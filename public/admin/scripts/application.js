@@ -37,8 +37,8 @@ import Sortable from "sortablejs";
 				ADMIN.utils.initializeMarkdonEditors();
 				UTILS.AsyncImageUploader.init();
 				ADMIN.utils.handleCopyIobjectCode();
-				window.UTILS.Suggestions.handleCategoriesSuggestions();
 				window.UTILS.TagChooser.init();
+				window.UTILS.Suggestions.handleCategoriesSuggestions();
 
 				// Form hints.
 				UTILS.formHints();
@@ -255,8 +255,11 @@ import Sortable from "sortablejs";
 					}
 
 				} );
-			}
+			},
 
+			handleCategoriesSuggestions: function() {
+				ADMIN.utils.categoriesSuggest( "[data-suggesting_categories='yes']" );
+			}
 		}
 	};
 
