@@ -37,6 +37,8 @@ class VatNumberField extends CharField {
 		"*" => '[A-Z]{2}\d{8,12}', // fallback
 	];
 
+	public $enable_validation;
+
 	function __construct($options = []){
 		$options += [
 			"enable_validation" => false, // zapne validaci DIC v systemu VIES: http://ec.europa.eu/taxation_customs/vies/vatResponse.html
