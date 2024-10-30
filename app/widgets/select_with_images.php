@@ -16,9 +16,10 @@
  * 	)));
  *
  */
-class SelectWithImages extends RadioSelect
-{
-	var $input_type = "radio";
+class SelectWithImages extends RadioSelect {
+
+	public $input_type = "radio";
+	public $options;
 
 	function __construct($options = array()){
 		$options += array(

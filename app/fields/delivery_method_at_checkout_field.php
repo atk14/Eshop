@@ -4,6 +4,8 @@
  */
 class DeliveryMethodAtCheckoutField extends ChoiceFieldWithImages {
 
+	public $basket;
+
 	function __construct($options = []){
 		$options += [
 			"basket" => null,
@@ -50,6 +52,9 @@ class DeliveryMethodAtCheckoutField extends ChoiceFieldWithImages {
 }
 
 class DeliveryMethodChoice {
+
+	public $options;
+	public $dm;
 
 	function __construct($dm, $options) {
 		$this->options = $options;
