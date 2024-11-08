@@ -22,6 +22,20 @@
  ***/
 
 class AjaxPager {
+
+	public $options;
+	public $params;
+	public $controller;
+	public $offset;
+	public $limit;
+	public $total;
+	public $url;
+	public $form;
+	public $sorting;
+	public $isXhrOrdered;
+	public $order;
+	public $isXhrPaged;
+
 	static function OffsetName() {
 		return defined("ATK14_PAGINATOR_OFFSET_PARAM_NAME") ? constant("ATK14_PAGINATOR_OFFSET_PARAM_NAME") : "from";
 	}
@@ -102,7 +116,7 @@ class AjaxPager {
 				$this->form = new Atk14Form();
 			}
 			$keys = $this->form->get_field_keys();
-			if(!isset($keys[$options['order_name']])) {
+			if(!in_array($options['order_name'],$keys)) {
 					$this->form->add_field($options['order_name'], new ChoiceField([
 							 "label" => $options['order_label'],
 							 "choices" => [],
@@ -489,6 +503,10 @@ class AjaxPager {
 		return $this->order;
 	}
 
+	/**
+	 *
+	 * @return Atk14Sorting
+	 */
 	function getSorting() {
 		if(!$this->sorting) {
 			$this->sorting = new Atk14Sorting(
