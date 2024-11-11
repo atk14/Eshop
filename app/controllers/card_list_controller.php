@@ -92,16 +92,26 @@ abstract class CardListController extends ApplicationController {
 			}
 	}
 
-	function _setup_sorting(&$options) {
-		$sorting = $this->pager->getSorting();
-		//$sorting['default'] = FilterFinder::DEFAULT_ORDER;
-		$sorting['default'] = $options['default_order'];
-		#$sorting['price'] = '(SELECT ROW(price, NOW() - sorting_date) FROM prepared_cards WHERE id=cards.id)';
-		#$sorting['price_desc'] = '(SELECT ROW(-price, sorting_date) FROM prepared_cards WHERE id=cards.id)';
+	function _setup_sorting($sorting,&$options) {
+		$default_order = $options["default_order"];
+		$sorting->add("default",$default_order,[
+			"title" => _("Nejnovější"),
+		]);
+
+		return;
+
+		$price = "(SELECT MIN(price) FROM pricelist_items pi WHERE pi.pricelist_id=1 AND minimum_quantity<=1 AND (valid_from IS NULL OR valid_from<NOW()) AND (valid_to IS NULL OR valid_to>NOW()) AND pi.product_id IN (SELECT id FROM products WHERE products.card_id=cards.id))";
+		$sorting->add("lowest_price","$price ASC, $default_order",[
+			"title" => _("Nejlevnější"),
+		]);
+		$sorting->add("highest_price","$price DESC, $default_order",[
+			"title" => _("Nejdražší"),
+		]);
+
 		#$options['materialized_fields'][] = 'price';
-		$sorting['popularity'] = '(SELECT ROW(-rating, NOW() - sorting_date) FROM prepared_cards WHERE id=cards.id)';
-		$sorting['name'] = "(SELECT body FROM translations WHERE record_id=cards.id AND table_name='cards' AND key='name' AND lang=:lang)";
-		$sorting['code'] = "(SELECT public_catalog_id(catalog_id) FROM products WHERE card_id = cards.id)";
+		//$sorting['popularity'] = '(SELECT ROW(-rating, NOW() - sorting_date) FROM prepared_cards WHERE id=cards.id)';
+		//$sorting['name'] = "(SELECT body FROM translations WHERE record_id=cards.id AND table_name='cards' AND key='name' AND lang=:lang)";
+		//$sorting['code'] = "(SELECT catalog_id FROM products WHERE card_id = cards.id)";
 	}
 
 	function _setup_page_title($options) {
@@ -118,7 +128,8 @@ abstract class CardListController extends ApplicationController {
 			'bind' => [],
 			'category' => true,
 			"first_breadcrumb_title" => "", // "" -> auto, "Novinky", "Slevy"
-			"materialized_fields" => []
+			"materialized_fields" => [],
+			"params" => [], // list of parameters needed to build URL to the actual action, e.g. ["path"]
 		];
 		if($options['category']) {
 			$out = $this->_setup_category($options);
@@ -145,14 +156,16 @@ abstract class CardListController extends ApplicationController {
 			}
 		}
 
-		$this->form = $this->tpl_data['form'] = $this->_get_form("FilterForm");
-		$this->tpl_data['pager'] = $this->pager = $pager = new CardsAjaxPager($this, [
-			'form' => $this->_get_form("CardListPagingForm"),
-			'page_size' => $this->page_size
-		]);
-		$this->tpl_data["paging_form"] = $pager->form;
+		$sorting = $this->sorting;
+		$this->_setup_sorting($sorting,$options);
 
-		$this->_setup_sorting($options);
+		$this->form = $this->tpl_data["form"] = $this->_get_form("FilterForm");
+		$this->tpl_data["pager"] = $this->pager = $pager = new CardsAjaxPager($this, [
+			"sorting" => $sorting,
+			"page_size" => $this->page_size,
+		]);
+
+		$this->tpl_data["paging_form"] = $pager->getForm();
 
 		$this->filter = $filter = new FilterForCards($this->effective_user, [
 				'conditions' => $cond,
@@ -168,11 +181,13 @@ abstract class CardListController extends ApplicationController {
 		}
 
 		$params = $this->params->toArray();
-		$params = array_filter(array_intersect_key($params, array_flip($options['params'])));
+		$_keys_to_preserve = array_flip($options['params']);
+		$_keys_to_preserve["order"] = "1";
+		$params = array_filter(array_intersect_key($params, $_keys_to_preserve));
 
 		$this->form->set_up_filter($filter, $this->params, [
 				'action' => $this->_link_to($params),
-				'update_choices' => !$pager->isXhr()
+				'update_choices' => !$pager->isXhr() || $pager->isXhrOrdered(),
 		]);
 		$this->finder = $this->tpl_data['finder'] = $finder = new FilterFinder($this->form->filter, [
 			'pager' => $pager,
@@ -189,7 +204,7 @@ abstract class CardListController extends ApplicationController {
 
 		$this->_setup_page_title($options);
 
-		if(!$pager->isXhr()) {
+		if(!$pager->isXhr() || $pager->isXhrOrdered()) {
 			$this->tpl_data['filtered'] = true;
 			if(!$this->form->fields){
 				// formular nema zadne policka - nebudeme ho zobrazovat
@@ -219,5 +234,4 @@ abstract class CardListController extends ApplicationController {
 		// index neukazujeme
 		//$this->breadcrumbs[] = array(_("Categories"),$this->_link_to("index"));
 	}
-
 }

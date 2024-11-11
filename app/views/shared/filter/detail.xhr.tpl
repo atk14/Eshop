@@ -48,7 +48,7 @@ if( --form[0].filtering == 0 ) {
 			empty.hide();
 	{/if}
 
-	{if !$finder->getPager()->isXhr()}
+	{if !$finder->getPager()->isXhr() || $finder->getPager()->isXhrOrdered()}
 		{if !$doNotrerenderFilters}
 			form.find('.js--filter_fields').html({jstring}{render partial="shared/filter/filter_fields"}{/jstring});
 			form.find('.js--filter_head').html({jstring}{render partial="shared/form_field" fields=$form->top_fields() no_label_rendering=true}{/jstring});
@@ -87,5 +87,7 @@ if( --form[0].filtering == 0 ) {
 	{if $add_searched_query}
 		ACTIVA.UTIL.add_searched_query({jstring}{$add_searched_query}{/jstring});
 	{/if}
+
+	$( "#paging_form" ).html( {jstring}{render partial="shared/paging_form"}{/jstring} );
 }
 })();

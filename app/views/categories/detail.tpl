@@ -22,13 +22,10 @@
 
 {render partial='shared/filter/filter_form' form=$form}
 
-{*
 <div id="paging_form">
 	{render partial="shared/paging_form" paging_form=$paging_form}
 </div>
-*}
 
 <section class="section--list-products" id="cards">
 	{render partial='shared/ajax_pager/ajax_pager'}
 </section>
-
