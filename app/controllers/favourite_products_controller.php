@@ -4,7 +4,6 @@ class FavouriteProductsController extends ApplicationController {
 	function index(){
 		$this->page_title = $this->breadcrumbs[] = _("Oblíbené produkty");
 		$this->tpl_data["favourite_products"] = $this->favourite_products_accessor->getFavouriteProducts();
-		$this->head_tags->setMetaTag("robots", "noindex,noarchive");
 	}
 
 	function create_new(){
