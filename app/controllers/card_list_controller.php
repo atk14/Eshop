@@ -37,7 +37,7 @@ abstract class CardListController extends ApplicationController {
 		$bind[':sort_category'] = $category;
 		$do = new \SqlBuilder\SqlJoinOrder("order_a, order_b, cards.id ASC",
 				"JOIN (SELECT NOT category_id = :sort_category, row_number() over(partition by category_id order by rank, card_id ASC), card_id from category_cards WHERE category_id IN (SELECT * from $ctable)) order_t(order_a,order_b) ON (order_t.card_id = cards.id)");
-		$options += ['default_order' => ['asc' => $do, 'desc' => $do->reversed() ]];
+		$options += ['default_order' => $do];
 		$this->_add_category_to_breadcrumbs($this->category,[
 			"path" => $path,
 			"first_breadcrumb_title" => $options["first_breadcrumb_title"],
@@ -94,17 +94,21 @@ abstract class CardListController extends ApplicationController {
 
 	function _setup_sorting($sorting,&$options) {
 		$default_order = $options["default_order"];
+		if(!is_a($default_order,"\SqlBuilder\SqlJoinOrder")){
+			$default_order = new \SqlBuilder\SqlJoinOrder($default_order);
+		}
+
 		$sorting->add("default",$default_order,[
-			"title" => _("Nejnovější"),
+			"title" => _("Doporučujeme"),
 		]);
 
 		return;
 
 		$price = "(SELECT MIN(price) FROM pricelist_items pi WHERE pi.pricelist_id=1 AND minimum_quantity<=1 AND (valid_from IS NULL OR valid_from<NOW()) AND (valid_to IS NULL OR valid_to>NOW()) AND pi.product_id IN (SELECT id FROM products WHERE products.card_id=cards.id))";
-		$sorting->add("lowest_price","$price ASC, $default_order",[
+		$sorting->add("lowest_price",new \SqlBuilder\SqlJoinOrder("$price ASC, $default_order",$default_order->join),[
 			"title" => _("Nejlevnější"),
 		]);
-		$sorting->add("highest_price","$price DESC, $default_order",[
+		$sorting->add("highest_price",new \SqlBuilder\SqlJoinOrder("$price DESC, $default_order",$default_order->join),[
 			"title" => _("Nejdražší"),
 		]);
 
