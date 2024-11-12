@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-28 16:18+0200\n"
-"PO-Revision-Date: 2024-06-28 16:23+0200\n"
+"POT-Creation-Date: 2024-11-12 14:37+0100\n"
+"PO-Revision-Date: 2024-11-12 14:40+0100\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: Team <team@email.com>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 msgid "Nahoru"
 msgstr "Top"
@@ -78,6 +78,7 @@ msgstr "Error 404: Page not found"
 msgid "We are deeply sorry, but the page on the URI <em>%1</em> wasn't found."
 msgstr "We are deeply sorry, but the page on the URI <em>%1</em> wasn't found."
 
+#: ../app/widgets/pupiq_image_input.php:45
 msgid "no image"
 msgstr "no image"
 
@@ -169,7 +170,7 @@ msgstr "The order cannot be completed"
 msgid "Doprava"
 msgstr "Shipping"
 
-#: ../app/widgets/select_with_images.php:132
+#: ../app/widgets/select_with_images.php:133
 msgid "Zdarma"
 msgstr "Free of charge"
 
@@ -293,12 +294,6 @@ msgstr "Related products"
 
 msgid "Je nám líto, ale prodej již skončil."
 msgstr "We apologize, but the sale is already over."
-
-msgid "Products"
-msgstr "Products"
-
-msgid "No product has been found."
-msgstr "No product has been found."
 
 msgid "Kontaktní údaje pro vyzvednutí zásilky"
 msgstr "Contact details for picking up your shipment"
@@ -889,6 +884,9 @@ msgstr "A total of %1 results found."
 msgid "Zobrazit všechny výsledky"
 msgstr "Show all results"
 
+msgid "No product has been found."
+msgstr "No product has been found."
+
 msgid "Attachments"
 msgstr "Attachments"
 
@@ -1222,6 +1220,10 @@ msgstr "VAT No.:"
 msgid "Výběru odpovídá:"
 msgstr "Corresponding to the selection:"
 
+#: ../lib/ajax_pager/ajax_pager.php:71 ../lib/ajax_pager/ajax_pager.php:618
+msgid "Seřadit dle"
+msgstr "Sort by"
+
 msgid "Photo gallery"
 msgstr "Photo gallery"
 
@@ -1290,6 +1292,9 @@ msgstr "Pages"
 
 msgid "Product categories"
 msgstr "Product categories"
+
+msgid "Products"
+msgstr "Products"
 
 #: ../app/controllers/brands_controller.php:20
 msgid "Brands"
@@ -1380,6 +1385,12 @@ msgstr "Saturday"
 msgid "Neděle"
 msgstr "Sunday"
 
+msgid "Mimořádná otevírací doba"
+msgstr "Special opening hours"
+
+msgid "zavřeno"
+msgstr "closed"
+
 msgid "Address"
 msgstr "Address"
 
@@ -1400,9 +1411,6 @@ msgstr "Search stores"
 
 msgid "Reset search"
 msgstr "Reset search"
-
-msgid "zavřeno"
-msgstr "closed"
 
 msgid "Informace o&nbsp;prodejně"
 msgstr "Information about&nbsp;shop"
@@ -1536,15 +1544,15 @@ msgstr "Error 1"
 msgid "Error 2"
 msgstr "Error 2"
 
-#: ../app/controllers/application_base.php:76
+#: ../app/controllers/application_base.php:77
 msgid "Page not found"
 msgstr "Page not found"
 
-#: ../app/controllers/application_base.php:90
+#: ../app/controllers/application_base.php:91
 msgid "Forbidden"
 msgstr "Forbidden"
 
-#: ../app/controllers/application_base.php:219
+#: ../app/controllers/application_base.php:220
 #: ../lib/structured_data/element/breadcrumb_list.php:68
 msgid "Home"
 msgstr "Home"
@@ -1665,6 +1673,18 @@ msgstr "Discount coupon has been removed"
 msgid "List of Brands"
 msgstr "List of Brands"
 
+#: ../app/controllers/card_list_controller.php:102
+msgid "Doporučujeme"
+msgstr "Featured"
+
+#: ../app/controllers/card_list_controller.php:109
+msgid "Nejlevnější"
+msgstr "Cheapest"
+
+#: ../app/controllers/card_list_controller.php:112
+msgid "Nejdražší"
+msgstr "Most expensive"
+
 #: ../app/controllers/categories_controller.php:14
 msgid "List of Categories"
 msgstr "List of Categories"
@@ -1711,7 +1731,7 @@ msgstr ""
 "The content of the shopping basket has changed. View the summary one more "
 "time and complete the order."
 
-#: ../app/controllers/checkouts_controller.php:215
+#: ../app/controllers/checkouts_controller.php:216
 #: ../app/controllers/delivery_service_branches_controller.php:101
 #: ../lib/delivery_services/src/app/controllers/delivery_service_branches_controller.php:101
 msgid "Nákupní košík"
@@ -1875,7 +1895,7 @@ msgstr "The payment transaction has been completed"
 msgid "Úhrada objednávky"
 msgstr "Payment of the order"
 
-#: ../app/controllers/searches_controller.php:21
+#: ../app/controllers/searches_controller.php:29
 #, php-format
 msgid "Vyhledávání: „%s“"
 msgstr "Searching: „%s“"
@@ -1947,7 +1967,7 @@ msgstr "Saved watchdog items"
 msgid "Aktivace hlídacího psa"
 msgstr "Watchdog activation"
 
-#: ../app/controllers/watched_products_controller.php:50
+#: ../app/controllers/watched_products_controller.php:48
 #, php-format
 msgid ""
 "Hlídací pes byl aktivován. O naskladnění produktu Vás budeme informovat na "
@@ -2026,7 +2046,7 @@ msgid "There is no such collection"
 msgstr "There is no such collection"
 
 #: ../app/fields/countries_field.php:16
-#, php-format
+#, no-php-format
 msgid "Country with code %country_code% does not exist."
 msgstr "Country with code %country_code% does not exist."
 
@@ -2038,7 +2058,7 @@ msgstr "Country code %country_code% is given more than once."
 msgid "Please, write comma-separated list of country codes"
 msgstr "Please, write comma-separated list of country codes"
 
-#: ../app/fields/decimal_field.php:24
+#: ../app/fields/decimal_field.php:28
 msgid ""
 "Ensure this number has at most %max% digits (it has %digits% including "
 "allowed decimal places)."
@@ -2046,7 +2066,7 @@ msgstr ""
 "Ensure this number has at most %max% digits (it has %digits% including "
 "allowed decimal places)."
 
-#: ../app/fields/decimal_field.php:25
+#: ../app/fields/decimal_field.php:29
 msgid ""
 "Ensure this number has at most %max% digits in integer-part (it has "
 "%integers%)."
@@ -2054,7 +2074,7 @@ msgstr ""
 "Ensure this number has at most %max% digits in integer-part (it has "
 "%integers%)."
 
-#: ../app/fields/decimal_field.php:26
+#: ../app/fields/decimal_field.php:30
 msgid ""
 "Ensure this number has at most %max% decimal places (it has "
 "%decimal_places%)."
@@ -2062,16 +2082,16 @@ msgstr ""
 "Ensure this number has at most %max% decimal places (it has "
 "%decimal_places%)."
 
-#: ../app/fields/delivery_method_at_checkout_field.php:36
+#: ../app/fields/delivery_method_at_checkout_field.php:38
 msgid "There is no such delivery method"
 msgstr "There is no such delivery method"
 
-#: ../app/fields/delivery_method_at_checkout_field.php:46
+#: ../app/fields/delivery_method_at_checkout_field.php:48
 #: ../test/controllers/tc_checkouts.php:94
 msgid "Choose pickup place for selected delivery method"
 msgstr "Choose pickup place for selected delivery method"
 
-#: ../app/fields/delivery_method_at_checkout_field.php:101
+#: ../app/fields/delivery_method_at_checkout_field.php:106
 msgid "dle země doručení"
 msgstr "according to the country of delivery"
 
@@ -2111,22 +2131,22 @@ msgstr "requires: %s"
 msgid "Toto nevypadá jako zápis hodin. Je očekáván zápis 12:00"
 msgstr "This does not look as a record of time. It is supposed to be 12:00"
 
-#: ../app/fields/login_field.php:9
+#: ../app/fields/login_field.php:11
 #, php-format
 msgid ""
 "Only letters, numbers, dots and dashes are allowed. Up to %s characters."
 msgstr ""
 "Only letters, numbers, dots and dashes are allowed. Up to %s characters."
 
-#: ../app/fields/login_field.php:21
+#: ../app/fields/login_field.php:23
 msgid "This username has been already taken"
 msgstr "This username has been already taken"
 
-#: ../app/fields/login_field.php:22
+#: ../app/fields/login_field.php:24
 msgid "Only letters, numbers, dots and dashes are allowed"
 msgstr "Only letters, numbers, dots and dashes are allowed"
 
-#: ../app/fields/object_field.php:34
+#: ../app/fields/object_field.php:37
 msgid "There is no such record"
 msgstr "There is no such record"
 
@@ -2175,15 +2195,15 @@ msgstr "page"
 msgid "There is no such page"
 msgstr "There is no such page"
 
-#: ../app/fields/phone_field.php:55
+#: ../app/fields/phone_field.php:62
 msgid "Enter phone number in format %sample_phone_number%"
 msgstr "Enter phone number in format %sample_phone_number%"
 
-#: ../app/fields/phone_field.php:79
+#: ../app/fields/phone_field.php:86
 msgid "Enter valid phone number (%sample_phone_number%)"
 msgstr "Enter valid phone number (%sample_phone_number%)"
 
-#: ../app/fields/phone_field.php:80
+#: ../app/fields/phone_field.php:87
 msgid "Enter phone number"
 msgstr "Enter phone number"
 
@@ -2195,33 +2215,33 @@ msgstr "There is no such product"
 msgid "typ produktu"
 msgstr "product type"
 
-#: ../app/fields/slug_field.php:6
+#: ../app/fields/slug_field.php:8
 msgid "Slug"
 msgstr "Slug"
 
-#: ../app/fields/slug_field.php:8
+#: ../app/fields/slug_field.php:10
 msgid "funny-green-mug"
 msgstr "funny-green-mug"
 
-#: ../app/fields/slug_field.php:12
+#: ../app/fields/slug_field.php:14
 msgid "Write something like black-cat-white-cat"
 msgstr "Write something like black-cat-white-cat"
 
-#: ../app/fields/tags_field.php:21
+#: ../app/fields/tags_field.php:26
 msgid "Ensure that there are max %max% tags (now there are %count%)"
 msgstr "Ensure that there are max %max% tags (now there are %count%)"
 
-#: ../app/fields/tags_field.php:22
+#: ../app/fields/tags_field.php:27
 #, php-format
 msgid "There is no tag <em>%s</em>"
 msgstr "There is no tag <em>%s</em>"
 
-#: ../app/fields/tags_field.php:23
+#: ../app/fields/tags_field.php:28
 #, php-format
 msgid "Tag <em>%s</em> is there more than once"
 msgstr "Tag <em>%s</em> is there more than once"
 
-#: ../app/fields/vat_number_field.php:52
+#: ../app/fields/vat_number_field.php:54
 msgid "DIČ není zadáno správně"
 msgstr "VAT number is incorrect"
 
@@ -2229,31 +2249,31 @@ msgstr "VAT number is incorrect"
 msgid "Toto není správný slevový kupón"
 msgstr "The discount coupon is incorrect"
 
-#: ../app/fields/zip_field.php:28
+#: ../app/fields/zip_field.php:32
 msgid "Please enter a valid zip code"
 msgstr "Please enter a valid zip code"
 
-#: ../app/fields/zip_field.php:31 ../app/fields/zip_field.php:32
+#: ../app/fields/zip_field.php:35 ../app/fields/zip_field.php:36
 msgid "Enter a valid ZIP code as NNN NN"
 msgstr "Enter a valid ZIP code as NNN NN"
 
-#: ../app/fields/zip_field.php:137
+#: ../app/fields/zip_field.php:141
 msgid "enter four digits"
 msgstr "enter four digits"
 
-#: ../app/fields/zip_field.php:143
+#: ../app/fields/zip_field.php:147
 msgid "enter five digits"
 msgstr "enter five digits"
 
-#: ../app/fields/zip_field.php:149
+#: ../app/fields/zip_field.php:153
 msgid "Enter six digits"
 msgstr "Enter six digits"
 
-#: ../app/fields/zip_field.php:155
+#: ../app/fields/zip_field.php:159
 msgid "Enter seven digits"
 msgstr "Enter seven digits"
 
-#: ../app/fields/zip_field.php:291
+#: ../app/fields/zip_field.php:295
 msgid "Enter five digits"
 msgstr "Enter five digits"
 
@@ -2464,7 +2484,7 @@ msgstr "Select a dispensing point"
 msgid "Neplatná pobočka"
 msgstr "Invalid branch"
 
-#: ../app/forms/filter_form.php:8
+#: ../app/forms/filter_form.php:11
 msgid "Filtrovat"
 msgstr "Filter"
 
@@ -2591,109 +2611,109 @@ msgstr "Product advertising"
 msgid "Doprava zdarma"
 msgstr "Free shipping"
 
-#: ../app/models/basket.php:704
+#: ../app/models/basket.php:709
 msgid "Košík je prázdný"
 msgstr "Shopping basket is empty"
 
-#: ../app/models/basket.php:714
+#: ../app/models/basket.php:719
 #, php-format
 msgid "Produkt <em>%s (%s)</em> byl vyřazen z nabídky"
 msgstr "The product <em>%s (%s)</em> has been removed from our offer"
 
-#: ../app/models/basket.php:716 ../app/models/basket.php:728
-#: ../app/models/basket.php:743
+#: ../app/models/basket.php:721 ../app/models/basket.php:733
+#: ../app/models/basket.php:748
 msgid "odebrat z košíku"
 msgstr "remove from basket"
 
-#: ../app/models/basket.php:726
+#: ../app/models/basket.php:731
 #, php-format
 msgid "Produkt <em>%s (%s)</em> byl vyřazen z našeho ceníku"
 msgstr "Product <em>%s (%s)</em> has been removed from our price list"
 
-#: ../app/models/basket.php:741
+#: ../app/models/basket.php:746
 #, php-format
 msgid "Produkt <em>%s (%s)</em> není skladem"
 msgstr "Product <em>%s (%s)</em> is out of stock"
 
-#: ../app/models/basket.php:751
+#: ../app/models/basket.php:756
 #, php-format
 msgid "Produkt <em>%s (%s)</em> lze objednat v počtu nejvýše: %s"
 msgstr "Product <em>%s (%s)</em> can be ordered in the maximum number of: %s"
 
-#: ../app/models/basket.php:753 ../app/models/basket.php:763
-#: ../app/models/basket.php:774
+#: ../app/models/basket.php:758 ../app/models/basket.php:768
+#: ../app/models/basket.php:779
 #, php-format
 msgid "změnit množství na %s"
 msgstr "change number to %s"
 
-#: ../app/models/basket.php:761
+#: ../app/models/basket.php:766
 #, php-format
 msgid "Produkt <em>%s (%s)</em> lze objednat v počtu nejméně: %s"
 msgstr "Product <em>%s (%s)</em> can be ordered in the minimum number of: %s"
 
-#: ../app/models/basket.php:772
+#: ../app/models/basket.php:777
 #, php-format
 msgid "Množství u produktu <em>%s (%s)</em> musí být násobkem čísla %s"
 msgstr "Number of products <em>%s (%s)</em> must be a multiple of number %s"
 
-#: ../app/models/basket.php:786
+#: ../app/models/basket.php:791
 #, php-format
 msgid "odstranit voucher"
 msgstr "remove voucher"
 
-#: ../app/models/basket.php:794
+#: ../app/models/basket.php:799
 msgid "Celková cena nesmí být záporná. Přihoďte do košíku ještě něco malého :)"
 msgstr ""
 "The total price cannot have a negative value. Add something little to the "
 "basket :)"
 
-#: ../app/models/basket.php:795 ../app/models/basket.php:801
+#: ../app/models/basket.php:800 ../app/models/basket.php:806
 #, php-format
 msgid "přejít do katalogu"
 msgstr "go to catalogue"
 
-#: ../app/models/basket.php:800
+#: ../app/models/basket.php:805
 #, php-format
 msgid ""
 "Celková cena musí být alespoň %s. Přihoďte do košíku ještě něco malého :)"
 msgstr ""
 "The total price must be at least %s. Add something little to the basket :)"
 
-#: ../app/models/basket.php:830
+#: ../app/models/basket.php:835
 #, php-format
 msgid "Doručovací metoda <em>%s</em> nemůže být vybrána"
 msgstr "Shipping method <em>%s</em> cannot be selected"
 
-#: ../app/models/basket.php:831 ../app/models/basket.php:838
+#: ../app/models/basket.php:836 ../app/models/basket.php:843
 msgid "vyberte jinou metodu"
 msgstr "choose another method"
 
-#: ../app/models/basket.php:837
+#: ../app/models/basket.php:842
 #, php-format
 msgid "Platební metoda <em>%s</em> nemůže být vybrána"
 msgstr "Payment method <em>%s</em> cannot be selected"
 
-#: ../app/models/basket.php:845
+#: ../app/models/basket.php:850
 msgid "Výdejní místo pro doručení objednávky nebylo vybráno"
 msgstr "The dispensing point for order delivery has not been selected"
 
-#: ../app/models/basket.php:846
+#: ../app/models/basket.php:851
 msgid "vyberte výdejní místo"
 msgstr "select a dispensing point"
 
-#: ../app/models/basket.php:858
+#: ../app/models/basket.php:863
 msgid "Objednávku nelze doručit na danou doručovací adresu"
 msgstr "The order cannot be delivered to the given delivery address"
 
-#: ../app/models/basket.php:859
+#: ../app/models/basket.php:864
 msgid "upravte doručovací adresu"
 msgstr "edit delivery address"
 
-#: ../app/models/basket.php:866
+#: ../app/models/basket.php:871
 msgid "Vybrané výdejní místo pro doručení objednávky již není aktivní"
 msgstr "The selected dispensing point for order delivery is no longer active"
 
-#: ../app/models/basket.php:867
+#: ../app/models/basket.php:872
 msgid "vyberte jiné výdejní místo"
 msgstr "select another dispensing point"
 
@@ -2705,6 +2725,16 @@ msgstr "CZK"
 #, php-format
 msgid "opening hours: %s"
 msgstr "opening hours: %s"
+
+#: ../app/models/delivery_service.php:303
+#: ../lib/delivery_services/src/app/models/delivery_service.php:303
+msgid "Česká Pošta - Balík na poštu"
+msgstr "Czech Post - Parcel to Post"
+
+#: ../app/models/delivery_service.php:304
+#: ../lib/delivery_services/src/app/models/delivery_service.php:304
+msgid "Česká Pošta - Balíkovna"
+msgstr "Czech Post - Balikovna"
 
 #: ../app/models/order.php:717
 #, php-format
@@ -2823,7 +2853,7 @@ msgstr "Remove file"
 
 #: ../app/widgets/async_pupiq_attachment_input.php:41
 #: ../app/widgets/pupiq_attachment_input.php:41
-#: ../app/widgets/pupiq_image_input.php:45
+#: ../app/widgets/pupiq_image_input.php:64
 msgid "remove"
 msgstr "remove"
 
@@ -2840,69 +2870,65 @@ msgstr "Reduce the ordered quantity"
 msgid "Zvyš objednané množství"
 msgstr "Increase the ordered quantity"
 
-#: ../app/widgets/pupiq_image_input.php:46
+#: ../app/widgets/pupiq_image_input.php:65
 msgid "Display image"
 msgstr "Display image"
 
-#: ../lib/ajax_pager/ajax_pager.php:57
-msgid "Seřadit dle"
-msgstr "Sort by"
-
-#: ../lib/ajax_pager/ajax_pager.php:62
+#: ../lib/ajax_pager/ajax_pager.php:76
 msgid "První strana"
 msgstr "First page"
 
-#: ../lib/ajax_pager/ajax_pager.php:63
+#: ../lib/ajax_pager/ajax_pager.php:77
 msgid "Další produkt"
 msgstr "Next product"
 
-#: ../lib/ajax_pager/ajax_pager.php:64 ../lib/ajax_pager/ajax_pager.php:67
+#: ../lib/ajax_pager/ajax_pager.php:78 ../lib/ajax_pager/ajax_pager.php:81
 msgid "Další strana"
 msgstr "Next page"
 
-#: ../lib/ajax_pager/ajax_pager.php:65
+#: ../lib/ajax_pager/ajax_pager.php:79
 #, php-format
 msgid "Další %s produkty"
 msgstr "Next %s products"
 
-#: ../lib/ajax_pager/ajax_pager.php:66
+#: ../lib/ajax_pager/ajax_pager.php:80
 #, php-format
 msgid "Dalších %s produktů"
 msgstr "Next %s products"
 
-#: ../lib/ajax_pager/ajax_pager.php:68
+#: ../lib/ajax_pager/ajax_pager.php:82
 msgid "Předchozí strana"
 msgstr "Previous page"
 
-#: ../lib/ajax_pager/ajax_pager.php:69
+#: ../lib/ajax_pager/ajax_pager.php:83
 msgid "Zbývá 1 položka z %t"
 msgstr "1 item of %t left"
 
-#: ../lib/ajax_pager/ajax_pager.php:70
+#: ../lib/ajax_pager/ajax_pager.php:84
 msgid "Zbývají %s položky z %t"
 msgstr "%s items of %t left"
 
-#: ../lib/ajax_pager/ajax_pager.php:71
+#: ../lib/ajax_pager/ajax_pager.php:85
 msgid "Zbývá %s položek z %t"
 msgstr "%s items of %t left"
 
-#: ../lib/ajax_pager/ajax_pager.php:75
+#: ../lib/ajax_pager/ajax_pager.php:89
 msgid "Vyhledáno celkem %t produktů"
 msgstr "Found %t product in total"
 
-#: ../lib/ajax_pager/ajax_pager.php:77 ../lib/ajax_pager/ajax_pager.php:80
+#: ../lib/ajax_pager/ajax_pager.php:91 ../lib/ajax_pager/ajax_pager.php:94
 msgid "produktů"
 msgstr "products"
 
-#: ../lib/ajax_pager/ajax_pager.php:78
+#: ../lib/ajax_pager/ajax_pager.php:92
 msgid "produkt"
 msgstr "product"
 
-#: ../lib/ajax_pager/ajax_pager.php:79
+#: ../lib/ajax_pager/ajax_pager.php:93
 msgid "produkty"
 msgstr "products"
 
-#: ../lib/ajax_pager/ajax_pager.php:82
+#: ../lib/ajax_pager/ajax_pager.php:96
 msgid "Načítám..."
 msgstr "Loading..."
 
