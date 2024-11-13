@@ -9,7 +9,7 @@ class CategoryField extends CharField{
 
 	var $consider_filter;
 	var $follow_pointing_category;
-	var $treat_null_as_root
+	var $treat_null_as_root;
 
 	function __construct($options = array()){
 		$options["null_empty_output"] = true;
