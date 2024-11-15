@@ -66,6 +66,7 @@ class PaymentTransactionsController extends AdminController {
 		$this->tpl_data["data"] = $data;
 		$this->tpl_data["internal_status"] = $internal_status;
 		$this->tpl_data["current_datetime"] = now();
+		$this->tpl_data["order"] = $this->payment_transaction->getOrder();
 	}
 
 	function _before_filter(){
