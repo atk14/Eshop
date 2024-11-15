@@ -5,6 +5,9 @@ class PaymentGatewayApi {
 
 	protected $set_new_new_transaction_to_started_state = true;
 
+	public $logger;
+	public $request;
+
 	function isProperlyConfigured(){
 		$class = get_called_class();
 		throw new \Exception("Method $class::isProperlyConfigured() needs to be defined");
