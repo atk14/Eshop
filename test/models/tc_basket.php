@@ -1286,6 +1286,33 @@ class TcBasket extends TcBase {
 		$this->assertEquals(true,$expcetion_thrown);
 	}
 
+	function test__getDeliveryCountry(){
+		$basket = Basket::CreateNewRecord4UserAndRegion($this->users["kveta"],$this->regions["czechoslovakia"]);
+
+		$basket->s("address_country",null);
+		$basket->s("delivery_address_country",null);
+		$this->assertEquals(null,$basket->_getDeliveryCountry());
+
+		$basket->s("address_country","CZ");
+		$this->assertEquals("CZ",$basket->_getDeliveryCountry());
+
+		$basket->s("delivery_address_country","SK");
+		$this->assertEquals("SK",$basket->_getDeliveryCountry());
+
+		$basket->s([
+			"delivery_firstname" => "Bobina",
+			"delivery_lastname" => "Drozdová",
+			"delivery_method_id" => $this->delivery_methods["zasilkovna"],
+			"delivery_method_data" => $this->delivery_service_branches["zasilkovna_1"]->getDeliveryMethodData(),
+		]);
+		$this->assertEquals("CZ",$basket->_getDeliveryCountry());
+
+		$basket->s([
+			"delivery_method_id" => $this->delivery_methods["personal_sk"],
+		]);
+		$this->assertEquals("SK",$basket->_getDeliveryCountry());
+	}
+
 	function _check_proper_price_rounding_on_items($items){
 		// bavlna_zelena: latky v cm se zaokrouhluji na 4 desetiny - v ceniku je 1.2342
 		$this->assertEquals(1.2342,$items[0]->getUnitPrice());
