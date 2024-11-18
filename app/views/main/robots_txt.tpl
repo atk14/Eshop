@@ -11,4 +11,7 @@ Disallow: {link_to controller="baskets" action="index"}
 Disallow: {link_to controller="favourite_products" action="index"}
 Disallow: {link_to controller="watched_products" action="index"}
 Disallow: {link_to controller="cookie_consents" action="index"}
+Disallow: /*offset=*
+Disallow: /*order=*
+Disallow: /*count=*
 Sitemap: {link_to controller="sitemaps" _with_hostname=true}

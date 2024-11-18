@@ -50,12 +50,63 @@
 			if ( this.form ) {
 				this.$form = $( "#" + this.form );
 				// console.log( "this.form: " + this.form ); // e.g. "form_categories_card_list_paging"
+
 				if ( this.$form.length === 1 && !this.$form[ 0 ].pagerInited ) {
-					this.$form.find( "select" ).change( ( function() {
+
+					$( "#paging_form" ).on( "click", function( e ) {
+						e.preventDefault();
+						if ( e.target.tagName.toUpperCase() === "A" ) {
+							var $a = $( e.target );
+							var $form = $( "#paging_form" ).find( "form" ); 
+							$a.parent().siblings().removeClass( "active" );
+							$a.parent().addClass( "active" );
+							if( $form.data( "remote" ) ) {
+								// $form is an ATK14 remote form
+								var $filter_form = $( "#filter_form" );
+								$form.attr( "action", $a.attr( "href" ) );
+								$filter_form.attr( "action", $a.data( "filter_href" ));
+								$filter_form[ 0 ].filtering++;
+								console.log( $form.attr( "action" ) );
+								$form.submit();
+							} else {
+								// $form is not an ATK14 remote form
+								window.location.href = $a.attr( "href" ) + "#pager";
+							}
+						}
+						return false;
+					} );
+
+					/*
+					$form.find( "a" ).click( function() {
+						var $a = $( this );
+						var $filter_form = $( "#filter_form" );
+						$a.parent().siblings().removeClass( "active" );
+						$a.parent().addClass( "active" );
+						$form.attr( "action", $a.attr( "href" ));
+						$filter_form.attr( "action", $a.attr( "href" ));
+						$filter_form[ 0 ].filtering++;
+						$form.submit();
+
+						return false;
+					} );
+					*/
+
+					/*
+					this.$form.find( "select,input[type=radio]" ).change( ( function() {
 						this.$form.submit();
 					} ).bind( this ) );
+					*/
 
+					/*
 					this.$form.submit( ( function( e ) {
+						var replaceParams = this.$form.serialize();
+						var replaceUrl;
+						replaceUrl = this.$form.attr( "action" );
+						if ( replaceParams !== "order=default" ) {
+							replaceUrl += replaceUrl.indexOf( "?" ) === -1 ? "?" : "&";
+							replaceUrl += replaceParams;
+						}
+						this.url = replaceUrl;
 						$.ajax( {
 							type: "post",
 							url: this.$form.attr( "action" ),
@@ -64,12 +115,18 @@
 							success: ( function( data ) {
 								this.updatePager( data, { noScroll: true } ) ;
 								window.document.activeElement.blur();
+								window.history.replaceState(
+									{}, "",
+									replaceUrl
+								);
 							} ).bind( this )
 						} );
 						e.preventDefault();
 						return false;
 					}
 					).bind( this ) );
+					*/
+
 					this.$form[ 0 ].pagerInited = true;
 				}
 			}

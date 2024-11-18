@@ -1,5 +1,7 @@
-{if $form && $form->get_fields()}
-	{form_remote}
+{if $form}
+	{* we need to have element <form id="filter_form"> always rendered for paging_form *}
+	{form_remote _class="{if !$form->get_fields()}d-none{/if}"}
+	{if $form->get_fields()}
 		<div id="filter" class="pfilter">
 			<div class="pfilter__header">
 				<h3 class="pfilter__title">{t}Filtrace produktů{/t}</h3>
@@ -22,5 +24,6 @@
 				{render partial="shared/filter/active_filters" filter=$finder->filter}
 			</div>
 		</div>
+	{/if}
 	{/form_remote}
 {/if}

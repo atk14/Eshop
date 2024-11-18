@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-28 16:18+0200\n"
+"POT-Creation-Date: 2024-11-12 14:37+0100\n"
 "PO-Revision-Date: 2024-05-13 14:19+0200\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: \n"
@@ -46,7 +46,7 @@ msgstr "Soubor nebyl zcela nahrán, nahrajte jej prosím znovu."
 msgid "Remove file"
 msgstr "Odstranit soubor"
 
-#: ../vendor/atk14/category-filter/src/app/forms/filter_form.php:8
+#: ../vendor/atk14/category-filter/src/app/forms/filter_form.php:11
 msgid "Filtrovat"
 msgstr "Filtrovat"
 
@@ -62,11 +62,11 @@ msgstr "Ano"
 msgid "Ne"
 msgstr "Ne"
 
-#: ../vendor/atk14/category-filter/src/lib/filter_range_section.php:220
+#: ../vendor/atk14/category-filter/src/lib/filter_range_section.php:223
 msgid "from"
 msgstr "od"
 
-#: ../vendor/atk14/category-filter/src/lib/filter_range_section.php:224
+#: ../vendor/atk14/category-filter/src/lib/filter_range_section.php:227
 msgid "to"
 msgstr "do"
 
@@ -90,30 +90,30 @@ msgstr "modrá"
 msgid "green"
 msgstr "green"
 
-#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:24
+#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:27
 msgid "Please enter a valid company registration number"
 msgstr "Zadejte platné IČ"
 
-#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:27
-#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:28
-#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:34
+#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:30
+#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:31
+#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:37
 msgid "Enter the company number as eight digits"
 msgstr "Zadejte IČ ve formátu 8 číslic"
 
-#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:29
+#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:32
 msgid "Enter the company number as seven digits"
 msgstr "Zadejte IČ ve formátu 7 číslic"
 
-#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:30
-#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:31
+#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:33
+#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:34
 msgid "Enter the company number as nine digits"
 msgstr "Zadejte IČ ve formátu 9 číslic"
 
-#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:32
+#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:35
 msgid "Enter the company number as LV and eleven digits"
 msgstr "Zadejte IČ ve formátu LV a 11 číslic"
 
-#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:33
+#: ../vendor/atk14/company-number-field/src/app/fields/company_number_field.php:36
 msgid "Enter the company number as ten digits"
 msgstr "Zadejte číslo společnosti jako deset číslic"
 
@@ -215,6 +215,14 @@ msgstr "Úvodní text dialogu"
 msgid "Text v patičce dialogu"
 msgstr "Text v patičce dialogu"
 
+#: ../vendor/atk14/cookie-consent/src/app/forms/admin/cookie_consents/edit_form.php:30
+msgid "Odeslat příkaz pro výchozí nastavení souhlasu"
+msgstr ""
+
+#: ../vendor/atk14/cookie-consent/src/app/forms/admin/cookie_consents/edit_form.php:36
+msgid "Odeslat příkaz pro aktualizaci nastavení souhlasu"
+msgstr ""
+
 #: ../vendor/atk14/cookie-consent/src/gettext_messages.php:4
 msgid "Nastavení"
 msgstr "Nastavení"
@@ -235,7 +243,7 @@ msgstr "Souhlasím s použitím všech cookies"
 msgid "Souhlasím s použitím vybraných cookies"
 msgstr "Souhlasím s použitím vybraných cookies"
 
-#: ../vendor/atk14/decimal-field/src/app/fields/decimal_field.php:24
+#: ../vendor/atk14/decimal-field/src/app/fields/decimal_field.php:28
 msgid ""
 "Ensure this number has at most %max% digits (it has %digits% including "
 "allowed decimal places)."
@@ -243,7 +251,7 @@ msgstr ""
 "Zajistěte, aby toto číslo mělo maximálně %max% číslic (teď má %digits% "
 "včetně povolených desetinných míst)."
 
-#: ../vendor/atk14/decimal-field/src/app/fields/decimal_field.php:25
+#: ../vendor/atk14/decimal-field/src/app/fields/decimal_field.php:29
 msgid ""
 "Ensure this number has at most %max% digits in integer-part (it has "
 "%integers%)."
@@ -251,7 +259,7 @@ msgstr ""
 "Zajistěte, aby toto číslo mělo maximálně %max% číslic před desetinnou čárkou "
 "(teď má %integers%)."
 
-#: ../vendor/atk14/decimal-field/src/app/fields/decimal_field.php:26
+#: ../vendor/atk14/decimal-field/src/app/fields/decimal_field.php:30
 msgid ""
 "Ensure this number has at most %max% decimal places (it has "
 "%decimal_places%)."
@@ -281,37 +289,37 @@ msgstr ""
 "Při komunikaci s rozhraním captcha API se vyskytl technický problém. Zkuste "
 "to prosím později."
 
-#: ../vendor/atk14/mail-panel/src/MailPanel.php:44
+#: ../vendor/atk14/mail-panel/src/MailPanel.php:47
 msgid "Headers"
 msgstr "Hlavičky"
 
-#: ../vendor/atk14/mail-panel/src/MailPanel.php:55
+#: ../vendor/atk14/mail-panel/src/MailPanel.php:58
 msgid "HTML body"
 msgstr "HTML text"
 
-#: ../vendor/atk14/mail-panel/src/MailPanel.php:61
+#: ../vendor/atk14/mail-panel/src/MailPanel.php:64
 msgid "Plain text body"
 msgstr "Prostý text"
 
-#: ../vendor/atk14/mail-panel/src/MailPanel.php:71
+#: ../vendor/atk14/mail-panel/src/MailPanel.php:74
 msgid "No mail has been sent"
 msgstr "Žádný e-mail nebyl odeslán"
 
-#: ../vendor/atk14/phone-field/src/phone_field.php:55
+#: ../vendor/atk14/phone-field/src/phone_field.php:62
 msgid "Enter phone number in format %sample_phone_number%"
 msgstr "Zadejte telefonní číslo ve formátu %sample_phone_number%"
 
-#: ../vendor/atk14/phone-field/src/phone_field.php:79
+#: ../vendor/atk14/phone-field/src/phone_field.php:86
 msgid "Enter valid phone number (%sample_phone_number%)"
 msgstr "Zadejte platné telefonní číslo (%sample_phone_number%)"
 
-#: ../vendor/atk14/phone-field/src/phone_field.php:80
+#: ../vendor/atk14/phone-field/src/phone_field.php:87
 msgid "Enter phone number"
 msgstr "Zadejte telefonní číslo"
 
 #: ../vendor/atk14/pupiq-client/src/app/widgets/async_pupiq_attachment_input.php:41
 #: ../vendor/atk14/pupiq-client/src/app/widgets/pupiq_attachment_input.php:41
-#: ../vendor/atk14/pupiq-client/src/app/widgets/pupiq_image_input.php:45
+#: ../vendor/atk14/pupiq-client/src/app/widgets/pupiq_image_input.php:64
 msgid "remove"
 msgstr "odstranit"
 
@@ -320,39 +328,43 @@ msgstr "odstranit"
 msgid "Download attachment"
 msgstr "Stáhnout přílohu"
 
-#: ../vendor/atk14/pupiq-client/src/app/widgets/pupiq_image_input.php:46
+#: ../vendor/atk14/pupiq-client/src/app/widgets/pupiq_image_input.php:45
+msgid "no image"
+msgstr ""
+
+#: ../vendor/atk14/pupiq-client/src/app/widgets/pupiq_image_input.php:65
 msgid "Display image"
 msgstr "Zobrazit obrázek"
 
-#: ../vendor/atk14/pupiq-client/src/lib/pupiq.php:113
+#: ../vendor/atk14/pupiq-client/src/lib/pupiq.php:114
 msgid "Unknown error"
 msgstr "Neznámá chyba"
 
-#: ../vendor/atk14/range-field/src/app/fields/range_field.php:23
+#: ../vendor/atk14/range-field/src/app/fields/range_field.php:29
 msgid "Minimum of the range is required"
 msgstr "Je požadováno minimum rozsahu"
 
-#: ../vendor/atk14/range-field/src/app/fields/range_field.php:24
+#: ../vendor/atk14/range-field/src/app/fields/range_field.php:30
 msgid "Maximum of the range is required"
 msgstr "Je požadováno maximum rozsahu"
 
-#: ../vendor/atk14/range-field/src/app/fields/range_field.php:25
+#: ../vendor/atk14/range-field/src/app/fields/range_field.php:31
 msgid "Value is out of range of allowed values"
 msgstr "Hodnota je mimo rozsah povolených hodnot"
 
-#: ../vendor/atk14/range-field/src/app/fields/range_field.php:26
+#: ../vendor/atk14/range-field/src/app/fields/range_field.php:32
 msgid "Invalid input for range field"
 msgstr "Neplatný vstup pro rozsahové pole"
 
-#: ../vendor/atk14/range-field/src/app/fields/range_field.php:27
+#: ../vendor/atk14/range-field/src/app/fields/range_field.php:33
 msgid "This range field accepts only numeric values"
 msgstr "Toto rozsahové pole přijímá pouze číselné hodnoty"
 
-#: ../vendor/atk14/range-field/src/app/widgets/range_input.php:55
+#: ../vendor/atk14/range-field/src/app/widgets/range_input.php:63
 msgid "<!-- range --> from"
 msgstr "od"
 
-#: ../vendor/atk14/range-field/src/app/widgets/range_input.php:59
+#: ../vendor/atk14/range-field/src/app/widgets/range_input.php:67
 msgid "<!-- range --> to"
 msgstr "do"
 
@@ -364,15 +376,15 @@ msgstr ""
 "Během komunikace se společností Google došlo k technickým problémům. Zkuste "
 "to prosím později."
 
-#: ../vendor/atk14/slug-field/src/slug_field.php:6
+#: ../vendor/atk14/slug-field/src/slug_field.php:8
 msgid "Slug"
 msgstr "Slug"
 
-#: ../vendor/atk14/slug-field/src/slug_field.php:8
+#: ../vendor/atk14/slug-field/src/slug_field.php:10
 msgid "funny-green-mug"
 msgstr "zabavny-zeleny-hrnek"
 
-#: ../vendor/atk14/slug-field/src/slug_field.php:12
+#: ../vendor/atk14/slug-field/src/slug_field.php:14
 msgid "Write something like black-cat-white-cat"
 msgstr "Napište něco jako cerna-kocka-bily-kocour"
 
@@ -380,34 +392,34 @@ msgstr "Napište něco jako cerna-kocka-bily-kocour"
 msgid "This doesn't look like an URL"
 msgstr "Toto nevypadá jako URL"
 
-#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:28
+#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:32
 #: ../vendor/atk14/zip-field/test/tc_zip_field.php:40
 msgid "Please enter a valid zip code"
 msgstr "Zadejte prosím platné PSČ"
 
-#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:31
-#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:32
+#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:35
+#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:36
 #: ../vendor/atk14/zip-field/test/tc_zip_field.php:50
 msgid "Enter a valid ZIP code as NNN NN"
 msgstr "Zadejte platné PSČ ve tvaru NNN NN"
 
-#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:137
+#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:141
 msgid "enter four digits"
 msgstr "zadejte čtyři číslice"
 
-#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:143
+#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:147
 msgid "enter five digits"
 msgstr "zadejte pět číslic"
 
-#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:149
+#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:153
 msgid "Enter six digits"
 msgstr "Zadejte šest číslic"
 
-#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:155
+#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:159
 msgid "Enter seven digits"
 msgstr "Zadejte sedm číslic"
 
-#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:291
+#: ../vendor/atk14/zip-field/src/app/fields/zip_field.php:295
 msgid "Enter five digits"
 msgstr "Zadejte pět číslic"
 

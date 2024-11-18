@@ -22,13 +22,12 @@
 
 {render partial='shared/filter/filter_form' form=$form}
 
-{*
+{remove_if_contains_no_text}
 <div id="paging_form">
 	{render partial="shared/paging_form" paging_form=$paging_form}
 </div>
-*}
+{/remove_if_contains_no_text}
 
 <section class="section--list-products" id="cards">
 	{render partial='shared/ajax_pager/ajax_pager'}
 </section>
-
