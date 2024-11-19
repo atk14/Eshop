@@ -32,7 +32,8 @@ var vendorScripts = [
 	"node_modules/leaflet/dist/leaflet.js",
 	"node_modules/leaflet.markercluster/dist/leaflet.markercluster.js",
 	"node_modules/leaflet-gesture-handling/dist/leaflet-gesture-handling.js",
-	"node_modules/sticky-sidebar-v2/dist/sticky-sidebar.js" // Enable this if site uses sidebar nav
+	"node_modules/sticky-sidebar-v2/dist/sticky-sidebar.js", // Enable this if site uses sidebar nav
+	"node_modules/validator/validator.js"
 ];
 
 var applicationScripts = [

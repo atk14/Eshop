@@ -75,7 +75,8 @@
     "@babel/core": "^7.17.12",
     "photoswipe": "^5.4.4",
     "sortablejs": "^1.15.2",
-    "sticky-sidebar-v2": "^1.1.1"
+    "sticky-sidebar-v2": "^1.1.1",
+    "validator": "^13.12.0"
   },
   "dependencies": {}
 }
