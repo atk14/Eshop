@@ -70,6 +70,11 @@
 					UTILS.SVGPlaceholders.SVGPlaceholders();
 				}
 
+				// Form validator
+				if( document.querySelector( ".body form" ) ){
+					new UTILS.FormValidator( document.querySelector( ".body form" ) );
+				}
+
 			}
 
 		},

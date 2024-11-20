@@ -396,3 +396,14 @@ form#form_checkouts_set_billing_and_delivery_data {
 		}
 	}
 }
+
+form.was-validated {
+	.form-control:valid {
+		border-color: $input-border-color;
+		background-image: none;
+	}
+	.form-control.is-invalid {
+		border-color: $form-feedback-invalid-color;
+		background-image:  $form-feedback-icon-invalid;
+	}
+}
