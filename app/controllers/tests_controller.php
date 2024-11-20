@@ -30,6 +30,10 @@ class TestsController extends ApplicationController {
 	function swiper_custom_config(){
 		$this->page_title = "Swiper custom configuration";
 	}
+	
+	function form_validation(){
+		$this->page_title = "JS Form Validation";
+	}
 
 	function notify_order_creation(){
 		$order = Order::FindFirst(["order_by" => "created_at DESC"]);
