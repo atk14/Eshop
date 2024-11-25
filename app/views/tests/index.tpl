@@ -9,5 +9,6 @@
 	<li>{a action="e503"}Stránka s chybou 503{/a}</li>
 	<li>{a action="colors"}Manipulace s barvami{/a}</li>
 	<li>{a action="swiper_custom_config"}Swiper custom configuration{/a}</li>
+	<li>{a action="js_validation"}Form with JS validation{/a}</li>
 </ul>
 

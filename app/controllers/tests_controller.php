@@ -70,6 +70,19 @@ class TestsController extends ApplicationController {
 		$this->response->write($content);
 	}
 
+	function js_validation(){
+		$this->page_title = _("Form with JS validation");
+
+		if($this->request->post() && ($d = $this->form->validate($this->params))){
+			$this->tpl_data["cleaned_data"] = $d;
+		}
+	}
+
+	function check_login_availability(){
+		$this->response->write(User::FindByLogin($this->params->getString("login")) ? "false" : "true");
+		$this->render_template = false;
+	}
+
 	function _dump_email(){
 		$this->render_template = false;
 		$this->response->write(sprintf('From: "%s" &lt;%s&gt;<br>',$this->mailer->from_name,$this->mailer->from));
