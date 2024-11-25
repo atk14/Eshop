@@ -36,6 +36,18 @@ class JsValidationForm extends ApplicationForm {
 			"required" => "Please choose your totem animal."
 		]);
 
+		$this->add_field("favourite_color", new ChoiceField([	
+			"label" => "Favourite color",
+			"choices" => [
+				"blue" => "Blue",
+				"red" => "Red",
+				"green" => "Green",
+			],
+		 "widget" => new RadioSelect(),
+		]))->update_messages([
+			"required" => "Please choose your totem animal."
+		]);
+
 		$this->add_field("password", new PasswordField([
 			"label" => "Password",
 		]));
