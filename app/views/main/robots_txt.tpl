@@ -1,3 +1,4 @@
+{assign ATK14_GLOBAL Atk14Global::GetInstance()}
 User-agent: *
 Disallow: /recovery/*
 Disallow: /obnova/*
@@ -7,10 +8,12 @@ Disallow: /obnova/*
  *
  * @see https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt#url-matching-based-on-path-values
  *}
-Disallow: {link_to controller="baskets" action="index"}
-Disallow: {link_to controller="favourite_products" action="index"}
-Disallow: {link_to controller="watched_products" action="index"}
-Disallow: {link_to controller="cookie_consents" action="index"}
+{foreach $ATK14_GLOBAL->getSupportedLangs() as $lang}
+Disallow: {link_to controller="baskets" action="index" lang=$lang}
+Disallow: {link_to controller="favourite_products" action="index" lang=$lang}
+Disallow: {link_to controller="watched_products" action="index" lang=$lang}
+Disallow: {link_to controller="cookie_consents" action="index" lang=$lang}
+{/foreach}
 Disallow: /*offset=*
 Disallow: /*order=*
 Disallow: /*count=*
