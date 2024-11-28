@@ -396,3 +396,22 @@ form#form_checkouts_set_billing_and_delivery_data {
 		}
 	}
 }
+
+// Override browser auto validation so its result pseudocalsses is not visible
+form.was-validated {
+	.form-control {
+		&:valid, &:invalid {
+			border-color: $input-border-color !important;
+			background-image: none !important;
+		}
+		&.is-invalid, &.invalid, &.error {
+			border-color: $form-feedback-invalid-color !important;
+			background-image:  $form-feedback-icon-invalid !important;
+		}
+		&.is-valid, &.valid {
+			border-color: $form-feedback-valid-color !important;
+			background-image:  $form-feedback-icon-valid !important;
+		}
+	}
+	
+}
