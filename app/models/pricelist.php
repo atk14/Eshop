@@ -55,6 +55,10 @@ class Pricelist extends ApplicationModel implements Translatable, Rankable {
 		}
 	}
 
+	function getPrice($product_id, $amount = 1){
+		return $this->dbmole->selectFloat("SELECT price FROM pricelist_items WHERE pricelist_id=:this AND product_id=:p AND minimum_quantity<=:amount ORDER BY price",[":this" => $this, ":p" => $product_id, ":amount" => $amount]);
+	}
+
 	function setPrice($product_id, $price){
 		$product_id = TableRecord::ObjToId($product_id);
 		return $this->setPrices([$product_id => $price], ["delete_missing_prices" => false]);
