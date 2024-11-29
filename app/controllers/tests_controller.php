@@ -78,6 +78,16 @@ class TestsController extends ApplicationController {
 		}
 	}
 
+	function no_js_validation(){
+		$this->page_title = _("Form without JS validation");
+
+		$this->form = $this->_get_form("JsValidationForm");
+
+		if($this->request->post() && ($d = $this->form->validate($this->params))){
+			$this->tpl_data["cleaned_data"] = $d;
+		}
+	}
+
 	function check_login_availability(){
 		$this->response->write(User::FindByLogin($this->params->getString("login")) ? "false" : "true");
 		$this->render_template = false;
