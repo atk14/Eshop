@@ -45,7 +45,7 @@ class JsValidationForm extends ApplicationForm {
 			],
 		 "widget" => new RadioSelect(),
 		]))->update_messages([
-			"required" => "Please choose your totem animal."
+			"required" => "Whats your favourite color, baby?"
 		]);
 
 		$this->add_field("password", new PasswordField([
@@ -54,6 +54,11 @@ class JsValidationForm extends ApplicationForm {
 
 		$this->add_field("password_confirmation", new PasswordField([
 			"label" => "Password confirmation",
+		]));
+
+		$this->add_field("consent", new ConfirmationField([
+			"label" => "Consent with all, do not ask",
+			"required" => "You must consent"
 		]));
 
 		$this->add_field("captcha", new RegexField('/^\s*aho[jy]\s*$/i', [

@@ -137,26 +137,6 @@ form {
 }
 
 
-// Validation states
-form {
-	.form-group {
-		&.form-group--has-error {
-			//border: 2px solid $danger;
-			.form-control {
-				border: 2px solid $danger;
-			}
-			label {
-				color: $danger;
-			}
-		}
-		&.form-group--is-valid {
-			.form-control {
-				border: 1px solid $success;
-			}
-		}
-	}
-}
-
 form#form_checkouts_summary .form-group--id_confirmation {
 	&.form-group--has-error {
 		border: 2px solid $danger;
@@ -398,6 +378,7 @@ form#form_checkouts_set_billing_and_delivery_data {
 }
 
 // Override browser auto validation so its result pseudocalsses is not visible
+// this probably is not needed
 form.was-validated {
 	.form-control {
 		&:valid, &:invalid {
@@ -414,4 +395,59 @@ form.was-validated {
 		}
 	}
 	
+}
+
+// Form validation styles
+// Validation states
+/*form {
+	.xxxxxform-group {
+		&.form-group--has-error {
+			.form-control {
+				border: 1px solid $danger;
+			}
+			label {
+				color: $danger;
+			}
+		}
+		&.form-group--is-valid {
+			.form-control {
+				border: 1px solid $success;
+			}
+		}
+	}
+}*/
+
+
+form {
+	// These electors should behave the same as .is-valid, .is-invalid: 
+	// .invalid, .valid, .form-group--is-valid .form-control, .form-group--has-error .form-control
+	.form-control {
+		&.invalid, &.error {
+			@extend .is-invalid;
+			outline: 1px solid $form-feedback-invalid-color;
+		}
+		&.valid {
+			@extend .is-valid;
+		}
+	}
+	.form-group--has-error .form-control {
+		@extend .is-invalid;
+		outline: 1px solid $form-feedback-invalid-color;
+	}
+	.form-group--is-valid .form-control {
+		@extend .is-valid;
+	}
+	// radio buttons, checkboxes
+	.form-group--has-error .list--radios, // radios in server validation
+	.list--radios:has(input.error, .is-invalid), // radios js validation
+	.form-group--checkbox .form-check:has(input.error, .is-invalid), // checkbox js validation
+	.form-group--checkbox.form-group--has-error .form-check  // checkbox server validation
+	{
+		outline: 2px solid $form-feedback-invalid-color;
+	}
+	// error feedback
+	.form-group > div.error {
+		color: $form-feedback-invalid-color;
+		margin-top: 0.1rem;
+	}
 }

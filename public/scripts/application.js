@@ -366,46 +366,7 @@
 
 		tests: {
 			js_validation: function() {
-				$.validator.addMethod( "regex", function( value, element, regexp ) {
-
-					// Regexp comes here as '/^[a-z]{1,5}$/i'
-					// It must be splitted to: pattern='^[a-z]{1,5}', modifiers='i'
-					var matches = regexp.match( /\/(.*)\/([^\/]*)/ ),
-						pattern = matches[ 1 ],
-						modifiers = matches[ 2 ],
-						re = new RegExp( pattern, modifiers );
-
-					return this.optional( element ) || re.test( value );
-				}, "Please check your input." );
-
-				// Validate signup form on keyup and submit
-				var $form = $( "#form_tests_js_validation" ),
-					rules = $form.data( "validation-rules" ),
-					messages = $form.data( "validation-messages" );
-
-					console.log( rules );
-
-				$form.validate( {
-					rules: rules,
-					messages: messages,
-
-					// The errorPlacement has to take the table layout into account
-					errorPlacement: function( error, element ) {
-						if ( element.is( ":radio" ) ) {
-							error.appendTo( element.parent().next().next() );
-						} else if ( element.is( ":checkbox" ) ) {
-							error.appendTo( element.next() );
-						} else {
-							error.appendTo( element.parent() );
-						}
-					},
-					errorElement: "p",
-
-					// Set this class to error-labels to indicate valid fields
-					success: function( label ) {
-						label.html( "Ok" ).addClass( "checked" );
-					}
-				} );
+				new UTILS.FormValidator();
 			}
 		},
 
