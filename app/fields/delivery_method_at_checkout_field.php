@@ -103,7 +103,7 @@ class DeliveryMethodChoice {
 			$highest = $this->_display_price($highest_price);
 			//$price = "<span class=\"v-price--long\">" . sprintf(_("od %s do %s dle země doručení") . "</span>",$lowest,$highest);
 			//$price = "<span class=\"v-price--long\">" . sprintf("%s &ndash; %s",$lowest,$highest) . "<br><small>"._("dle země doručení")."</small>" . "</span>";
-			$price = "<span class=\"v-price--long\">" . sprintf("cena od %s",$lowest) . "<br><small>"._("dle země doručení")."</small>" . "</span>";
+			$price = "<span class=\"v-price--long\">" . sprintf(_("cena od %s"),$lowest) . "<br><small>"._("dle země doručení")."</small>" . "</span>";
 		}else{
 			$price = $this->_display_price($price);
 		}
