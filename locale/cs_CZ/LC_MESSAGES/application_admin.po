@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 14:37+0100\n"
+"POT-Creation-Date: 2024-12-02 17:45+0100\n"
 "PO-Revision-Date: 2024-06-07 17:09+0200\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: Team <team@email.com>\n"
@@ -1246,6 +1246,61 @@ msgstr "Nová možnost platby"
 #: ../app/forms/admin/payment_methods/payment_methods_form.php:29
 msgid "Platební brána"
 msgstr "Platební brána"
+
+msgid "ID platební transakce (lokální)"
+msgstr ""
+
+msgid "objednávka"
+msgstr ""
+
+msgid "platební brána"
+msgstr ""
+
+msgid "<em>Testovací</em> režim"
+msgstr ""
+
+msgid "Výpis z API"
+msgstr ""
+
+msgid "Objednávka"
+msgstr ""
+
+msgid "Celková cena k úhradě"
+msgstr ""
+
+msgid "Transakční ID"
+msgstr ""
+
+msgid "Transakce začala"
+msgstr ""
+
+msgid "IP adresa"
+msgstr ""
+
+#: ../app/forms/admin/orders/index_form.php:39
+msgid "Stav platby"
+msgstr "Stav platby"
+
+msgid "Datum poslední změny stavu"
+msgstr ""
+
+msgid "Nebyla nelezena ani jedna transakce."
+msgstr ""
+
+msgid "Částka"
+msgstr ""
+
+msgid "Transakční id"
+msgstr ""
+
+msgid "Stav"
+msgstr ""
+
+msgid "Datum stavu"
+msgstr ""
+
+msgid "neznámý stav"
+msgstr ""
 
 #: ../app/forms/admin/categories/categories_form.php:35
 #: ../app/forms/admin/collections/collections_form.php:13
@@ -2648,6 +2703,21 @@ msgstr "Pro konfiguraci platební brány se obraťte na správce e-shopu."
 #: ../app/controllers/admin/payment_methods_controller.php:31
 #, php-format
 msgid "Editace platební metody '%s'"
+msgstr ""
+
+#: ../app/controllers/admin/payment_transactions_controller.php:5
+msgid "Online platební transakce"
+msgstr ""
+
+#: ../app/controllers/admin/payment_transactions_controller.php:49
+#: ../app/controllers/admin/payment_transactions_controller.php:59
+#, php-format
+msgid "Online platební transakce #%s"
+msgstr ""
+
+#: ../app/controllers/admin/payment_transactions_controller.php:58
+#, php-format
+msgid "Výpis platební transakce #%s z API"
 msgstr ""
 
 #: ../app/controllers/admin/pricelist_items_controller.php:7
@@ -4140,10 +4210,6 @@ msgstr "způsob platby"
 #: ../app/forms/admin/orders/index_form.php:33
 msgid "stav online platby"
 msgstr "stav online platby"
-
-#: ../app/forms/admin/orders/index_form.php:39
-msgid "Stav platby"
-msgstr "Stav platby"
 
 #: ../app/forms/admin/orders/index_form.php:45
 msgid "Způsob doručení"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 14:37+0100\n"
-"PO-Revision-Date: 2024-11-12 14:40+0100\n"
+"POT-Creation-Date: 2024-12-02 17:45+0100\n"
+"PO-Revision-Date: 2024-12-02 17:46+0100\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: Team <team@email.com>\n"
 "Language: en_US\n"
@@ -2090,6 +2090,11 @@ msgstr "There is no such delivery method"
 #: ../test/controllers/tc_checkouts.php:94
 msgid "Choose pickup place for selected delivery method"
 msgstr "Choose pickup place for selected delivery method"
+
+#: ../app/fields/delivery_method_at_checkout_field.php:106
+#, php-format
+msgid "cena od %s"
+msgstr "price from %s"
 
 #: ../app/fields/delivery_method_at_checkout_field.php:106
 msgid "dle země doručení"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 14:37+0100\n"
-"PO-Revision-Date: 2024-11-12 14:37+0100\n"
+"POT-Creation-Date: 2024-12-02 17:45+0100\n"
+"PO-Revision-Date: 2024-12-02 17:46+0100\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: Team <team@email.com>\n"
 "Language: cs_CZ\n"
@@ -2036,7 +2036,7 @@ msgid "There is no such collection"
 msgstr "Taková kolekce neexistuje"
 
 #: ../app/fields/countries_field.php:16
-#, no-php-format
+#, fuzzy, no-php-format
 msgid "Country with code %country_code% does not exist."
 msgstr "Země s kódem %country_code% neexistuje."
 
@@ -2080,6 +2080,11 @@ msgstr "Tento způsob dopravy neexistuje"
 #: ../test/controllers/tc_checkouts.php:94
 msgid "Choose pickup place for selected delivery method"
 msgstr "Vyberte výdejní místo pro vybraný způsob doručení"
+
+#: ../app/fields/delivery_method_at_checkout_field.php:106
+#, php-format
+msgid "cena od %s"
+msgstr "cena od %s"
 
 #: ../app/fields/delivery_method_at_checkout_field.php:106
 msgid "dle země doručení"
