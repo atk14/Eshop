@@ -51,7 +51,7 @@ window.UTILS.FormValidator = class {
     frm.prepend( flag );
 
 
-    // Validate signup form on keyup and submit
+    // Validate form on keyup and submit
     let $form = $( frm ),
     rules = $form.data( "validation-rules" ),
     messages = $form.data( "validation-messages" );
@@ -65,23 +65,14 @@ window.UTILS.FormValidator = class {
 
       // The errorPlacement has to take the table layout into account
       errorPlacement: function( error, element ) {
-        /*if ( element.is( ":radio" ) ) {
-          error.appendTo( element.closest( ".form-group" ) );
-        } else if ( element.is( ":checkbox" ) ) {
-          error.appendTo( element.next() );
-        } else {
-          error.appendTo( element.parent() );
-        }*/
+
+        // hack to remove existing error messages to avoid displaying multiple old errors under login field
+        element.closest( ".form-group" ).find( "div.error" ).remove();
+
+        // place error message into parent .form-group
         error.appendTo( element.closest( ".form-group" ) );
       },
       errorElement: "div",
-      //errorClass: "bg-info",
-
-      // Set this class to error-labels to indicate valid fields
-      success: function( label ) {
-        //label.html( "Ok" ).addClass( "checked" );
-        label.addClass( "checked" );
-      }
     } );
   }
 
