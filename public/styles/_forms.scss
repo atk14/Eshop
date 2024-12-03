@@ -397,27 +397,6 @@ form.was-validated {
 	
 }
 
-// Form validation styles
-// Validation states
-/*form {
-	.xxxxxform-group {
-		&.form-group--has-error {
-			.form-control {
-				border: 1px solid $danger;
-			}
-			label {
-				color: $danger;
-			}
-		}
-		&.form-group--is-valid {
-			.form-control {
-				border: 1px solid $success;
-			}
-		}
-	}
-}*/
-
-
 form {
 	// These electors should behave the same as .is-valid, .is-invalid: 
 	// .invalid, .valid, .form-group--is-valid .form-control, .form-group--has-error .form-control
@@ -437,13 +416,23 @@ form {
 	.form-group--is-valid .form-control {
 		@extend .is-valid;
 	}
+
 	// radio buttons, checkboxes
 	.form-group--has-error .list--radios, // radios in server validation
 	.list--radios:has(input.error, .is-invalid), // radios js validation
+	{
+		outline: 2px solid $form-feedback-invalid-color;
+	}
+
 	.form-group--checkbox .form-check:has(input.error, .is-invalid), // checkbox js validation
 	.form-group--checkbox.form-group--has-error .form-check  // checkbox server validation
 	{
 		outline: 2px solid $form-feedback-invalid-color;
+		padding-right: $input-height-inner !important; // stylelint-disable-line declaration-no-important
+		background-image: escape-svg($form-feedback-icon-invalid);
+		background-repeat: no-repeat;
+		background-position: right $input-height-inner-quarter center;
+		background-size: $input-height-inner-half $input-height-inner-half;
 	}
 	// error feedback
 	.form-group > div.error {
