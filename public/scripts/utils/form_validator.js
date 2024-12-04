@@ -73,6 +73,14 @@ window.UTILS.FormValidator = class {
         error.appendTo( element.closest( ".form-group" ) );
       },
       errorElement: "div",
+
+      // On invalid form submit
+      invalidHandler: function() {
+        if( window.UTILS.FlashMessage ) {
+          window.UTILS.FlashMessage.create( { message: "TODO: lokalizovaný text o tom, že se to má správně vyplnit", style: "danger"} );
+        }
+      },
+
     } );
   }
 
