@@ -54,3 +54,18 @@ Flash Message is alert which floats atop of page and disappears within seconds. 
 	</div>
 </div>
 [/example]
+
+### Display Flash Message by Javascript
+
+Flash message may be displayed by Javascript:
+
+<code>window.UTILS.FlashMessage.create( { message: "hello", style: "danger", dismissible: true } );</code>
+
+#### Options:
+- message: text to display
+- style: color style - alert | danger | success | info | warning
+- dismissible: if true close button would be added 
+
+[example]
+	<button class="btn btn-primary" onclick="window.UTILS.FlashMessage.create({message:'Hello there!', style: 'warning'});">Show flash message</button>
+[/example]
