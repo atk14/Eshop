@@ -70,6 +70,9 @@
 					UTILS.SVGPlaceholders.SVGPlaceholders();
 				}
 
+				// password reveal 
+				new UTILS.PasswordReveal();
+
 			}
 
 		},

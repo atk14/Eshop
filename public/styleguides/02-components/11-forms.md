@@ -1,6 +1,7 @@
 Forms
 =====
 Form markup and styling is based on Bootstrap form system. In most cases, following Bootstrap forms documentation would lead to nice and correct results.
+Passwords fields are autimatically enhanced with password reveal button.
 
 ## Form layouts
 
