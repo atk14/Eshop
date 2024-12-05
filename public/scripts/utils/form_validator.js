@@ -76,8 +76,8 @@ window.UTILS.FormValidator = class {
 
       // On invalid form submit
       invalidHandler: function() {
-        if( window.UTILS.FlashMessage ) {
-          window.UTILS.FlashMessage.create( { message: "TODO: lokalizovaný text o tom, že se to má správně vyplnit", style: "danger"} );
+        if( window.UTILS.FlashMessage && frm.dataset.invalid_message ) {
+          window.UTILS.FlashMessage.create( { message: frm.dataset.invalid_message, style: "danger"} );
         }
       },
 

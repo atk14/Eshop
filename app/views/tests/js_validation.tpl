@@ -10,7 +10,7 @@
 
 {else}
 
-{form _novalidate=novalidate _data-validation-messages="{!$js_validator->get_messages()|to_json}" _data-validation-rules="{!$js_validator->get_rules()|to_json}"}
+{form _novalidate=novalidate _data-validation-messages="{!$js_validator->get_messages()|to_json}" _data-validation-rules="{!$js_validator->get_rules()|to_json}" _data-invalid_message="{t}Některé položky nebyly vyplněny správně. Zkontrolujte formulář a opravte chyby.{/t}"}
 
 {render partial="shared/form_error"}
 
