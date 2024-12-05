@@ -1,0 +1,11 @@
+// Alerts displayed in original theme bg color instead of Bootstrap default light bg.
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    @include alert-variant( $value, $value, color-yiq( $value ) );
+    button.close {
+      color: inherit;
+      opacity: 0.75;
+    }
+  }
+}

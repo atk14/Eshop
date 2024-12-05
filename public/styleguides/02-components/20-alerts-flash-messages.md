@@ -44,16 +44,17 @@ For more information see Bootstrap documentation.
 
 ## Flash Message
 
-Flash Message is alert which floats atop of page and disappears within seconds. Don't be afraid to reload this page to see it!
+Flash Message is alert which floats atop of page and disappears within seconds. They may be displayed on page load in <code>.flash_messages</code> element which is found at the root of <code>body</code> element. 
 
-[example]
+```html
 <div class="flash_messages">
 	<div class="alert  show alert-success"><button type="button" class="close" data-dismiss="alert">×</button>Flash Message Content</em>
 	</div>
 	<div class="alert  show alert-warning"><button type="button" class="close" data-dismiss="alert">×</button>Flash Message Content</em>
 	</div>
 </div>
-[/example]
+```
+
 
 ### Display Flash Message by Javascript
 
@@ -68,4 +69,5 @@ Flash message may be displayed by Javascript:
 
 [example]
 	<button class="btn btn-primary" onclick="window.UTILS.FlashMessage.create({message:'Hello there!', style: 'warning'});">Show flash message</button>
+	<button class="btn btn-primary" onclick="window.UTILS.FlashMessage.create({message:'Let me put it this way, Mr. Amor. The 9000 series is the most reliable computer ever made. No 9000 computer has ever made a mistake or distorted information. We are all, by any practical definition of the words, foolproof and incapable of error', style: 'success'});">Show another flash message</button>
 [/example]
