@@ -10,3 +10,4 @@ $new_link.tooltip( {
 } );
 $new_link.tooltip("show");
 setTimeout(function(){ $new_link.tooltip("hide"); }, 2000);
+window.dispatchEvent( new Event( "favourites_updated" ) );

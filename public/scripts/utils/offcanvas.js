@@ -177,4 +177,11 @@ window.UTILS.OffcanvasBasket = function() {
 	// Set handler for basket show event
 	$( "#offcanvas-basket" ).on( "bs-offcanvas-show", $this.loadBasket );
 
+	// Update basket view when basket changed in another window
+	window.addEventListener( "basket_remote_updated", function(){
+		if( document.getElementById( "offcanvas-basket" ) && document.getElementById( "offcanvas-basket" ).classList.contains( "show" ) ) {
+			$this.loadBasket();
+		} else { console.log( "fuck off" ) };
+	} );
+
 };

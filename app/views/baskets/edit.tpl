@@ -25,3 +25,5 @@
 </div>
 
 {/form}
+
+{render partial="shared/basket_changed_modal"}
