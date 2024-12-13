@@ -239,8 +239,4 @@ class BasketsController extends ApplicationController {
 
 		return $product;
 	}
-
-	function get_basket_info() {
-		
-	}
 }

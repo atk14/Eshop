@@ -1,1 +1,0 @@
-{render partial="shared/layout/header/header_favourites"}
