@@ -24,4 +24,6 @@
 	</div>
 {/form}
 
-{render partial="shared/basket_changed_modal"}
+{content for="out_of_container"}
+	{render partial="shared/basket_changed_modal"}
+{/content}
