@@ -10,7 +10,7 @@ class TcAutomaticOrderStatusUpdaterRobot extends TcBase {
 
 		$robot = new AutomaticOrderStatusUpdaterRobot();
 		$robot->__runRobot();
-		$this->assertContains("total changes: 0",$robot->logger->buffer->toString());
+		$this->assertStringContains("total changes: 0",$robot->logger->buffer->toString());
 
 		// nothing should be changed
 		$order = $this->orders["test"];
@@ -22,7 +22,7 @@ class TcAutomaticOrderStatusUpdaterRobot extends TcBase {
 		$order->setNewOrderStatus("waiting_for_bank_transfer");
 		$robot = new AutomaticOrderStatusUpdaterRobot();
 		$robot->__runRobot();
-		$this->assertContains("total changes: 0",$robot->logger->buffer->toString());
+		$this->assertStringContains("total changes: 0",$robot->logger->buffer->toString());
 		$order = Order::GetInstanceById($order); // re-read order
 		$this->assertEquals("waiting_for_bank_transfer",$order->getOrderStatus()->getCode());
 
@@ -35,7 +35,7 @@ class TcAutomaticOrderStatusUpdaterRobot extends TcBase {
 		]);
 		$robot = new AutomaticOrderStatusUpdaterRobot();
 		$robot->__runRobot();
-		$this->assertContains("total changes: 1",$robot->logger->buffer->toString());
+		$this->assertStringContains("total changes: 1",$robot->logger->buffer->toString());
 		$order = Order::GetInstanceById($order); // re-read order
 		$this->assertEquals("payment_failed",$order->getOrderStatus()->getCode());
 		$this->assertTrue($order->getOrderStatusSetByUser()->isRobot());

@@ -4,8 +4,8 @@
  */
 class TcDeliveryService extends TcBase {
 
-	function setUp() {
-		parent::setUp();
+	function _setUp() {
+		parent::_setUp();
 
 		Cache::Clear();
 		SystemParameter::ClearCache();

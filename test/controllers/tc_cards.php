@@ -13,8 +13,8 @@ class TcCards extends TcBase {
 		$card = $this->cards["coffee"];
 		$client->get("cards/detail",["id" => $card]);
 		$this->assertEquals(200,$client->getStatusCode());
-		$this->assertContains($card->getName(),$client->getContent());
-		$this->assertNotContains("We apologize, but the sale is already over.",$client->getContent());
+		$this->assertStringContains($card->getName(),$client->getContent());
+		$this->assertStringNotContains("We apologize, but the sale is already over.",$client->getContent());
 
 		$this->_assertOGProperties();
 
@@ -22,30 +22,30 @@ class TcCards extends TcBase {
 		$card->s("visible",false);
 		$client->get("cards/detail",["id" => $card]);
 		$this->assertEquals(404,$client->getStatusCode());
-		$this->assertContains($card->getName(),$client->getContent());
-		$this->assertContains("We apologize, but the sale is already over.",$client->getContent());
+		$this->assertStringContains($card->getName(),$client->getContent());
+		$this->assertStringContains("We apologize, but the sale is already over.",$client->getContent());
 
 		// Deleted product
 		$card->s("deleted",true);
 		$client->get("cards/detail",["id" => $card]);
 		$this->assertEquals(404,$client->getStatusCode());
-		$this->assertContains($card->getName(),$client->getContent());
-		$this->assertContains("We apologize, but the sale is already over.",$client->getContent());
+		$this->assertStringContains($card->getName(),$client->getContent());
+		$this->assertStringContains("We apologize, but the sale is already over.",$client->getContent());
 
 		// Special system product
 		$product = Product::FindByCode("price_rounding");
 		$card = $product->getCard();
 		$client->get("cards/detail",["id" => $card]);
 		$this->assertEquals(404,$client->getStatusCode());
-		$this->assertNotContains($card->getName(),$client->getContent());
-		$this->assertNotContains("We apologize, but the sale is already over.",$client->getContent());
+		$this->assertStringNotContains($card->getName(),$client->getContent());
+		$this->assertStringNotContains("We apologize, but the sale is already over.",$client->getContent());
 
 	}
 
 	protected function _assertOGProperties() {
-		$this->assertContains('<meta property="og:description">', $this->client->getContent());
-		$this->assertContains('<meta property="og:title" content="Coffee">', $this->client->getContent());
-		$this->assertContains('<meta property="og:type" content="article">', $this->client->getContent());
-		$this->assertContains(sprintf('<meta property="og:url" content="http://%s/drink/coffee/">', ATK14_HTTP_HOST), $this->client->getContent());
+		$this->assertStringContains('<meta property="og:description">', $this->client->getContent());
+		$this->assertStringContains('<meta property="og:title" content="Coffee">', $this->client->getContent());
+		$this->assertStringContains('<meta property="og:type" content="article">', $this->client->getContent());
+		$this->assertStringContains(sprintf('<meta property="og:url" content="http://%s/drink/coffee/">', ATK14_HTTP_HOST), $this->client->getContent());
 	}
 }
