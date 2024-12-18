@@ -15,10 +15,10 @@
  */
 class TcCheckouts extends TcBase {
 
-	function tearDown() {
+	function _tearDown() {
 		# we need to logout user after each test otherwise fixtures setup fails as created_by_user_id is filled with user id of newly created user in one of tests performed in this class;
 		$this->client->post("logins/destroy");
-		parent::tearDown();
+		parent::_tearDown();
 	}
 
 	/**
