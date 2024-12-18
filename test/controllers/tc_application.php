@@ -31,14 +31,14 @@ class TcApplication extends TcBase{
 
 		$this->client->get("application/non_existing_action");
 		$this->assertEquals(404,$this->client->getStatusCode());
-		$this->assertContains("Well, nothing was found here...",$this->client->getContent());
+		$this->assertStringContains("Well, nothing was found here...",$this->client->getContent());
 
 		$page->s("code","not_error404");
 		Page::GetInstanceByCode("error404",array("refresh_cache" => true));
 
 		$this->client->get("application/non_existing_action");
 		$this->assertEquals(404,$this->client->getStatusCode());
-		$this->assertNotContains("Well, nothing was found here...",$this->client->getContent());
+		$this->assertStringNotContains("Well, nothing was found here...",$this->client->getContent());
 	}
 
 	function test_error_redirections(){
