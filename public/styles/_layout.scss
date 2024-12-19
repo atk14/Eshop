@@ -45,3 +45,7 @@ header {
 	margin-bottom: $grid-gutter-width * 2;
 	padding-top: 1rem;
 }
+
+@if $enable_grid_layout {
+  @include grid_layout();
+}

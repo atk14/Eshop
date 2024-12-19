@@ -1,0 +1,12 @@
+@mixin grid_layout() {
+  .grid-outer-fullwidth {
+    width: 100%;
+    max-width: unset;
+    background-color: rgba(yellow,.15);
+  }
+  .container--main {
+    border: 0.75mm dashed red;
+    @extend .grid-outer-fullwidth;
+  }
+}
+
