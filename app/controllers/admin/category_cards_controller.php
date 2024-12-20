@@ -1,5 +1,6 @@
 <?php
 class CategoryCardsController extends AdminController{
+
 	// pridani produktu do kategorie probiha taky v cards/add_to_category
 
 	function index() {
@@ -7,6 +8,11 @@ class CategoryCardsController extends AdminController{
 		$this->breadcrumbs[] = _("Product list");
 
 		($d = $this->form->validate($this->params)) || ($d = $this->form->get_initial());
+
+		$format = $this->params->getString("format");
+		if($format && !in_array($format,["csv"])){
+			return $this->_execute_action("error404");
+		}
 
 		$bind_ar = [];
 		$bind_ar[":category_id"] = $this->category;
@@ -30,7 +36,7 @@ class CategoryCardsController extends AdminController{
 		$this->sorting->add("created_at","cards.created_at DESC, $_rank_asc","cards.created_at ASC, $_rank_desc");
 		$this->sorting->add("catalog_id","$_catalog_id ASC, $_rank_asc","$_catalog_id DESC, $_rank_desc");
 
-		$this->tpl_data["finder"] = Card::Finder(array(
+		$this->tpl_data["finder"] = $finder = Card::Finder(array(
 			"query" => "
 				SELECT
 					category_cards.card_id
@@ -44,12 +50,48 @@ class CategoryCardsController extends AdminController{
 			",
 			"order_by" => $this->sorting,
 			"bind_ar" => $bind_ar,
-			"offset" => $this->params->getInt("offset"),
-			"limit" => 100,
+			"offset" => $format ? null : $this->params->getInt("offset"),
+			"limit" => $format ? null : 100,
 			"use_cache" => true,
 		));
 
-		$this->tpl_data["searching"] = strlen($search_condition)>0;
+		$this->tpl_data["searching"] = $searching = strlen($search_condition)>0;
+
+		// building URL for CSV export
+		$params = $this->params->toArray();
+		unset($params["offset"]);
+		$params["format"] = "csv";
+		$this->tpl_data["csv_export_url"] = $this->_link_to($params);
+
+
+		if($format=="csv"){
+			$csv = new CsvWriter();
+			$this->response->setContentType("text/csv");
+			$this->response->setHeader('Content-Disposition: attachment; filename="category_cards.'.$format.'"');
+			$this->render_template = false;
+			$i = 1;
+			foreach($finder->getRecords() as $card){
+				$rank = "";
+				if(!$searching && $this->sorting->getActiveKey()=="rank"){
+					$rank = $i;
+				}
+				if(!$searching && $this->sorting->getActiveKey()=="rank-desc"){
+					$rank = $finder->getTotalAmount() - $i + 1;
+				}
+				$product = $card->getFirstProduct();
+				$csv[] = [
+					"catalog_id" => $product ? $product->getCatalogId() : "",
+					"name" => $card->getName(),
+					"rank" => $rank,
+					"created_at" => $card->getCreatedAt(),
+				];
+				$i++;
+			}
+
+			$this->response->write($csv->writeToString(["format" => $format, "with_header" => true]));
+		}
+
+
 	}
 
 	function create_new(){

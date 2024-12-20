@@ -29,4 +29,6 @@
 
 	{paginator}
 
+	<p><a href="{$csv_export_url}">{t}Export to CSV{/t}</a></p>
+
 {/if}
