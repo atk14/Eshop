@@ -6,23 +6,50 @@ class CategoryCardsController extends AdminController{
 		$this->page_title = sprintf(_("Products in category %s"),strip_tags($this->category->getName()));
 		$this->breadcrumbs[] = _("Product list");
 
+		($d = $this->form->validate($this->params)) || ($d = $this->form->get_initial());
+
+		$bind_ar = [];
+		$bind_ar[":category_id"] = $this->category;
+
+		$search_condition = "";
+		if($d["search"]){
+			$_fields = [];
+			$_fields[] = "(SELECT STRING_AGG(catalog_id,' ') FROM products WHERE card_id=cards.id)";
+			$_fields[] = "(SELECT body FROM translations WHERE table_name='cards' AND record_id=cards.id AND key='name' AND lang=:lang)";
+			$bind_ar[":lang"] = $this->lang;
+			$_fields = array_map(function($_f){ return "COALESCE($_f,'')"; },$_fields);
+			if($ft_cond = FullTextSearchQueryLike::GetQuery("UPPER(".join("||' '||",$_fields).")",Translate::Upper($d["search"]),$bind_ar)){
+				$search_condition = $ft_cond;
+			}
+		}
+
+		$_rank_asc = "category_cards.rank ASC, category_cards.id ASC";
+		$_rank_desc = "category_cards.rank DESC, category_cards.id DESC";
+		$_catalog_id = "COALESCE((SELECT catalog_id FROM products WHERE card_id=cards.id AND NOT deleted ORDER BY catalog_id ASC LIMIT 1),'')";
+		$this->sorting->add("rank",$_rank_asc,$_rank_desc);
+		$this->sorting->add("created_at","cards.created_at DESC, $_rank_asc","cards.created_at ASC, $_rank_desc");
+		$this->sorting->add("catalog_id","$_catalog_id ASC, $_rank_asc","$_catalog_id DESC, $_rank_desc");
+
 		$this->tpl_data["finder"] = Card::Finder(array(
 			"query" => "
-				SELECT card_id FROM
-					category_cards
+				SELECT
+					category_cards.card_id
+				FROM
+					category_cards,
+					cards
 				WHERE
-					category_id=:category_id
-				ORDER BY
-					rank, id
+					category_cards.category_id=:category_id AND
+					cards.id=category_cards.card_id
+				".($search_condition ? "AND ($search_condition)" : "")."	
 			",
-			"order_by" => "",
-			"bind_ar" => array(
-				":category_id" => $this->category
-			),
+			"order_by" => $this->sorting,
+			"bind_ar" => $bind_ar,
 			"offset" => $this->params->getInt("offset"),
 			"limit" => 100,
 			"use_cache" => true,
 		));
+
+		$this->tpl_data["searching"] = strlen($search_condition)>0;
 	}
 
 	function create_new(){
