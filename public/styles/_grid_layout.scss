@@ -2,10 +2,34 @@
   .grid-outer-fullwidth {
     width: 100%;
     max-width: unset;
-    background-color: rgba(yellow,.15);
+    background-color: rgba(yellow,.1);
+    grid-column: 1 / -1 !important;
+    margin-left: 0;
+    margin-right: 0;
   }
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, $container-max-width) 1fr;
+    column-gap: $grid-gutter-width;
+    > * {
+      grid-column: 2 / -2;
+    }
+    @include media-breakpoint-down(md) {
+      column-gap: $grid-gutter-width * 0.5;
+    }
+  }
+
+  .article-body, .page-body, article {
+    @extend .grid-layout;
+  }
+
   .container--main {
-    border: 0.75mm dashed red;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container--main, div.body, div.content-main, article, .article-body, .content-main {
+    outline: 0.75mm dashed red;
+    @extend .grid-layout;
     @extend .grid-outer-fullwidth;
   }
 }
