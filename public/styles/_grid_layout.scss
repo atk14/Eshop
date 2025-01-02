@@ -2,7 +2,7 @@
   .grid-outer-fullwidth {
     width: 100%;
     max-width: unset;
-    background-color: rgba(yellow,.1);
+    background-color: rgba(yellow,.01);
     grid-column: 1 / -1 !important;
     margin-left: 0;
     margin-right: 0;
@@ -13,6 +13,9 @@
     column-gap: $grid-gutter-width;
     > * {
       grid-column: 2 / -2;
+    }
+    > .fullwidth {
+      grid-column: 1 / -1;
     }
     @include media-breakpoint-down(md) {
       column-gap: $grid-gutter-width * 0.5;
@@ -27,7 +30,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .container--main, div.body, div.content-main, article, .article-body, .content-main {
+  .container--main, div.body, div.content-main, article, .article-body, .page-body, .content-main {
     outline: 0.75mm dashed red;
     @extend .grid-layout;
     @extend .grid-outer-fullwidth;
