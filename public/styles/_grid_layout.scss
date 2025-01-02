@@ -30,7 +30,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .container--main, div.body, div.content-main, article, .article-body, .page-body, .content-main {
+  .container--main, div.body, div.content-main, article, .article-body, .page-body, .content-main, footer > .container-fluid {
     outline: 0.75mm dashed red;
     @extend .grid-layout;
     @extend .grid-outer-fullwidth;
