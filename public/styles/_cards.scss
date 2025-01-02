@@ -158,3 +158,21 @@ $card-deck-margin: divide($grid-gutter-width, 4);
 		display: block;
 	}
 }
+
+// This mixin is used to create a grid of cards with a minimum width of $minCardWidth
+@mixin sized_cards($minCardWidth:300px,$gap:$card-deck-margin,$gap_sm:$card-deck-margin) {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax($minCardWidth, 1fr));
+	column-gap: $gap;
+	row-gap: $gap;
+	.card {
+		margin: 0;
+	}
+}
+
+.testcards {
+	@include sized_cards(230px);
+}
+.testcards2 {
+	@include sized_cards();
+}
