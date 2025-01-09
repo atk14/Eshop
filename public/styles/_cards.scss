@@ -167,6 +167,10 @@ $card-deck-margin: divide($grid-gutter-width, 4);
 	row-gap: $gap;
 	.card {
 		margin: 0;
+		@if $gap==0 {
+			border-top: none;
+			border-left: none;
+		}
 	}
 }
 
@@ -175,4 +179,7 @@ $card-deck-margin: divide($grid-gutter-width, 4);
 }
 .testcards2 {
 	@include sized_cards();
+}
+.testcards--big {
+	@include sized_cards(250px,0,0);
 }
