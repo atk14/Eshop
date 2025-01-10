@@ -56,3 +56,6 @@ section.store-properties {
 		}
 	}
 }
+@if $enable_grid_layout {
+  @include grid_layout();
+}

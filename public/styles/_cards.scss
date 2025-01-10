@@ -40,6 +40,8 @@ a.card {
 	}
 }
 
+// Card deck - system for card layout. This is deprecated and is kept here mainly because it is used in legacy projects.
+// Use @mixin sized_cards instead (see below)
 .card-deck {
 	// brought from Bootstrap 4
 	.card {
@@ -113,4 +115,30 @@ a.card {
 			min-width: calc(33.333% - #{$card-deck-margin} * 2);
 		}
 	}
+}
+
+// This mixin is used to create a grid of cards with a minimum width of $minCardWidth
+@mixin sized_cards($minCardWidth:300px,$gap:$card-deck-margin,$gap_sm:$card-deck-margin) {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax($minCardWidth, 1fr));
+	column-gap: $gap;
+	row-gap: $gap;
+	.card {
+		margin: 0;
+		@if $gap==0 {
+			border-top: none;
+			border-left: none;
+		}
+	}
+}
+
+// Example of usage
+.testcards {
+	@include sized_cards(230px);
+}
+.testcards2 {
+	@include sized_cards();
+}
+.testcards--big {
+	@include sized_cards(400px,0,0);
 }

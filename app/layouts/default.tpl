@@ -65,7 +65,7 @@
 		{render partial="shared/trackers/google/tag_manager_body"}
 		{render partial="shared/layout/flash_message"}
 		{render partial="shared/layout/header"}
-		<div class="container-fluid{if $section_navigation} has-nav-section{/if}">
+		<div class="container-fluid{if $section_navigation} has-nav-section{/if} container--main">
 			
 			{if $breadcrumbs && sizeof($breadcrumbs)>=2} {* It makes no sense to display breadcrumbs with just 1 or no element *}
 				{render partial="shared/breadcrumbs"}
