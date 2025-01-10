@@ -102,3 +102,6 @@ body {
 		}
 	}
 }
+@if $enable_grid_layout {
+  @include grid_layout();
+}
