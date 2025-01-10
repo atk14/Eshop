@@ -18,5 +18,5 @@ $breadcrumb-padding-x:		 0;
 $fa-font-family: "Font Awesome 6 Free";
 $fa-brands-font-family: "Font Awesome 6 Brands";
 
-// Enable grid layout
-$enable_grid_layout: true;
+// Enable grid layout - for legacy projects it may be better to turn it off.
+$enable_grid_layout: false;

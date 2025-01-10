@@ -78,7 +78,8 @@ $card-deck-margin: divide($grid-gutter-width, 4);
 	}
 }
 
-
+// Card deck - system for card layout. This is deprecated and is kept here mainly because it is used in legacy projects.
+// Use @mixin sized_cards instead (see below)
 .card-deck {
 	// brought from Bootstrap 4
 	.card {
@@ -174,6 +175,7 @@ $card-deck-margin: divide($grid-gutter-width, 4);
 	}
 }
 
+// Example of usage
 .testcards {
 	@include sized_cards(230px);
 }
@@ -181,5 +183,5 @@ $card-deck-margin: divide($grid-gutter-width, 4);
 	@include sized_cards();
 }
 .testcards--big {
-	@include sized_cards(250px,0,0);
+	@include sized_cards(400px,0,0);
 }
