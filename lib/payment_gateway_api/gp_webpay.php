@@ -258,8 +258,9 @@ class GpWebpay extends PaymentGatewayApi {
 			throw new \Exception($this->_compileUrlFetcherErrorMessage($uf));
 		}
 		$xmole = new \XMole();
-		$stat = $xmole->parse($content);
-		myAssert($stat,"Failed to parse XML (".$xmole->get_error_message()."): ".$content);
+		$content_cleaned = $this->_cleanXml($content);
+		$stat = $xmole->parse($content_cleaned);
+		myAssert($stat,"Failed to parse XML (".$xmole->get_error_message()."): $content, cleaned XML: $content_cleaned");
 
 		/*
 		 *	<?xml version="1.0" encoding="UTF-8"?>
@@ -285,15 +286,15 @@ class GpWebpay extends PaymentGatewayApi {
 		 */
 
 
-		$branch = $xmole->get_first_matching_branch('/soapenv:Envelope/soapenv:Body/ns4:getPaymentDetailResponse/ns4:paymentDetailResponse');
-		myAssert($branch);
+		$branch = $xmole->get_first_matching_branch('/soapenv:Envelope/soapenv:Body/getPaymentDetailResponse/paymentDetailResponse');
+		myAssert($branch,"unexpected XML: $content_cleaned");
 
 		$status_ar = [];
 		foreach($branch["children"] as $v){
 			$key = $v["element"];
 			$value = $v["data"];
 
-			$key = preg_replace('/^ns3:/','',$key);
+			$key = preg_replace('/^ns\d+:/','',$key);
 			$status_ar[$key] = $value;
 		}
 		myAssert($status_ar);
@@ -307,6 +308,10 @@ class GpWebpay extends PaymentGatewayApi {
 		}
 
 		return $status_ar;
+	}
+
+	function _cleanXml($xml){
+		return preg_replace('/(<\/?)ns\d+:/','\1',$xml);
 	}
 
 	protected function _getSigner(){

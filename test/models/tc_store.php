@@ -11,7 +11,7 @@ class TcStore extends TcBase {
 		$store = $this->stores["test"];
 
 		$this->assertEquals("Street\n111 00 City",$store->getAddress());
-		$this->assertContains("Street\n111 00 City\nCzech",$store->getAddress(array("with_country" => true))); // "Czechia" or "Czech Republic"
+		$this->assertStringContains("Street\n111 00 City\nCzech",$store->getAddress(array("with_country" => true))); // "Czechia" or "Czech Republic"
 
 		$this->assertEquals("Street, 111 00 City",$store->getAddress(["connector" => ", "]));
 		$this->assertEquals("Testing store, Street, 111 00 City",$store->getAddress(["connector" => ", ", "with_name" => true]));

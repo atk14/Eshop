@@ -41,9 +41,9 @@ window.UTILS.LiveStatusRefresher = class {
   }
 
   async updateBasketInfo() {
-    const response = await fetch( "/" + this.lang + "/baskets/get_basket_info", this.reqInitObject );
-    const content = await response.text();
-    this.render( ".js--basket_info_content", content );
+    const response = await fetch( "/api/" + this.lang + "/baskets/detail/?format=json", this.reqInitObject );
+    const content = await response.json();
+    this.render( ".js--basket_info_content", content.header_info );
 
     // Show modal if on baskets/edit or checkouts/summary screen 
     if( ( this.bodyData.controller === "baskets" && this.bodyData.action === "edit" ) || ( this.bodyData.controller === "checkouts" && this.bodyData.action === "summary" ) ) {
@@ -61,9 +61,9 @@ window.UTILS.LiveStatusRefresher = class {
   }
   
   async updateFavouritesInfo() {
-    const response = await fetch( "/" + this.lang + "/favourite_products/get_favourites_info", this.reqInitObject );
-    const content = await response.text();
-    this.render( ".js--header-favourites", content );
+    const response = await fetch( "/api/" + this.lang + "/favourite_products/detail/?format=json", this.reqInitObject );
+    const content = await response.json();
+    this.render( ".js--header-favourites", content.header_info );
   }
 
   /** Replaces tag specified by selector with content */

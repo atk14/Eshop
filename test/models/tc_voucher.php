@@ -48,6 +48,6 @@ class TcVoucher extends TcBase {
 		$this->assertTrue($voucher->isApplicable($basket,$err_msg));
 
 		$this->assertFalse($inactive_voucher->isApplicable($basket,$err_msg));
-		$this->assertContains("cannot be applied",$err_msg);
+		$this->assertStringContains("cannot be applied",$err_msg);
 	}
 }

@@ -159,9 +159,10 @@
 								{t}Platební transakce{/t}
 							{/if}
 							<ul>
+								<li>{a action="payment_transactions/detail" id=$payment_transaction}#{$payment_transaction->getId()}{/a}</li>
 								<li>{t}Platební brána:{/t} {$payment_transaction->getPaymentGateway()}</li>
 								<li>{t}Transakční ID:{/t} {$payment_transaction->getPaymentTransactionId()|default:"?"}</li>
-								<li>{t}Stav platby:{/t} {$payment_transaction->getPaymentStatus()|default:"?"}</li>
+								<li>{t}Stav platby:{/t} {render partial="payment_transactions/payment_status" payment_status=$payment_transaction->getPaymentStatus()}</li>
 								<li>{t}Stav platby aktualizován:{/t} {$payment_transaction->getPaymentStatusUpdatedAt()|format_datetime|default:$mdash}</li>
 							</ul>
 						</li>

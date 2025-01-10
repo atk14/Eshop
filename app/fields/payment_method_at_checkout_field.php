@@ -4,6 +4,8 @@
  */
 class PaymentMethodAtCheckoutField extends ChoiceFieldWithImages {
 
+	public $basket;
+
 	function __construct($options = []){
 		$options += [
 			"basket" => null,
@@ -26,6 +28,9 @@ class PaymentMethodAtCheckoutField extends ChoiceFieldWithImages {
 }
 
 class PaymentMethodChoice {
+
+	public $options;
+	public $pm;
 
   function __construct($pm, $options) {
     $this->options = $options;

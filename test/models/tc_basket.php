@@ -941,7 +941,7 @@ class TcBasket extends TcBase {
 		$basket = $this->_prepareEmptyBasket();
 
 		$this->assertEquals(false,$basket->canOrderBeCreated($messages));
-		$this->assertContains("Shopping basket is empty","$messages[0]");
+		$this->assertStringContains("Shopping basket is empty","$messages[0]");
 
 		// deleted product
 
@@ -950,7 +950,7 @@ class TcBasket extends TcBase {
 		$basket->addProduct($this->products["deleted_product"],1);
 
 		$this->assertEquals(false,$basket->canOrderBeCreated($messages));
-		$this->assertContains("has been removed from our offer","$messages[0]");
+		$this->assertStringContains("has been removed from our offer","$messages[0]");
 
 		 // deleted card
 
@@ -959,7 +959,7 @@ class TcBasket extends TcBase {
 		$basket->addProduct($this->products["product_in_deleted_card"],1);
 
 		$this->assertEquals(false,$basket->canOrderBeCreated($messages));
-		$this->assertContains("has been removed from our offer","$messages[0]");
+		$this->assertStringContains("has been removed from our offer","$messages[0]");
 
 		//
 
@@ -1284,6 +1284,33 @@ class TcBasket extends TcBase {
 			$expcetion_thrown = true;
 		}
 		$this->assertEquals(true,$expcetion_thrown);
+	}
+
+	function test__getDeliveryCountry(){
+		$basket = Basket::CreateNewRecord4UserAndRegion($this->users["kveta"],$this->regions["czechoslovakia"]);
+
+		$basket->s("address_country",null);
+		$basket->s("delivery_address_country",null);
+		$this->assertEquals(null,$basket->_getDeliveryCountry());
+
+		$basket->s("address_country","CZ");
+		$this->assertEquals("CZ",$basket->_getDeliveryCountry());
+
+		$basket->s("delivery_address_country","SK");
+		$this->assertEquals("SK",$basket->_getDeliveryCountry());
+
+		$basket->s([
+			"delivery_firstname" => "Bobina",
+			"delivery_lastname" => "Drozdová",
+			"delivery_method_id" => $this->delivery_methods["zasilkovna"],
+			"delivery_method_data" => $this->delivery_service_branches["zasilkovna_1"]->getDeliveryMethodData(),
+		]);
+		$this->assertEquals("CZ",$basket->_getDeliveryCountry());
+
+		$basket->s([
+			"delivery_method_id" => $this->delivery_methods["personal_sk"],
+		]);
+		$this->assertEquals("SK",$basket->_getDeliveryCountry());
 	}
 
 	function _check_proper_price_rounding_on_items($items){

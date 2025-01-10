@@ -1340,8 +1340,8 @@ class Basket extends BasketOrOrder {
 		return parent::setValues($values,$options);
 	}
 
-	protected function _getDeliveryCountry(){
-		$country = $this->g("delivery_address_country");
+	function _getDeliveryCountry(){
+		$country = $this->getDeliveryAddressCountry();
 		$country = is_null($country) ? $this->g("address_country") : $country;
 		if(is_null($country)){
 			$region = $this->getRegion();

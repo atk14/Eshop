@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-28 16:18+0200\n"
+"POT-Creation-Date: 2024-12-02 17:45+0100\n"
 "PO-Revision-Date: 2024-06-07 17:09+0200\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: Team <team@email.com>\n"
@@ -179,7 +179,7 @@ msgstr ""
 msgid "Nebyla nalezena ani jedna kampaň."
 msgstr "Nebyla nalezena ani jedna kampaň."
 
-#: ../app/forms/admin/admin_form.php:171
+#: ../app/forms/admin/admin_form.php:172
 #: ../app/forms/admin/campaigns/campaigns_form.php:12
 #: ../app/forms/admin/delivery_methods/delivery_methods_form.php:14
 #: ../app/forms/admin/payment_methods/payment_methods_form.php:14
@@ -938,6 +938,7 @@ msgstr "Kampaň"
 msgid "Sleva"
 msgstr "Sleva"
 
+#: ../app/forms/admin/special_opening_hours/special_opening_hours_form.php:24
 msgid "Poznámka"
 msgstr "Poznámka"
 
@@ -1246,6 +1247,61 @@ msgstr "Nová možnost platby"
 msgid "Platební brána"
 msgstr "Platební brána"
 
+msgid "ID platební transakce (lokální)"
+msgstr ""
+
+msgid "objednávka"
+msgstr ""
+
+msgid "platební brána"
+msgstr ""
+
+msgid "<em>Testovací</em> režim"
+msgstr ""
+
+msgid "Výpis z API"
+msgstr ""
+
+msgid "Objednávka"
+msgstr ""
+
+msgid "Celková cena k úhradě"
+msgstr ""
+
+msgid "Transakční ID"
+msgstr ""
+
+msgid "Transakce začala"
+msgstr ""
+
+msgid "IP adresa"
+msgstr ""
+
+#: ../app/forms/admin/orders/index_form.php:39
+msgid "Stav platby"
+msgstr "Stav platby"
+
+msgid "Datum poslední změny stavu"
+msgstr ""
+
+msgid "Nebyla nelezena ani jedna transakce."
+msgstr ""
+
+msgid "Částka"
+msgstr ""
+
+msgid "Transakční id"
+msgstr ""
+
+msgid "Stav"
+msgstr ""
+
+msgid "Datum stavu"
+msgstr ""
+
+msgid "neznámý stav"
+msgstr ""
+
 #: ../app/forms/admin/categories/categories_form.php:35
 #: ../app/forms/admin/collections/collections_form.php:13
 #: ../app/forms/admin/images/images_form.php:16
@@ -1551,6 +1607,15 @@ msgstr "nebyly vybrány žádné platební metody"
 msgid "Add new image"
 msgstr "Přidat nový obrázek"
 
+msgid "Displayed"
+msgstr ""
+
+msgid "<!-- Displayed --> from %1"
+msgstr ""
+
+msgid "<!-- Displayed --> to %1"
+msgstr ""
+
 msgid "Zatím tady není žádný obrázek."
 msgstr "Zatím tady není žádný obrázek."
 
@@ -1571,6 +1636,22 @@ msgstr ""
 "Chystáte se trvale smazat obrázkový posuvník %1\n"
 "\tJste si jistý/á?"
 
+msgid "Žádná záznam nebyl nalezen."
+msgstr ""
+
+#: ../app/forms/admin/special_opening_hours/special_opening_hours_form.php:6
+msgid "Datum"
+msgstr ""
+
+msgid "Otevírací hodiny"
+msgstr ""
+
+msgid "zavřeno"
+msgstr ""
+
+msgid "Special opening hours"
+msgstr ""
+
 msgid "Add a store"
 msgstr "Přidat prodejnu"
 
@@ -1587,7 +1668,7 @@ msgstr ""
 msgid "Parameter name"
 msgstr "Název parametru"
 
-#: ../app/forms/admin/admin_form.php:138
+#: ../app/forms/admin/admin_form.php:139
 #: ../app/forms/admin/currencies/currencies_form.php:6
 msgid "Code"
 msgstr "Kód"
@@ -2538,7 +2619,7 @@ msgstr "Objednávka %d"
 msgid "Změna stavu objednávky %s"
 msgstr "Změna stavu objednávky %s"
 
-#: ../app/controllers/admin/order_order_statuses_controller.php:93
+#: ../app/controllers/admin/order_order_statuses_controller.php:96
 msgid "Byl nastaven úspěšně nový stav objednávky"
 msgstr "Byl nastaven úspěšně nový stav objednávky"
 
@@ -2622,6 +2703,21 @@ msgstr "Pro konfiguraci platební brány se obraťte na správce e-shopu."
 #: ../app/controllers/admin/payment_methods_controller.php:31
 #, php-format
 msgid "Editace platební metody '%s'"
+msgstr ""
+
+#: ../app/controllers/admin/payment_transactions_controller.php:5
+msgid "Online platební transakce"
+msgstr ""
+
+#: ../app/controllers/admin/payment_transactions_controller.php:49
+#: ../app/controllers/admin/payment_transactions_controller.php:59
+#, php-format
+msgid "Online platební transakce #%s"
+msgstr ""
+
+#: ../app/controllers/admin/payment_transactions_controller.php:58
+#, php-format
+msgid "Výpis platební transakce #%s z API"
 msgstr ""
 
 #: ../app/controllers/admin/pricelist_items_controller.php:7
@@ -2718,6 +2814,28 @@ msgstr "Seznam obrázkových posuvníků"
 #, php-format
 msgid "Editing slug of object \"%s\""
 msgstr "Editace slugu objektu \"%s\""
+
+#: ../app/controllers/admin/special_opening_hours_controller.php:5
+#, php-format
+msgid "Mimořádná otevírací doba pro prodejnu %s"
+msgstr ""
+
+#: ../app/controllers/admin/special_opening_hours_controller.php:26
+#, php-format
+msgid "Vytvoření mimořádné otevírací doby pro prodejnu %s"
+msgstr ""
+
+#: ../app/controllers/admin/special_opening_hours_controller.php:29
+msgid "Pro tento datum již záznam existuje"
+msgstr ""
+
+#: ../app/controllers/admin/special_opening_hours_controller.php:40
+msgid "Editace mimořádné otevírací doby"
+msgstr ""
+
+#: ../app/controllers/admin/special_opening_hours_controller.php:60
+msgid "Mimořádná otevírací doba"
+msgstr ""
 
 #: ../app/controllers/admin/stores_controller.php:5
 msgid "List of stores"
@@ -2898,7 +3016,7 @@ msgid "Export entries from warehouse %s"
 msgstr "Exportovat položky ze skladu %s"
 
 #: ../app/controllers/admin/warehouse_items_controller.php:108
-#: ../app/forms/admin/admin_form.php:192
+#: ../app/forms/admin/admin_form.php:193
 msgid "Unit"
 msgstr "Jednotka"
 
@@ -2940,57 +3058,57 @@ msgstr "položek nezměněno: %s"
 msgid "entries deleted: %s"
 msgstr "položek smazáno: %s"
 
-#: ../app/forms/admin/admin_form.php:108
+#: ../app/forms/admin/admin_form.php:109
 #: ../app/forms/admin/gallery_items/gallery_items_form.php:10
 #: ../app/forms/admin/slider_items/slider_items_form.php:17
 msgid "Titulek"
 msgstr "Titulek"
 
-#: ../app/forms/admin/admin_form.php:117
+#: ../app/forms/admin/admin_form.php:118
 #: ../app/forms/admin/cookie_consent_categories/cookie_consent_categories_form.php:54
 #: ../app/forms/admin/gallery_items/gallery_items_form.php:16
 #: ../app/forms/admin/slider_items/slider_items_form.php:23
 msgid "Popis"
 msgstr "Popis"
 
-#: ../app/forms/admin/admin_form.php:125
+#: ../app/forms/admin/admin_form.php:126
 msgid "Validity date from"
 msgstr "Datum platnosti od"
 
-#: ../app/forms/admin/admin_form.php:131
+#: ../app/forms/admin/admin_form.php:132
 msgid "Validity date to"
 msgstr "Datum platnosti do"
 
-#: ../app/forms/admin/admin_form.php:143
+#: ../app/forms/admin/admin_form.php:144
 msgid "An alternative key for system usage."
 msgstr "Alternativní klíč pro systémové potřeby."
 
-#: ../app/forms/admin/admin_form.php:143
+#: ../app/forms/admin/admin_form.php:144
 msgid ""
 "An alternative key for system usage. Leave it unchanged if you are not sure."
 msgstr ""
 "Alternativní klíč pro systémové použití. Pokud si nejste jisti, ponechte "
 "beze změny."
 
-#: ../app/forms/admin/admin_form.php:151
+#: ../app/forms/admin/admin_form.php:152
 msgid "Is visible?"
 msgstr "Je viditelné?"
 
-#: ../app/forms/admin/admin_form.php:161
+#: ../app/forms/admin/admin_form.php:162
 #: ../app/forms/admin/regions/regions_form.php:17
 #: ../app/forms/admin/users/users_form.php:53
 msgid "Is active?"
 msgstr "Je aktivní?"
 
-#: ../app/forms/admin/admin_form.php:181
+#: ../app/forms/admin/admin_form.php:182
 msgid "Vat rate"
 msgstr "Sazba DPH"
 
-#: ../app/forms/admin/admin_form.php:199
+#: ../app/forms/admin/admin_form.php:200
 msgid "Lze produkt objednat, i když není skladem?"
 msgstr "Lze produkt objednat, i když není skladem?"
 
-#: ../app/forms/admin/admin_form.php:200
+#: ../app/forms/admin/admin_form.php:201
 msgid ""
 "Zaškrtněte pouze v případě, že se jedná o produkt bez uvažování skladové "
 "zásoby (např. digitální soubor)"
@@ -2998,20 +3116,20 @@ msgstr ""
 "Zaškrtněte pouze v případě, že se jedná o produkt bez uvažování skladové "
 "zásoby (např. digitální soubor)"
 
-#: ../app/forms/admin/admin_form.php:229 ../app/forms/admin/admin_form.php:236
+#: ../app/forms/admin/admin_form.php:230 ../app/forms/admin/admin_form.php:237
 #: ../app/forms/admin/category_trees/create_new_form.php:17
 msgid "Stejný kód je již použit pro jiný záznam"
 msgstr "Stejný kód je již použit pro jiný záznam"
 
-#: ../app/forms/admin/admin_form.php:304
+#: ../app/forms/admin/admin_form.php:305
 msgid "The same slug is used in a different object"
 msgstr "Stejný slug je použit u jiného objektu"
 
-#: ../app/forms/admin/admin_form.php:329 ../app/forms/admin/admin_form.php:334
+#: ../app/forms/admin/admin_form.php:330 ../app/forms/admin/admin_form.php:335
 msgid "The same catalog number is used for another product"
 msgstr "Stejné katalogové číslo se používá pro jiný produkt"
 
-#: ../app/forms/admin/admin_form.php:329 ../app/forms/admin/admin_form.php:334
+#: ../app/forms/admin/admin_form.php:330 ../app/forms/admin/admin_form.php:335
 msgid "open in administration"
 msgstr "otevřít v administraci"
 
@@ -3619,6 +3737,14 @@ msgstr "Úvodní text dialogu"
 msgid "Text v patičce dialogu"
 msgstr "Text v patičce dialogu"
 
+#: ../app/forms/admin/cookie_consents/edit_form.php:30
+msgid "Odeslat příkaz pro výchozí nastavení souhlasu"
+msgstr ""
+
+#: ../app/forms/admin/cookie_consents/edit_form.php:36
+msgid "Odeslat příkaz pro aktualizaci nastavení souhlasu"
+msgstr ""
+
 #: ../app/forms/admin/creator_roles/creator_roles_form.php:11
 msgid "Plural name"
 msgstr "Název v množném čísle"
@@ -4085,10 +4211,6 @@ msgstr "způsob platby"
 msgid "stav online platby"
 msgstr "stav online platby"
 
-#: ../app/forms/admin/orders/index_form.php:39
-msgid "Stav platby"
-msgstr "Stav platby"
-
 #: ../app/forms/admin/orders/index_form.php:45
 msgid "Způsob doručení"
 msgstr "Způsob doručení"
@@ -4355,9 +4477,50 @@ msgstr ""
 "externí web musí obsahovat celou cestu včetně domény (např. http://www."
 "externi-web.cz/soubor.pdf)."
 
+#: ../app/forms/admin/slider_items/slider_items_form.php:37
+msgid "Display this picture from date and time"
+msgstr ""
+
+#: ../app/forms/admin/slider_items/slider_items_form.php:46
+msgid "Display this picture to date and time"
+msgstr ""
+
 #: ../app/forms/admin/slugs/edit_form.php:7
 msgid "Update slug"
 msgstr "Aktualizace slugu"
+
+#: ../app/forms/admin/special_opening_hours/special_opening_hours_form.php:11
+msgid "Otevřeno od"
+msgstr ""
+
+#: ../app/forms/admin/special_opening_hours/special_opening_hours_form.php:14
+#: ../app/forms/admin/special_opening_hours/special_opening_hours_form.php:20
+msgid "Nevyplňujte, pokud je zavřeno"
+msgstr ""
+
+#: ../app/forms/admin/special_opening_hours/special_opening_hours_form.php:17
+msgid "Otevřeno do"
+msgstr ""
+
+#: ../app/forms/admin/special_opening_hours/special_opening_hours_form.php:26
+msgid "dovolená"
+msgstr ""
+
+#: ../app/forms/admin/special_opening_hours/special_opening_hours_form.php:26
+msgid "inventura"
+msgstr ""
+
+#: ../app/forms/admin/special_opening_hours/special_opening_hours_form.php:26
+msgid "Vánoce"
+msgstr ""
+
+#: ../app/forms/admin/special_opening_hours/special_opening_hours_form.php:37
+msgid "Zadejte oba časy nebo ponechte oba nevyplněné"
+msgstr ""
+
+#: ../app/forms/admin/special_opening_hours/special_opening_hours_form.php:40
+msgid "Čas otevření do musí být větší než čas otevření od"
+msgstr ""
 
 #: ../app/forms/admin/stores/stores_form.php:26
 msgid "Phone"

@@ -1,1 +1,0 @@
-{render partial="shared/basket_info_content" was_changed=true}

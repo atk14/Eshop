@@ -23,14 +23,14 @@ class TcPages extends TcBase {
 
 		$this->client->get("pages/detail", array("id" => $page));
 		$this->assertEquals("200",$this->client->getStatusCode());
-		$this->assertNotContains('<meta name="robots" content="noindex,nofollow,noarchive">',$this->client->getContent());
+		$this->assertStringNotContains('<meta name="robots" content="noindex,nofollow,noarchive">',$this->client->getContent());
 		$this->_assertOGProperties(["url" => sprintf("http://%s/testing-page/testing-subpage/", ATK14_HTTP_HOST)]);
 
 		$page->s("indexable",false);
 
 		$this->client->get("pages/detail", array("id" => $page));
 		$this->assertEquals("200",$this->client->getStatusCode());
-		$this->assertContains('<meta name="robots" content="noindex,noarchive">',$this->client->getContent());
+		$this->assertStringContains('<meta name="robots" content="noindex,noarchive">',$this->client->getContent());
 	}
 
 	protected function _assertOGProperties($options=[]) {
@@ -38,9 +38,9 @@ class TcPages extends TcBase {
 			"url" => "",
 		];
 		$url = $options["url"];
-		$this->assertContains('<meta property="og:description">', $this->client->getContent());
-		$this->assertContains('<meta property="og:title" content="Testing Subpage">', $this->client->getContent());
-		$this->assertContains('<meta property="og:type" content="article">', $this->client->getContent());
-		$this->assertContains('<meta property="og:url" content="'.$url.'">', $this->client->getContent());
+		$this->assertStringContains('<meta property="og:description">', $this->client->getContent());
+		$this->assertStringContains('<meta property="og:title" content="Testing Subpage">', $this->client->getContent());
+		$this->assertStringContains('<meta property="og:type" content="article">', $this->client->getContent());
+		$this->assertStringContains('<meta property="og:url" content="'.$url.'">', $this->client->getContent());
 	}
 }

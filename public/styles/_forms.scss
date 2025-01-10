@@ -418,3 +418,52 @@ form#form_checkouts_set_billing_and_delivery_data {
 		border: none !important;
 	}
 }
+
+#paging_form {
+	margin-top: $grid-gutter-width * -0.5;
+	.cards_sorting {
+		$itemPadding: 0;
+		display: flex;
+		gap: 0 2ch;
+		&__title {
+			padding: $itemPadding;
+			text-wrap: nowrap;
+		}
+		&__options {
+			list-style: none;
+			display: flex;
+			gap: 0 2ch;
+			padding: 0;
+			margin: 0;
+			flex-wrap: wrap;
+			
+			.cards_sorting__item {
+				a {
+					display: block;
+					padding: $itemPadding;
+					text-underline-offset: 0.33em;
+				}
+				&.active {			
+					a {
+						font-weight: 700;
+						text-decoration: underline;
+					}
+				}
+			}
+			
+		}
+		@include media-breakpoint-down(xs) {
+			gap: 0 1.25ch;
+			&__options {
+				gap: 0 1.25ch;
+			}
+		}
+		@media(max-width: 400px) {
+			flex-wrap: wrap;
+			&__title {
+				flex-basis: 100%;
+				flex-shrink: 0;
+			}
+		}
+	}
+}

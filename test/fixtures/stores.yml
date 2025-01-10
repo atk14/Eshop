@@ -14,3 +14,15 @@ groceries:
   opening_hours_tue2: "12.00"
   opening_hours_tue3: "12.50"
   opening_hours_tue4: "18.00"
+
+test_sk:
+  code: "test_sk"
+  name_en: "Testing store SK"
+  name_cs: "Testovací store SK"
+  address_street: Street
+  address_city: City
+  address_zip: 845 45
+  address_country: SK
+  opening_hours_en: "Monday: closed. Tuesday-Sunday: 10 AM - 6 PM."
+  opening_hours_cs: "Pondělí zavřeno, úterý až neděle: 10:00 - 18:00."
+  

@@ -86,7 +86,7 @@ window.UTILS.OffcanvasBasket = function() {
 	window.addEventListener( "basket_remote_updated", function(){
 		if( document.getElementById( "offcanvas-basket" ) && document.getElementById( "offcanvas-basket" ).classList.contains( "show" ) ) {
 			$this.loadBasket();
-		} else { console.log( "fuck off" ) };
+		};
 	} );
 
 };

@@ -45,6 +45,8 @@ class DeliveryMethodAtCheckoutSelect extends SelectWithImages {
  */
 class DeliveryMethodInputWithBranch extends RadioInputWithImage {
 
+	public $options;
+
 	function __construct($name, $value, $attrs, $key, $choice, $index) {
 		$attrs["data-branch_needed"] = true;
 		return parent::__construct($name, $value, $attrs, $key, $choice, $index);

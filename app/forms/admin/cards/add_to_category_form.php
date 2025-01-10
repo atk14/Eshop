@@ -16,7 +16,7 @@ class AddToCategoryForm extends AdminForm{
 	function clean() {
 		list($e,$d) = parent::clean();
 
-		if ($d["category"] && !$d["category"]->allowProducts()) {
+		if (isset($d["category"]) && !$d["category"]->allowProducts()) {
 			$this->set_error("category", _("You can not insert products into this category"));
 		}
 		return array($e,$d);

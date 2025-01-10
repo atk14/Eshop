@@ -57,3 +57,12 @@ europallet:
   price_incl_vat: 500
   vat_rate_id: "<?= $vat_rates["twenty_one"]->getId() ?>"
 
+personal_sk:
+  code: "personal_test_sk"
+  label_en: "Personal pickup SK"
+  label_cs: "Osobní odběr SK"
+  regions: "<?= json_encode(["DEFAULT" => true, $regions["czechoslovakia"]->getCode() => true]) ?>"
+  price_incl_vat: 0
+  vat_rate_id: "<?= $vat_rates["twenty_one"]->getId() ?>"
+  personal_pickup: true
+  personal_pickup_on_store_id: "<?= $stores["test_sk"]->getId() ?>"

@@ -50,16 +50,16 @@ class TcCountriesField extends TcBase {
 		$form["countries"] = new CountriesField([
 			"initial" => '["CZ","SK"]'
 		]);
-		$this->assertContains('value="CZ, SK"',$form["countries"]->as_widget());
+		$this->assertStringContains('value="CZ, SK"',$form["countries"]->as_widget());
 
 		$form["countries"] = new CountriesField([
 			"initial" => ["PL","HU"]
 		]);
-		$this->assertContains('value="PL, HU"',$form["countries"]->as_widget());
+		$this->assertStringContains('value="PL, HU"',$form["countries"]->as_widget());
 
 		$form["countries"] = new CountriesField([
 			"initial" => "CZ, PL"
 		]);
-		$this->assertContains('value="CZ, PL"',$form["countries"]->as_widget());
+		$this->assertStringContains('value="CZ, PL"',$form["countries"]->as_widget());
 	}
 }
