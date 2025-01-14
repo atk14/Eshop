@@ -3,8 +3,7 @@
 {render partial="shared/layout/content_header" title=$page_title}
 
 {if $delivery_addresses}
-<div class="card-deck-wrapper">
-	<ul class="card-deck card-deck--sized-4 cards--addresses">
+	<ul class="card-grid cards--addresses">
 		{foreach $delivery_addresses as $da name=addresscounter}
 			{assign addresscounter $smarty.foreach.addresscounter.iteration}
 			<li class="card bg-light">
@@ -18,7 +17,6 @@
 			</li>
 		{/foreach}
 	</ul>
-</div>
 {/if}
 
 {form _class="form form-horizontal" _novalidate="novalidate"}

@@ -62,7 +62,7 @@
 			{assign max_cards 6}
 			{foreach $creator->getRoles() as $role}
 				<h5>{highlight_keywords keywords=$params.q tag="<mark>"}{$page->getTitle()}{/highlight_keywords}: {$role}</h5>
-				<div class="card-deck card-deck--micro">
+				<div class="card-grid--micro">
 				{foreach $creator->getCards($role,["limit" => $max_cards+1]) as $card}
 
 					{if $card@index==$max_cards}

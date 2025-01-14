@@ -12,7 +12,7 @@
 		{if $title}
 		<h4>{$title}</h4>
 		{/if}
-		<div class="card-deck card-deck--sized-4">
+		<div class="card-grid">
 		{foreach $cards as $card}
 			{render partial="shared/card_item" card=$card}
 		{/foreach}

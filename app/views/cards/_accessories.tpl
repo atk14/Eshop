@@ -3,7 +3,7 @@
 {if $accessories}
 	<section class="linked-cards linked-cards--accessories">
 		<h3 class="h3">{t}Accessories{/t}</h3>
-		<div class="card-deck card-deck--sized-6">
+		<div class="card-grid--mini">
 			{foreach $accessories as $c}
 				{render partial="linked_product_item"}
 			{/foreach}

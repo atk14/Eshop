@@ -1,5 +1,4 @@
-<div class="card-deck-wrapper">
-	<ul class="card-deck card-deck--sized-4 cards--addresses">
+	<ul class="card-grid cards--addresses">
 		{foreach $delivery_addresses as $da}
 			{capture assign="confirm"}{t escape=false}Doručovací adresa bude smazána. Pokračovat?{/t}{/capture}
 			<li class="card bg-light">
@@ -13,4 +12,3 @@
 			</li>
 		{/foreach}
 	</ul>
-</div>

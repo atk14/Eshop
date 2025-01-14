@@ -46,7 +46,7 @@
 	<section class="section--recent-articles">
 		{capture assign=recent_articles_title}{t}Aktuality{/t}{/capture}
 		{render partial="shared/layout/content_header" title=$recent_articles_title title_tag="h2"}
-		<div class="card-deck card-deck--sized-4">
+		<div class="card-grid">
 			{foreach $recent_articles as $article}
 				{a controller=articles action=detail id=$article _class="card"}
 					<div class="card__image">

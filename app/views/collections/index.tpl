@@ -1,6 +1,5 @@
 {render partial="shared/layout/content_header" title=$page_title}
-<div class="card-deck-wrapper">
-<div class="card-deck card-deck--sized-4">
+<div class="card-grid">
 {foreach $collections as $collection}
 		{a action="detail" id=$collection _class="card"}
 		{!$collection->getImageUrl()|pupiq_img:"!400x400":"class='card-img-top'"}
@@ -10,5 +9,4 @@
 		</div>
 		{/a}
 {/foreach}
-</div>
 </div>

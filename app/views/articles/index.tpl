@@ -5,7 +5,7 @@
 
 {else}
 	<section class="section--articles">
-		<div class="card-deck card-deck--sized-4">
+		<div class="card-grid">
 			{render partial=article_item from=$finder->getRecords() item=article}
 		</div>
 	</section>

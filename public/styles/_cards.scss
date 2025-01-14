@@ -354,6 +354,10 @@ $card-border-style: 1px dashed $border-color;
 					flex-basis: percenage(1/3);
 				}*/
 			}
+			@container ( width <= 500px ) {
+				grid-column: span 1;
+				display: block;
+			}
 		}
 	}
 
@@ -628,7 +632,7 @@ $gap( optional ) - gap between cards (used for border calculations when gap == 0
 
 .section--child-pages {
 	margin-top: $grid-gutter-width;
-	.card-deck {
+	.card-grid {
 		margin-top: $grid-gutter-width;
 		.card {
 			background-color: $gray-100;
@@ -638,28 +642,45 @@ $gap( optional ) - gap between cards (used for border calculations when gap == 0
 		}
 	}
 }
+
 // This mixin is used to create a grid of cards with a minimum width of $minCardWidth
 @mixin sized_cards($minCardWidth:300px,$gap:$card-deck-margin,$gap_sm:$card-deck-margin) {
 	display: grid;
+	container-name: cards-container;
+	container-type: inline-size;
 	grid-template-columns: repeat(auto-fill, minmax($minCardWidth, 1fr));
 	column-gap: $gap;
 	row-gap: $gap;
+
+	@if $gap==0 {
+	 	//border-left: $card-border-style;
+	 	//border-top: $card-border-style;
+	}
 	.card {
 		margin: 0;
 		@if $gap==0 {
-			border-top: none;
-			border-left: none;
+			//border-top: none;
+			//border-left: none;
 		}
 	}
 }
 
-// Example of usage
-.testcards {
-	@include sized_cards(230px);
+
+
+.card-grid {
+	@include sized_cards(240px);
 }
-.testcards2 {
-	@include sized_cards();
+.card-grid--larger {
+	@include sized_cards(320px);
 }
-.testcards--big {
-	@include sized_cards(400px,0,0);
+.card-grid--mini {
+	@include sized_cards(170px,0);
+}
+.card-grid--micro {
+	@include sized_cards(75px,0);
+	grid-template-columns: repeat(auto-fill, 100px);
+}
+.card-grid--login_options {
+	@include sized_cards(240px, $grid-gutter-width*0.5);
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }

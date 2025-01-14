@@ -46,7 +46,7 @@
 		{/foreach}
 		</ul>*}
 		
-		<div class="card-deck card-deck--sized-6">
+		<div class="card-grid--mini">
 			{foreach $child_pages as $child_page}
 				{a action=detail id=$child_page _class="card"}
 					{if $child_page->getImageUrl()}

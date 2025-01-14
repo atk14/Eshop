@@ -1,6 +1,5 @@
 {render partial="shared/layout/content_header" title=$page_title}
-<div class="card-deck-wrapper">
-<div class="card-deck card-deck--sized-4">
+<div class="card-grid">
 {foreach $brands as $brand}
 	
 	{a action="detail" id=$brand _class="card"}
@@ -23,5 +22,4 @@
 	{/a}
 	
 {/foreach}
-</div>
 </div>

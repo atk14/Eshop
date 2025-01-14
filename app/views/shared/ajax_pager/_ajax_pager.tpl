@@ -1,10 +1,10 @@
 {*
  *
- *	{render partial="shared/ajax_pager/ajax_pager" list_class="card-deck card-deck--sized-2 card-deck--dark product-list"}
+ *	{render partial="shared/ajax_pager/ajax_pager" list_class="card-grid product-list"}
  *}
 
 {if !$pager}{assign var=pager value=$finder->getPager()}{/if}
-{if !$list_class}{assign list_class "card-deck card-deck--sized-4 product-list"}{/if}
+{if !$list_class}{assign list_class "card-grid product-list"}{/if}
 
 {assign var=items value=$finder->getRecords()}
 {assign var=item_name value="`$pager->getItemVariable()`"} {* e.g. "item" *}
