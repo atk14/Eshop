@@ -1,6 +1,8 @@
 <?php
 class RegionsField extends MultipleChoiceField {
 
+	var $json_encode;
+
 	/**
 	 * Constructor
 	 *
