@@ -105,3 +105,27 @@ body {
 @if $enable_grid_layout {
   @include grid_layout();
 }
+
+div.body {
+	border: 1mm solid red;
+}
+.container-fluid {
+	border: 1mm dashed orange;
+	margin: 0;
+	padding: 0;
+}
+.content-main {
+	border: 1mm solid yellow;
+}
+article {
+	border: 1mm dotted lime;
+	.page__body, .article__body {
+		border: 1mm dashed cyan;
+		> * {
+			border: 1px solid blue;
+		}
+	}
+	.article__body > :not(.fullwidth), .page__body > :not(.fullwidth) {
+		max-width: unset !important;
+	}
+}

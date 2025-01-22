@@ -1,7 +1,7 @@
 // Mixin for grid layout
 // Must be enabled in _application_variables.scss
 
-@mixin grid_layout() {
+@mixin grid_layout--old() {
   .grid-outer-fullwidth {
     width: 100%;
     max-width: unset;
@@ -38,3 +38,35 @@
   }
 }
 
+/*
+  div.body > .container-fluid > .content-main
+  div.body > .container-fluid > .breadcrumb
+*/
+
+:root {
+  --main-content-margin: $grid-gutter-width;
+  @include media-breakpoint-down(sm) {
+    --main-content-margin: $grid-gutter-width * 0.5;
+  }
+}
+@mixin grid_layout() {
+  div.body {
+    max-width: unset;
+  }
+
+  xdiv.body {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, $container-max-width) 1fr;
+  }
+
+  body.body_articles_detail, body.body_pages_detail {
+    //display: block;
+  }
+
+  .container-fluid {
+    max-width: unset;
+  }
+  .content-main {
+    max-width: unset;
+  }
+}

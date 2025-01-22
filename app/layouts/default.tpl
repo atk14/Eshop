@@ -62,6 +62,10 @@
 			document.documentElement.className = document.documentElement.className.replace( /\bno-js\b/, "js" );
 		{/javascript_tag}
 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
 		{stylesheet_link_tag file="$public/dist/styles/vendor.css" hide_when_file_not_found=true}
 		{stylesheet_link_tag file="$public/dist/styles/application_styles.css"}
 
@@ -87,7 +91,6 @@
 		{if defined("SIDEBAR_MENU_ENABLED") && constant("SIDEBAR_MENU_ENABLED") && $namespace=="" && ($controller=="main" || $controller=="categories" || $controller=="cards")}
 			{assign use_sidebar_menu true}
 		{/if}
-		<div class="body--upper">{placeholder for="out_of_container"}</div>
 		<div class="body{if $section_navigation || $use_sidebar_menu} has-nav-section{/if}" id="page-body">
 			{if $section_navigation || $use_sidebar_menu}<div class="body__sticky-container">{/if}
 			{if $section_navigation}
