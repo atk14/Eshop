@@ -11,8 +11,10 @@ function smarty_modifier_color_to_rgba($color,$alpha = "1.0"){
 	if(!$color){
 		return;
 	}
+
+	$alpha = (float)$alpha;
 	
 	$color_object = ariColor::newColor( $color );
-	$new_color_object = $color_object->getNew( 'alpha', $alpha );
-	return $new_color_object->toCSS( 'rgba' );
+	$new_color_object = $color_object->getNew( "alpha", $alpha );
+	return $new_color_object->toCSS( "rgba" );
 }
