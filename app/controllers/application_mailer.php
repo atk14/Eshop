@@ -130,6 +130,7 @@ class ApplicationMailer extends Atk14Mailer {
 		$region = $order->getRegion();
 		$this->_initialize_for_region($region);
 		$this->to = $order->getEmail();
+		$this->to_name = trim($order->getFirstname()." ".$order->getLastname());
 		$this->tpl_data["order"] = $order;
 		$this->tpl_data["currency"] = $order->getCurrency();
 		$this->tpl_data["shipping_days"] = SystemParameter::ContentOn("orders.notifications.shipping_days");
@@ -147,6 +148,7 @@ class ApplicationMailer extends Atk14Mailer {
 		$region = $order->getRegion();
 		$this->_initialize_for_region($region);
 		$this->to = $order->getEmail();
+		$this->to_name = trim($order->getFirstname()." ".$order->getLastname());
 		$this->sms_phone_number = $order->getDeliveryPhone(); // dorucovaci adresa je povinna, fakturacni nikoli
 		$this->tpl_data["order"] = $order;
 		$this->tpl_data["order_status"] = $order_status = $order->getOrderStatus();
