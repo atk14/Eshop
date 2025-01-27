@@ -22,13 +22,24 @@ class LoginsController extends ApiController{
 	 *
 	 * * 401 Unauthorized: Bad password
 	 * * 404 Not Found: There is no such user
+	 * * 425 Too Early: Retry login attempt after the specific amount of time
 	 * * 201 Created
 	 * * 400 Bad Request
 	 */
 	function create_new(){
 		if($this->request->post() && ($d = $this->form->validate($this->params))){
+			if(InvalidLoginAttempt::IsRemoteAddressBlocked($this->request->getRemoteAddr(),$realease_time)){
+				$this->_report_fail(InvalidLoginAttempt::BuildLoginAttemptDelayMessage($realease_time),425);
+				return;
+			}
+
 			$user = User::Login($d["login"],$d["password"],$bad_password);
 			if(!$user){
+				InvalidLoginAttempt::CreateNewRecord([
+					"login" => $d["login"],
+				]);
+				$this->logger->warn("invalid login attempt on $d[login] from ".$this->request->getRemoteAddr());
+
 				if($bad_password){
 					$this->_report_fail(_("Bad password"),401); // Unauthorized
 					return;
