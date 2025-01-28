@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-12 14:37+0100\n"
-"PO-Revision-Date: 2024-05-13 14:19+0200\n"
+"PO-Revision-Date: 2025-01-28 13:51+0100\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: \n"
 "Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: ../vendor/atk14/async-file-field/src/app/controllers/api/temporary_file_uploads_controller.php:36
 msgid "Temporary file uploading is not enabled"
@@ -217,11 +217,11 @@ msgstr "Text v patičce dialogu"
 
 #: ../vendor/atk14/cookie-consent/src/app/forms/admin/cookie_consents/edit_form.php:30
 msgid "Odeslat příkaz pro výchozí nastavení souhlasu"
-msgstr ""
+msgstr "Odeslat příkaz pro výchozí nastavení souhlasu"
 
 #: ../vendor/atk14/cookie-consent/src/app/forms/admin/cookie_consents/edit_form.php:36
 msgid "Odeslat příkaz pro aktualizaci nastavení souhlasu"
-msgstr ""
+msgstr "Odeslat příkaz pro aktualizaci nastavení souhlasu"
 
 #: ../vendor/atk14/cookie-consent/src/gettext_messages.php:4
 msgid "Nastavení"
@@ -330,7 +330,7 @@ msgstr "Stáhnout přílohu"
 
 #: ../vendor/atk14/pupiq-client/src/app/widgets/pupiq_image_input.php:45
 msgid "no image"
-msgstr ""
+msgstr "bez obrázku"
 
 #: ../vendor/atk14/pupiq-client/src/app/widgets/pupiq_image_input.php:65
 msgid "Display image"
@@ -423,14 +423,14 @@ msgstr "Zadejte sedm číslic"
 msgid "Enter five digits"
 msgstr "Zadejte pět číslic"
 
+msgid "od"
+msgstr "od"
+
+msgid "do"
+msgstr "do"
+
 #~ msgid "Enter the ZIP code as NNN NN"
 #~ msgstr "Zadejte PSČ ve formátu NNN NN"
-
-#~ msgid "od"
-#~ msgstr "od"
-
-#~ msgid "do"
-#~ msgstr "do"
 
 #~ msgid "Hello World!"
 #~ msgstr "Ahoj světe!"

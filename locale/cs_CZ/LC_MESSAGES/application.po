@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 17:45+0100\n"
-"PO-Revision-Date: 2024-12-02 17:46+0100\n"
+"POT-Creation-Date: 2025-01-28 13:42+0100\n"
+"PO-Revision-Date: 2025-01-28 13:46+0100\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: Team <team@email.com>\n"
 "Language: cs_CZ\n"
@@ -884,6 +884,19 @@ msgstr "Žádný produkt nebyl nalezen."
 msgid "Attachments"
 msgstr "Přílohy"
 
+msgid "Obsah košíku byl změněn"
+msgstr "Obsah košíku byl změněn"
+
+msgid ""
+"<p>Zdá se, že se změnil obsah nákupního košíku. Prosíme, obnovte stránku, "
+"abychom měli jistotu, že v košíku máte to, co chcete.</p>"
+msgstr ""
+"<p>Zdá se, že se změnil obsah nákupního košíku. Prosíme, obnovte stránku, "
+"abychom měli jistotu, že v košíku máte to, co chcete.</p>"
+
+msgid "Obnovit stránku"
+msgstr "Obnovit stránku"
+
 #: ../app/controllers/application.php:123
 msgid "Basket"
 msgstr "Košík"
@@ -1121,7 +1134,7 @@ msgstr "Dodací adresy"
 msgid "Oblíbené produkty"
 msgstr "Oblíbené produkty"
 
-#: ../app/controllers/logins_controller.php:35
+#: ../app/controllers/logins_controller.php:43
 #: ../app/forms/logins/destroy_form.php:4
 msgid "Sign out"
 msgstr "Odhlásit se"
@@ -1512,11 +1525,15 @@ msgstr "naskladnění oznámeno"
 msgid "zatím nenaskladněno"
 msgstr "zatím nenaskladněno"
 
-#: ../app/controllers/api/logins_controller.php:33
+#: ../app/controllers/api/logins_controller.php:35
+msgid "For security reasons, this function is disabled"
+msgstr "Z bezpečnostních důvodů je tato funkce vypnutá"
+
+#: ../app/controllers/api/logins_controller.php:53
 msgid "Bad password"
 msgstr "Špatné heslo"
 
-#: ../app/controllers/api/logins_controller.php:36
+#: ../app/controllers/api/logins_controller.php:56
 msgid "There is no such user"
 msgstr "Takový uživatel tady není"
 
@@ -1550,42 +1567,42 @@ msgstr "Zakázáno"
 msgid "Home"
 msgstr "Domů"
 
-#: ../app/controllers/application_mailer.php:105
+#: ../app/controllers/application_mailer.php:106
 msgid "New registration"
 msgstr "Nová registrace"
 
-#: ../app/controllers/application_mailer.php:114
+#: ../app/controllers/application_mailer.php:116
 msgid "Reset Your Password"
 msgstr "Obnova vašeho hesla"
 
-#: ../app/controllers/application_mailer.php:123
+#: ../app/controllers/application_mailer.php:126
 msgid "Your password was updated"
 msgstr "Vaše heslo bylo změněno"
 
-#: ../app/controllers/application_mailer.php:134
+#: ../app/controllers/application_mailer.php:138
 #, php-format
 msgid "Order %d"
 msgstr "Objednávka %d"
 
-#: ../app/controllers/application_mailer.php:154
+#: ../app/controllers/application_mailer.php:158
 #: ../app/controllers/application.php:83
 #: ../app/controllers/orders_controller.php:46
 #, php-format
 msgid "Objednávka %s"
 msgstr "Objednávka %s"
 
-#: ../app/controllers/application_mailer.php:180
+#: ../app/controllers/application_mailer.php:184
 msgid "Message sent from contact page"
 msgstr "Zpráva zaslaná z kontaktní stránky"
 
-#: ../app/controllers/application_mailer.php:191
-#: ../app/controllers/application_mailer.php:200
+#: ../app/controllers/application_mailer.php:195
+#: ../app/controllers/application_mailer.php:204
 #: ../app/controllers/information_requests_controller.php:5
 #: ../app/controllers/information_requests_controller.php:29
 msgid "Request for information"
 msgstr "Žádost o informaci"
 
-#: ../app/controllers/application_mailer.php:210
+#: ../app/controllers/application_mailer.php:214
 #, php-format
 msgid "Naskladnění produktu: %s"
 msgstr "Naskladnění produktu: %s"
@@ -1619,7 +1636,7 @@ msgstr "Objednávka dokončena"
 #: ../app/controllers/application_rest_api.php:76
 #, php-format
 msgid "Commands in %s"
-msgstr "Příkazy v %s"
+msgstr "Přikazy v %s"
 
 #: ../app/controllers/application_rest_api.php:186
 #, php-format
@@ -1811,7 +1828,7 @@ msgstr ""
 "Pro stažení digitálních souborů z objednávky se prosím přihlaste jako "
 "uživatel <em>%s</em>"
 
-#: ../app/controllers/logins_controller.php:18
+#: ../app/controllers/logins_controller.php:26
 #, php-format
 msgid ""
 "Wrong login and password combination. <a href=\"%s\">Have you forgotten your "
@@ -1820,20 +1837,20 @@ msgstr ""
 "Nesprávna kombinace loginu a hesla. <a href=\"%s\">Zapomněl jste své heslo?</"
 "a>"
 
-#: ../app/controllers/logins_controller.php:20
+#: ../app/controllers/logins_controller.php:28
 msgid "Wrong login and password combination"
 msgstr "Nesprávna kombinace loginu a hesla"
 
-#: ../app/controllers/logins_controller.php:27
+#: ../app/controllers/logins_controller.php:35
 #, php-format
 msgid "You have been successfully logged in as <em>%s</em>"
 msgstr "Byl jste úspěšně přihlášen jako <em>%s</em>"
 
-#: ../app/controllers/logins_controller.php:39
+#: ../app/controllers/logins_controller.php:47
 msgid "You have been successfully logged out"
 msgstr "Byl jste úspěšně odhlášen"
 
-#: ../app/controllers/logins_controller.php:39
+#: ../app/controllers/logins_controller.php:47
 #, php-format
 msgid "You've stayed logged in as <em>%s</em>"
 msgstr "Zůstal jste přihlášen jako <em>%s</em>"
@@ -2010,20 +2027,20 @@ msgstr "Katalogové číslo"
 msgid "This doesn't look like a catalog number"
 msgstr "Toto nevypadá jako katalogové číslo"
 
-#: ../app/fields/category_field.php:25
+#: ../app/fields/category_field.php:29
 msgid "Start with a slash if you want to search the catalog tree from the root"
 msgstr ""
 "Začněte psát lomítko, pokud chcete prohledávat katalogový strom od kořene"
 
-#: ../app/fields/category_field.php:25
+#: ../app/fields/category_field.php:29
 msgid "A single slash will be considered as root."
 msgstr "Samotné lomítko bude považováno za kořen."
 
-#: ../app/fields/category_field.php:35
+#: ../app/fields/category_field.php:39
 msgid "There is no such category"
 msgstr "Taková kategorie neexistuje"
 
-#: ../app/fields/category_field.php:36
+#: ../app/fields/category_field.php:40
 msgid "It's a filter. This category cannot be selected."
 msgstr "Toto je filtr. Tato kategorie nemůže být vybrána."
 
@@ -2730,6 +2747,35 @@ msgstr "Česká Pošta - Balík na poštu"
 msgid "Česká Pošta - Balíkovna"
 msgstr "Česká Pošta - Balíkovna"
 
+#: ../app/models/invalid_login_attempt.php:46
+msgid "Delay the next sign-in attempt for a second"
+msgstr "Odložte další pokus o přihlášení o vteřinku"
+
+#: ../app/models/invalid_login_attempt.php:53
+#: ../app/models/invalid_login_attempt.php:70
+#, php-format
+msgid "Delay the next sign-in attempt for %s minutes"
+msgstr "Odložte další pokus o přihlášení o %s minut"
+
+#: ../app/models/invalid_login_attempt.php:58
+#, php-format
+msgid "Delay the next sign-in attempt for one minute and %s seconds"
+msgstr "Odložte další pokus o přihlášení o jednu minutu a %s vteřin"
+
+#: ../app/models/invalid_login_attempt.php:60
+msgid "Delay the next sign-in attempt for one minute"
+msgstr "Odložte další pokus o přihlášení o jednu minutu"
+
+#: ../app/models/invalid_login_attempt.php:64
+#, php-format
+msgid "Delay the next sign-in attempt for %s seconds"
+msgstr "Odložte další pokus o přihlášení o %s vteřin"
+
+#: ../app/models/invalid_login_attempt.php:68
+#, php-format
+msgid "Delay the next sign-in attempt for %s minutes and %s seconds"
+msgstr "Odložte další pokus o přihlášení o %s minuty a %s vteřin"
+
 #: ../app/models/order.php:717
 #, php-format
 msgid "Poznámka k doručovací adrese: %s"
@@ -2801,7 +2847,7 @@ msgstr "Celé číslo"
 
 #: ../app/models/user.php:213
 msgid "deleted user"
-msgstr "smazat uživatele"
+msgstr "smazaný uživatel"
 
 #: ../app/models/user.php:215
 msgid "inactive user"
@@ -2979,64 +3025,64 @@ msgstr "Objednávka č. %s v e-shopu %s"
 msgid "obj. %s"
 msgstr "obj. %s"
 
+msgid "Enter the ZIP code as NNN NN"
+msgstr "Zadejte PSČ jako NNN NN"
+
+msgid "Žádné podací místo nebylo nalezeno"
+msgstr "Žádné podací místo nebylo nalezeno"
+
+msgid "Pobočka nebyla nalezena"
+msgstr "Pobočka nebyla nalezena"
+
+msgid "Object not found"
+msgstr "Objekt nebyl nalezen"
+
+msgid "Výdejní místo"
+msgstr "Výdejní místo"
+
+msgid "Zadejte psč, město nebo název provozovny"
+msgstr "Zadejte psč, město nebo název provozovny"
+
+msgid "Pro opakování platby přejděte na adresu %1"
+msgstr "Pro opakování platby přejděte na adresu %1"
+
+msgid ""
+"Pro opakování online platby <a href=\"%1\">klikně zde</a>. V případě "
+"přetrvávajících potíží můžete objednávku uhradit bankovním převodem."
+msgstr ""
+"Pro opakování online platby <a href=\"%1\">klikně zde</a>. V případě "
+"přetrvávajících potíží můžete objednávku uhradit bankovním převodem."
+
+msgid "Checkout"
+msgstr "Pokladna"
+
+msgid "<small>cena od</small><br>%1"
+msgstr "<small>cena od</small><br>%1"
+
+msgid "naskladnění sleduje hlídací pes"
+msgstr "naskladnění sleduje hlídací pes"
+
+msgid "aktivovat hlídacího psa"
+msgstr "aktivovat hlídacího psa"
+
+msgid "Zobrazit detaily"
+msgstr "Zobrazit detaily"
+
+msgid "searching ..."
+msgstr "hledání ..."
+
+msgid "cena od<br>%1"
+msgstr "cena od<br>%1"
+
+msgid "Tvůrce"
+msgstr "Tvůrce"
+
+msgid "Nic nebylo nelezeno."
+msgstr "Nic nebylo nelezeno."
+
 #, php-format
 #~ msgid "Pro způsob dodání '%s' nebylo zvoleno doručovací místo"
 #~ msgstr "Pro způsob dodání '%s' nebylo zvoleno doručovací místo"
-
-#~ msgid "Enter the ZIP code as NNN NN"
-#~ msgstr "Zadejte PSČ jako NNN NN"
-
-#~ msgid "Žádné podací místo nebylo nalezeno"
-#~ msgstr "Žádné podací místo nebylo nalezeno"
-
-#~ msgid "Pobočka nebyla nalezena"
-#~ msgstr "Pobočka nebyla nalezena"
-
-#~ msgid "Object not found"
-#~ msgstr "Objekt nebyl nalezen"
-
-#~ msgid "Výdejní místo"
-#~ msgstr "Výdejní místo"
-
-#~ msgid "Zadejte psč, město nebo název provozovny"
-#~ msgstr "Zadejte psč, město nebo název provozovny"
-
-#~ msgid "Pro opakování platby přejděte na adresu %1"
-#~ msgstr "Pro opakování platby přejděte na adresu %1"
-
-#~ msgid ""
-#~ "Pro opakování online platby <a href=\"%1\">klikně zde</a>. V případě "
-#~ "přetrvávajících potíží můžete objednávku uhradit bankovním převodem."
-#~ msgstr ""
-#~ "Pro opakování online platby <a href=\"%1\">klikně zde</a>. V případě "
-#~ "přetrvávajících potíží můžete objednávku uhradit bankovním převodem."
-
-#~ msgid "Checkout"
-#~ msgstr "Pokladna"
-
-#~ msgid "<small>cena od</small><br>%1"
-#~ msgstr "<small>cena od</small><br>%1"
-
-#~ msgid "naskladnění sleduje hlídací pes"
-#~ msgstr "naskladnění sleduje hlídací pes"
-
-#~ msgid "aktivovat hlídacího psa"
-#~ msgstr "aktivovat hlídacího psa"
-
-#~ msgid "Zobrazit detaily"
-#~ msgstr "Zobrazit detaily"
-
-#~ msgid "searching ..."
-#~ msgstr "hledání ..."
-
-#~ msgid "cena od<br>%1"
-#~ msgstr "cena od<br>%1"
-
-#~ msgid "Tvůrce"
-#~ msgstr "Tvůrce"
-
-#~ msgid "Nic nebylo nelezeno."
-#~ msgstr "Nic nebylo nelezeno."
 
 #~ msgid "Add to cart"
 #~ msgstr "Přidat do košíku"
@@ -5043,3 +5089,35 @@ msgstr "obj. %s"
 
 #~ msgid "Now you can <a href=\"%1\">sign in</a> and enjoy our website."
 #~ msgstr "Nyní se můžete <a href=\"%1\">přihlásit</a> a užít si náš web."
+
+#~ msgid "The Mini Skelet contains mainly"
+#~ msgstr "Mini Skelet obsahuje především"
+
+#~ msgid ""
+#~ "Are you planning to kick up a new project from the Atk14MiniSkelet? "
+#~ "Great! Just run the following commands."
+#~ msgstr ""
+#~ "Plánujete rozjet nový projekt z Atk14MiniSkelet? Skvělé! Stačí spustit "
+#~ "následující příkazy."
+
+#~ msgid ""
+#~ "You can find more information in <a href=\"https://github.com/atk14/"
+#~ "Atk14MiniSkelet/blob/master/README.md#installation\">the installation "
+#~ "instructions.</a>"
+#~ msgstr ""
+#~ "Více informací najdete v <a href=\"https://github.com/atk14/"
+#~ "Atk14MiniSkelet/blob/master/README.md#installation\">návodu k instalaci.</"
+#~ "a>"
+
+#~ msgid ""
+#~ "If you want to help us to improve the Atk14MiniSkelet, <a href=\"https://"
+#~ "github.com/atk14/Atk14MiniSkelet\">fork it on GitHub.</a>"
+#~ msgstr ""
+#~ "Pokud nám chcete pomoci Atk14MiniSkelet vylepšit, <a href=\"https://"
+#~ "github.com/atk14/Atk14MiniSkelet\">forkněte si jej na GitHubu.</a>"
+
+#~ msgid "ATK14 Mini Skelet on GitHub"
+#~ msgstr "ATK14 Mini Skelet na GitHubu"
+
+#~ msgid "Welcome at ATK14 Mini Skelet!"
+#~ msgstr "Vítejte na ATK14 Mini Skelet!"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 17:45+0100\n"
-"PO-Revision-Date: 2024-12-02 17:46+0100\n"
+"POT-Creation-Date: 2025-01-28 13:42+0100\n"
+"PO-Revision-Date: 2025-01-28 13:44+0100\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: Team <team@email.com>\n"
 "Language: en_US\n"
@@ -890,6 +890,19 @@ msgstr "No product has been found."
 msgid "Attachments"
 msgstr "Attachments"
 
+msgid "Obsah košíku byl změněn"
+msgstr "Basket content has been changed"
+
+msgid ""
+"<p>Zdá se, že se změnil obsah nákupního košíku. Prosíme, obnovte stránku, "
+"abychom měli jistotu, že v košíku máte to, co chcete.</p>"
+msgstr ""
+"<p>The content of the shopping basket seems to have changed. Please refresh "
+"the page to make sure you have what you want in your basket.</p>"
+
+msgid "Obnovit stránku"
+msgstr "Refresh page"
+
 #: ../app/controllers/application.php:123
 msgid "Basket"
 msgstr "Basket"
@@ -1127,7 +1140,7 @@ msgstr "Delivery addresses"
 msgid "Oblíbené produkty"
 msgstr "Favourite products"
 
-#: ../app/controllers/logins_controller.php:35
+#: ../app/controllers/logins_controller.php:43
 #: ../app/forms/logins/destroy_form.php:4
 msgid "Sign out"
 msgstr "Sign out"
@@ -1519,11 +1532,15 @@ msgstr "storage notified"
 msgid "zatím nenaskladněno"
 msgstr "not yet stocked"
 
-#: ../app/controllers/api/logins_controller.php:33
+#: ../app/controllers/api/logins_controller.php:35
+msgid "For security reasons, this function is disabled"
+msgstr "For security reasons, this function is disabled"
+
+#: ../app/controllers/api/logins_controller.php:53
 msgid "Bad password"
 msgstr "Bad password"
 
-#: ../app/controllers/api/logins_controller.php:36
+#: ../app/controllers/api/logins_controller.php:56
 msgid "There is no such user"
 msgstr "There is no such user"
 
@@ -1557,42 +1574,42 @@ msgstr "Forbidden"
 msgid "Home"
 msgstr "Home"
 
-#: ../app/controllers/application_mailer.php:105
+#: ../app/controllers/application_mailer.php:106
 msgid "New registration"
 msgstr "New registration"
 
-#: ../app/controllers/application_mailer.php:114
+#: ../app/controllers/application_mailer.php:116
 msgid "Reset Your Password"
 msgstr "Reset Your Password"
 
-#: ../app/controllers/application_mailer.php:123
+#: ../app/controllers/application_mailer.php:126
 msgid "Your password was updated"
 msgstr "Your password was updated"
 
-#: ../app/controllers/application_mailer.php:134
+#: ../app/controllers/application_mailer.php:138
 #, php-format
 msgid "Order %d"
 msgstr "Order %d"
 
-#: ../app/controllers/application_mailer.php:154
+#: ../app/controllers/application_mailer.php:158
 #: ../app/controllers/application.php:83
 #: ../app/controllers/orders_controller.php:46
 #, php-format
 msgid "Objednávka %s"
 msgstr "Order %s"
 
-#: ../app/controllers/application_mailer.php:180
+#: ../app/controllers/application_mailer.php:184
 msgid "Message sent from contact page"
 msgstr "Message sent from contact page"
 
-#: ../app/controllers/application_mailer.php:191
-#: ../app/controllers/application_mailer.php:200
+#: ../app/controllers/application_mailer.php:195
+#: ../app/controllers/application_mailer.php:204
 #: ../app/controllers/information_requests_controller.php:5
 #: ../app/controllers/information_requests_controller.php:29
 msgid "Request for information"
 msgstr "Request for information"
 
-#: ../app/controllers/application_mailer.php:210
+#: ../app/controllers/application_mailer.php:214
 #, php-format
 msgid "Naskladnění produktu: %s"
 msgstr "Product storage: %s"
@@ -1819,7 +1836,7 @@ msgid ""
 msgstr ""
 "After download digital files of the order please log in as user <em>%s</em>"
 
-#: ../app/controllers/logins_controller.php:18
+#: ../app/controllers/logins_controller.php:26
 #, php-format
 msgid ""
 "Wrong login and password combination. <a href=\"%s\">Have you forgotten your "
@@ -1828,20 +1845,20 @@ msgstr ""
 "Wrong login and password combination. <a href=\"%s\">Have you forgotten your "
 "password?</a>"
 
-#: ../app/controllers/logins_controller.php:20
+#: ../app/controllers/logins_controller.php:28
 msgid "Wrong login and password combination"
 msgstr "Wrong login and password combination"
 
-#: ../app/controllers/logins_controller.php:27
+#: ../app/controllers/logins_controller.php:35
 #, php-format
 msgid "You have been successfully logged in as <em>%s</em>"
 msgstr "You have been successfully logged in as <em>%s</em>"
 
-#: ../app/controllers/logins_controller.php:39
+#: ../app/controllers/logins_controller.php:47
 msgid "You have been successfully logged out"
 msgstr "You have been successfully logged out"
 
-#: ../app/controllers/logins_controller.php:39
+#: ../app/controllers/logins_controller.php:47
 #, php-format
 msgid "You've stayed logged in as <em>%s</em>"
 msgstr "You've stayed logged in as <em>%s</em>"
@@ -2020,20 +2037,20 @@ msgstr "Catalog number"
 msgid "This doesn't look like a catalog number"
 msgstr "This doesn't look like a catalog number"
 
-#: ../app/fields/category_field.php:25
+#: ../app/fields/category_field.php:29
 msgid "Start with a slash if you want to search the catalog tree from the root"
 msgstr ""
 "Start with a slash if you want to search the catalog tree from the root"
 
-#: ../app/fields/category_field.php:25
+#: ../app/fields/category_field.php:29
 msgid "A single slash will be considered as root."
 msgstr "A single slash will be considered as root."
 
-#: ../app/fields/category_field.php:35
+#: ../app/fields/category_field.php:39
 msgid "There is no such category"
 msgstr "There is no such category"
 
-#: ../app/fields/category_field.php:36
+#: ../app/fields/category_field.php:40
 msgid "It's a filter. This category cannot be selected."
 msgstr "It's a filter. This category cannot be selected."
 
@@ -2741,6 +2758,35 @@ msgstr "Czech Post - Parcel to Post"
 msgid "Česká Pošta - Balíkovna"
 msgstr "Czech Post - Balikovna"
 
+#: ../app/models/invalid_login_attempt.php:46
+msgid "Delay the next sign-in attempt for a second"
+msgstr "Delay the next sign-in attempt for a second"
+
+#: ../app/models/invalid_login_attempt.php:53
+#: ../app/models/invalid_login_attempt.php:70
+#, php-format
+msgid "Delay the next sign-in attempt for %s minutes"
+msgstr "Delay the next sign-in attempt for %s minutes"
+
+#: ../app/models/invalid_login_attempt.php:58
+#, php-format
+msgid "Delay the next sign-in attempt for one minute and %s seconds"
+msgstr "Delay the next sign-in attempt for one minute and %s seconds"
+
+#: ../app/models/invalid_login_attempt.php:60
+msgid "Delay the next sign-in attempt for one minute"
+msgstr "Delay the next sign-in attempt for one minute"
+
+#: ../app/models/invalid_login_attempt.php:64
+#, php-format
+msgid "Delay the next sign-in attempt for %s seconds"
+msgstr "Delay the next sign-in attempt for %s seconds"
+
+#: ../app/models/invalid_login_attempt.php:68
+#, php-format
+msgid "Delay the next sign-in attempt for %s minutes and %s seconds"
+msgstr "Delay the next sign-in attempt for %s minutes and %s seconds"
+
 #: ../app/models/order.php:717
 #, php-format
 msgid "Poznámka k doručovací adrese: %s"
@@ -2989,133 +3035,133 @@ msgid "obj. %s"
 msgstr "ord. No. %s"
 
 #, php-format
-#~ msgid "Pro způsob dodání '%s' nebylo zvoleno doručovací místo"
-#~ msgstr "Delivery address has not been selected for the shipping method '%s'"
+msgid "Pro způsob dodání '%s' nebylo zvoleno doručovací místo"
+msgstr "Delivery address has not been selected for the shipping method '%s'"
 
-#~ msgid "Enter the ZIP code as NNN NN"
-#~ msgstr "Enter the ZIP code as NNN NN"
+msgid "Enter the ZIP code as NNN NN"
+msgstr "Enter the ZIP code as NNN NN"
 
-#~ msgid "Žádné podací místo nebylo nalezeno"
-#~ msgstr "No dispensing point found"
+msgid "Žádné podací místo nebylo nalezeno"
+msgstr "No dispensing point found"
 
-#~ msgid "Pobočka nebyla nalezena"
-#~ msgstr "Branch not found"
+msgid "Pobočka nebyla nalezena"
+msgstr "Branch not found"
 
-#~ msgid "Object not found"
-#~ msgstr "Object not found"
+msgid "Object not found"
+msgstr "Object not found"
 
-#~ msgid "Výdejní místo"
-#~ msgstr "Delivery point"
+msgid "Výdejní místo"
+msgstr "Delivery point"
 
-#~ msgid "Zadejte psč, město nebo název provozovny"
-#~ msgstr "Enter a zip code, city, or business name"
-
-#, php-format
-#~ msgid "od %s do %s dle země doručení"
-#~ msgstr "from %s till %s according to the country of delivery"
-
-#~ msgid "Běžná cena:"
-#~ msgstr "Common price:"
-
-#~ msgid "země"
-#~ msgstr "country"
+msgid "Zadejte psč, město nebo název provozovny"
+msgstr "Enter a zip code, city, or business name"
 
 #, php-format
-#~ msgid "Telefonní číslo zadejte ve formátu %s"
-#~ msgstr "Enter phone number in format %s"
+msgid "od %s do %s dle země doručení"
+msgstr "from %s till %s according to the country of delivery"
 
-#~ msgid "Pro opakování platby přejděte na adresu %1"
-#~ msgstr "To repeat the payment, go to %1"
+msgid "Běžná cena:"
+msgstr "Common price:"
 
-#~ msgid ""
-#~ "Pro opakování online platby <a href=\"%1\">klikně zde</a>. V případě "
-#~ "přetrvávajících potíží můžete objednávku uhradit bankovním převodem."
-#~ msgstr ""
-#~ "To repeat your online payment <a href=\"%1\">click here</a>. In case of "
-#~ "persistent problems, you can pay your order by bank transfer."
+msgid "země"
+msgstr "country"
 
-#~ msgid "Shipping and payment method"
-#~ msgstr "Shipping and payment method"
+#, php-format
+msgid "Telefonní číslo zadejte ve formátu %s"
+msgstr "Enter phone number in format %s"
 
-#~ msgid "<small>cena od</small><br>%1"
-#~ msgstr "<small>price from</small><br>%1"
+msgid "Pro opakování platby přejděte na adresu %1"
+msgstr "To repeat the payment, go to %1"
 
-#~ msgid ""
-#~ "K provozování webu %1 využíváme takzvané cookies. Cookies jsou soubory "
-#~ "sloužící k přizpůsobení obsahu webu, k měření jeho funkčnosti a k "
-#~ "zajištění vaší maximální spokojenosti. Používáním tohoto webu souhlasíte "
-#~ "s tím, jak soubory cookies dále používáme."
-#~ msgstr ""
-#~ "We use so-called cookies to run %1 website. Cookies are files helping to "
-#~ "adapt the ewb content, to measure its functionality and to ensure you "
-#~ "maximum satisfaction. By using this web you agree with the way how we "
-#~ "user the cookie files."
+msgid ""
+"Pro opakování online platby <a href=\"%1\">klikně zde</a>. V případě "
+"přetrvávajících potíží můžete objednávku uhradit bankovním převodem."
+msgstr ""
+"To repeat your online payment <a href=\"%1\">click here</a>. In case of "
+"persistent problems, you can pay your order by bank transfer."
 
-#~ msgid "Souhlasím"
-#~ msgstr "I agree"
+msgid "Shipping and payment method"
+msgstr "Shipping and payment method"
 
-#~ msgid "Vytvořit novou adresu"
-#~ msgstr "Create new address"
+msgid "<small>cena od</small><br>%1"
+msgstr "<small>price from</small><br>%1"
 
-#~ msgid "Poznámka"
-#~ msgstr "Note"
+msgid ""
+"K provozování webu %1 využíváme takzvané cookies. Cookies jsou soubory "
+"sloužící k přizpůsobení obsahu webu, k měření jeho funkčnosti a k zajištění "
+"vaší maximální spokojenosti. Používáním tohoto webu souhlasíte s tím, jak "
+"soubory cookies dále používáme."
+msgstr ""
+"We use so-called cookies to run %1 website. Cookies are files helping to "
+"adapt the ewb content, to measure its functionality and to ensure you "
+"maximum satisfaction. By using this web you agree with the way how we user "
+"the cookie files."
 
-#~ msgid "Např. číslo patra nebo dveří"
-#~ msgstr "E.g. number of floor or door"
+msgid "Souhlasím"
+msgstr "I agree"
 
-#~ msgid "Poznámka k doručovací adrese"
-#~ msgstr "Note to delivery address"
+msgid "Vytvořit novou adresu"
+msgstr "Create new address"
 
-#~ msgid "Poznámka k objednávce"
-#~ msgstr "Note to order"
+msgid "Poznámka"
+msgstr "Note"
 
-#~ msgid "Price: %1 <span class=\"dph\">incl. VAT</span>"
-#~ msgstr "Price: %1 <span class=\"dph\">incl. VAT</span>"
+msgid "Např. číslo patra nebo dveří"
+msgstr "E.g. number of floor or door"
 
-#~ msgid "Pochlubte se přátelům s Vaším nákupem."
-#~ msgstr "Share your shopping experience with your friends."
+msgid "Poznámka k doručovací adrese"
+msgstr "Note to delivery address"
 
-#~ msgid "Sdílet"
-#~ msgstr "Share"
+msgid "Poznámka k objednávce"
+msgstr "Note to order"
 
-#~ msgid "zvolit pobočku"
-#~ msgstr "choose a branch office"
+msgid "Price: %1 <span class=\"dph\">incl. VAT</span>"
+msgstr "Price: %1 <span class=\"dph\">incl. VAT</span>"
 
-#~ msgid "Pobočka: %1, %2, %3, %4"
-#~ msgstr "Branch:  %1, %2, %3, %4"
+msgid "Pochlubte se přátelům s Vaším nákupem."
+msgstr "Share your shopping experience with your friends."
 
-#~ msgid "Zobrazit detaily"
-#~ msgstr "View details"
+msgid "Sdílet"
+msgstr "Share"
 
-#~ msgid "Ukázat na mapě"
-#~ msgstr "Show on map"
+msgid "zvolit pobočku"
+msgstr "choose a branch office"
 
-#~ msgid "searching ..."
-#~ msgstr "searching ..."
+msgid "Pobočka: %1, %2, %3, %4"
+msgstr "Branch:  %1, %2, %3, %4"
 
-#~ msgid "Obchodní podmínky"
-#~ msgstr "Terms and Conditions"
+msgid "Zobrazit detaily"
+msgstr "View details"
 
-#~ msgid "cena od<br>%1"
-#~ msgstr "price from<br>%1"
+msgid "Ukázat na mapě"
+msgstr "Show on map"
 
-#~ msgid "Článek"
-#~ msgstr "Article"
+msgid "searching ..."
+msgstr "searching ..."
 
-#~ msgid "Kategorie produktů"
-#~ msgstr "Product category"
+msgid "Obchodní podmínky"
+msgstr "Terms and Conditions"
 
-#~ msgid "Stránka"
-#~ msgstr "Page"
+msgid "cena od<br>%1"
+msgstr "price from<br>%1"
 
-#~ msgid "Tvůrce"
-#~ msgstr "Creator"
+msgid "Článek"
+msgstr "Article"
 
-#~ msgid "Nic nebylo nelezeno."
-#~ msgstr "Nothing was found."
+msgid "Kategorie produktů"
+msgstr "Product category"
 
-#~ msgid "cena od %1"
-#~ msgstr "price from %1"
+msgid "Stránka"
+msgstr "Page"
+
+msgid "Tvůrce"
+msgstr "Creator"
+
+msgid "Nic nebylo nelezeno."
+msgstr "Nothing was found."
+
+msgid "cena od %1"
+msgstr "price from %1"
 
 #~ msgid "Add to cart"
 #~ msgstr "Add to cart"
@@ -3344,3 +3390,49 @@ msgstr "ord. No. %s"
 
 #~ msgid "ATK14 Skelet on GitHub"
 #~ msgstr "ATK14 Skelet on GitHub"
+
+#~ msgid ""
+#~ "<em>ATK14 Mini Skelet</em> is the <a href=\"https://skelet.atk14.net/"
+#~ "\">ATK14 Skelet</a> on a heavy diet. All the unnecessary meat has been "
+#~ "cut away and what's left would like to be the very basis of your web "
+#~ "application."
+#~ msgstr ""
+#~ "<em>ATK14 Mini Skelet</em> is the <a href=\"https://skelet.atk14.net/"
+#~ "\">ATK14 Skelet</a> on a heavy diet. All the unnecessary meat has been "
+#~ "cut away and what's left would like to be the very basis of your web "
+#~ "application."
+
+#~ msgid "The Mini Skelet contains mainly"
+#~ msgstr "The Mini Skelet contains mainly"
+
+#~ msgid ""
+#~ "Are you planning to kick up a new project from the Atk14MiniSkelet? "
+#~ "Great! Just run the following commands."
+#~ msgstr ""
+#~ "Are you planning to kick up a new project from the Atk14MiniSkelet? "
+#~ "Great! Just run the following commands."
+
+#~ msgid ""
+#~ "You can find more information in <a href=\"https://github.com/atk14/"
+#~ "Atk14MiniSkelet/blob/master/README.md#installation\">the installation "
+#~ "instructions.</a>"
+#~ msgstr ""
+#~ "You can find more information in <a href=\"https://github.com/atk14/"
+#~ "Atk14MiniSkelet/blob/master/README.md#installation\">the installation "
+#~ "instructions.</a>"
+
+#~ msgid ""
+#~ "If you want to help us to improve the Atk14MiniSkelet, <a href=\"https://"
+#~ "github.com/atk14/Atk14MiniSkelet\">fork it on GitHub.</a>"
+#~ msgstr ""
+#~ "If you want to help us to improve the Atk14MiniSkelet, <a href=\"https://"
+#~ "github.com/atk14/Atk14MiniSkelet\">fork it on GitHub.</a>"
+
+#~ msgid "ATK14 Mini Skelet on GitHub"
+#~ msgstr "ATK14 Mini Skelet on GitHub"
+
+#~ msgid "Homepage"
+#~ msgstr "Homepage"
+
+#~ msgid "Welcome at ATK14 Mini Skelet!"
+#~ msgstr "Welcome at ATK14 Mini Skelet!"

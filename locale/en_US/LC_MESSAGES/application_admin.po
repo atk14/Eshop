@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 17:45+0100\n"
-"PO-Revision-Date: 2022-04-25 16:29+0200\n"
+"POT-Creation-Date: 2025-01-28 13:42+0100\n"
+"PO-Revision-Date: 2025-01-28 13:37+0100\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: Team <team@email.com>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.4.2\n"
 
 msgid ""
 "Are you sure to delete article item\n"
@@ -486,7 +486,7 @@ msgid "filter option"
 msgstr "filter option"
 
 msgid "Not visible"
-msgstr ""
+msgstr "Not visible"
 
 msgid "Move the category"
 msgstr "Move the category"
@@ -593,6 +593,9 @@ msgstr "create new one"
 #: ../app/forms/admin/category_cards/edit_form.php:6
 msgid "Ranking"
 msgstr "Ranking"
+
+msgid "Export to CSV"
+msgstr ""
 
 msgid "Expand all"
 msgstr "Expand all"
@@ -805,7 +808,7 @@ msgid "Upravit obrázky fotogalerie"
 msgstr "Edit photo gallery images"
 
 msgid "Download original image"
-msgstr ""
+msgstr "Download original image"
 
 msgid "bez titulku nebo popisu"
 msgstr "without title or description"
@@ -832,7 +835,7 @@ msgid "There is no link in the list."
 msgstr "There is no link in the list."
 
 msgid "This item has an administrable submenu:"
-msgstr ""
+msgstr "This item has an administrable submenu:"
 
 msgid "Edit links"
 msgstr "Edit links"
@@ -841,7 +844,7 @@ msgid "Create new link list"
 msgstr "Create new link list"
 
 msgid "This is a submenu for:"
-msgstr ""
+msgstr "This is a submenu for:"
 
 msgid "Link list"
 msgstr "Link list"
@@ -884,7 +887,7 @@ msgstr "Email"
 
 #: ../app/forms/admin/newsletter_subscribers/index_form.php:14
 msgid "Language"
-msgstr ""
+msgstr "Language"
 
 msgid "Subscribed since"
 msgstr "Subscribed since"
@@ -1753,7 +1756,7 @@ msgid "Is admin?"
 msgstr "Is admin?"
 
 msgid "deleted user"
-msgstr ""
+msgstr "deleted user"
 
 msgid "inactive user"
 msgstr "inactive user"
@@ -1768,7 +1771,7 @@ msgid "regular user"
 msgstr "regular user"
 
 msgid "deleted"
-msgstr ""
+msgstr "deleted"
 
 msgid "Add a VAT rate"
 msgstr "Add a VAT rate"
@@ -2315,25 +2318,25 @@ msgstr "Creating new link to the category \"%s\""
 msgid "Alias was created"
 msgstr "Alias was created"
 
-#: ../app/controllers/admin/category_cards_controller.php:6
+#: ../app/controllers/admin/category_cards_controller.php:7
 #, php-format
 msgid "Products in category %s"
 msgstr "Products in category %s"
 
-#: ../app/controllers/admin/category_cards_controller.php:7
+#: ../app/controllers/admin/category_cards_controller.php:8
 msgid "Product list"
 msgstr "Product list"
 
-#: ../app/controllers/admin/category_cards_controller.php:29
+#: ../app/controllers/admin/category_cards_controller.php:98
 #, php-format
 msgid "Adding product into the category %s"
 msgstr "Adding product into the category %s"
 
-#: ../app/controllers/admin/category_cards_controller.php:36
+#: ../app/controllers/admin/category_cards_controller.php:105
 msgid "The product was added"
 msgstr "The product was added"
 
-#: ../app/controllers/admin/category_cards_controller.php:42
+#: ../app/controllers/admin/category_cards_controller.php:111
 #, php-format
 msgid "Edit ranking of %s"
 msgstr "Edit ranking of %s"
@@ -2826,7 +2829,7 @@ msgstr "New store"
 #: ../app/controllers/admin/stores_controller.php:17
 #, php-format
 msgid "Edit store '%s'"
-msgstr ""
+msgstr "Edit store '%s'"
 
 #: ../app/controllers/admin/system_parameters_controller.php:36
 #, php-format
@@ -3568,19 +3571,19 @@ msgstr "Search"
 
 #: ../app/forms/admin/cards/index_form.php:10
 msgid "Visible"
-msgstr ""
+msgstr "Visible"
 
 #: ../app/forms/admin/cards/index_form.php:12
 msgid "visibility"
-msgstr ""
+msgstr "visibility"
 
 #: ../app/forms/admin/cards/index_form.php:13
 msgid "only visible products"
-msgstr ""
+msgstr "only visible products"
 
 #: ../app/forms/admin/cards/index_form.php:14
 msgid "only invisible products"
-msgstr ""
+msgstr "only invisible products"
 
 #: ../app/forms/admin/categories/categories_form.php:17
 msgid "Long name"
@@ -3982,7 +3985,7 @@ msgstr "Slider with thumbnails"
 
 #: ../app/forms/admin/galleries/galleries_form.php:13
 msgid "Logo slider"
-msgstr ""
+msgstr "Logo slider"
 
 #: ../app/forms/admin/gallery_items/create_new_form.php:7
 msgid "Nahrát fotografii"
@@ -4058,7 +4061,7 @@ msgstr "About us"
 
 #: ../app/forms/admin/newsletter_subscribers/index_form.php:9
 msgid "language"
-msgstr ""
+msgstr "language"
 
 #: ../app/forms/admin/order_campaigns/order_campaigns_form.php:17
 #: ../app/forms/admin/order_vouchers/order_vouchers_form.php:17
@@ -4294,11 +4297,11 @@ msgstr "Card"
 
 #: ../app/forms/admin/pictures/pictures_form.php:17
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: ../app/forms/admin/pictures/pictures_form.php:18
 msgid "Alternate text for the image, if the image cannot be displayed."
-msgstr ""
+msgstr "Alternate text for the image, if the image cannot be displayed."
 
 #: ../app/forms/admin/pricelist_items/create_new_form.php:8
 #: ../app/forms/admin/pricelist_items/edit_form.php:13
@@ -4857,28 +4860,28 @@ msgstr "Import"
 msgid "Applicable to eshop?"
 msgstr "Applicable to eshop?"
 
-#~ msgid "Vypnout"
-#~ msgstr "Disable"
+msgid "Vypnout"
+msgstr "Disable"
 
-#~ msgid "Zapnout"
-#~ msgstr "Enable"
+msgid "Zapnout"
+msgstr "Enable"
+
+#, php-format
+msgid "This page is the profile page for another creator (%s)"
+msgstr "This page is the profile page for another creator (%s)"
+
+msgid "Edit stockount in warehouse %1"
+msgstr "Edit stockount in warehouse %1"
+
+msgid ""
+"You are about to permanently delete user %1\n"
+"Are you sure about that?"
+msgstr ""
+"You are about to permanently delete user %1\n"
+"Are you sure about that?"
 
 #~ msgid "Edit store"
 #~ msgstr "Edit store"
-
-#, php-format
-#~ msgid "This page is the profile page for another creator (%s)"
-#~ msgstr "This page is the profile page for another creator (%s)"
-
-#~ msgid "Edit stockount in warehouse %1"
-#~ msgstr "Edit stockount in warehouse %1"
-
-#~ msgid ""
-#~ "You are about to permanently delete user %1\n"
-#~ "Are you sure about that?"
-#~ msgstr ""
-#~ "You are about to permanently delete user %1\n"
-#~ "Are you sure about that?"
 
 #~ msgid "Localized value"
 #~ msgstr "Localized value"
