@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-28 12:19+0100\n"
-"PO-Revision-Date: 2025-01-28 12:10+0100\n"
+"PO-Revision-Date: 2025-01-28 12:43+0100\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: Team <team@email.com>\n"
 "Language: cs_CZ\n"
@@ -94,7 +94,7 @@ msgid "At the moment there are no news."
 msgstr "V této chvíli nejsou žádné novinky."
 
 msgid "articles total"
-msgstr ""
+msgstr "článků celkem"
 
 msgid ""
 "If you have any question, contact us through the following form. We will "
@@ -857,7 +857,7 @@ msgstr "Heslo se neshoduje"
 
 #: ../app/helpers/block.drink_shortcode__person.php:17
 msgid "More"
-msgstr ""
+msgstr "Více"
 
 #: ../app/helpers/modifier.display_bool.php:13
 msgid "Yes"
@@ -922,7 +922,7 @@ msgstr "administrátor"
 
 #: ../app/widgets/async_file_input.php:20
 msgid "Remove file"
-msgstr ""
+msgstr "Odstranit soubor"
 
 #: ../app/widgets/async_pupiq_attachment_input.php:41
 #: ../app/widgets/pupiq_attachment_input.php:41
@@ -937,7 +937,7 @@ msgstr "Stáhnout přílohu"
 
 #: ../app/widgets/pupiq_image_input.php:45
 msgid "no image"
-msgstr ""
+msgstr "bez obrázku"
 
 #: ../app/widgets/pupiq_image_input.php:65
 msgid "Display image"

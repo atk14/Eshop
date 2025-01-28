@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-28 12:19+0100\n"
-"PO-Revision-Date: 2025-01-28 12:10+0100\n"
+"PO-Revision-Date: 2025-01-28 12:45+0100\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: Team <team@email.com>\n"
 "Language: cs_CZ\n"
@@ -132,7 +132,7 @@ msgid "Upravit obrázky fotogalerie"
 msgstr "Upravit obrázky fotogalerie"
 
 msgid "Download original image"
-msgstr ""
+msgstr "Stáhnout originální obrázek"
 
 msgid "bez titulku nebo popisu"
 msgstr "bez titulku nebo popisu"
@@ -162,7 +162,7 @@ msgid "invisible"
 msgstr "neviditelné"
 
 msgid "This item has an administrable submenu:"
-msgstr ""
+msgstr "Tato položka má administrovatelné podmenu:"
 
 msgid "Edit links"
 msgstr "Editovat odkazy"
@@ -171,7 +171,7 @@ msgid "Create new link list"
 msgstr "Vytvořit nový odkaz"
 
 msgid "This is a submenu for:"
-msgstr ""
+msgstr "Toto je podmenu pro:"
 
 msgid "Link list"
 msgstr "Seznam odkazů"
@@ -197,7 +197,7 @@ msgstr "Jméno"
 
 #: ../app/forms/admin/newsletter_subscribers/index_form.php:14
 msgid "Language"
-msgstr ""
+msgstr "Jazyk"
 
 msgid "Subscribed since"
 msgstr "Přihlášen od"
@@ -932,7 +932,7 @@ msgstr "Posuvník s náhledy"
 
 #: ../app/forms/admin/galleries/galleries_form.php:13
 msgid "Logo slider"
-msgstr ""
+msgstr "Posuvník pro loga"
 
 #: ../app/forms/admin/gallery_items/create_new_form.php:7
 msgid "Nahrát fotografii"
@@ -1004,7 +1004,7 @@ msgstr "O nás"
 
 #: ../app/forms/admin/newsletter_subscribers/index_form.php:9
 msgid "language"
-msgstr ""
+msgstr "jazyk"
 
 #: ../app/forms/admin/pages/create_new_form.php:8
 #: ../app/forms/admin/pages/edit_form.php:21
@@ -1053,11 +1053,11 @@ msgstr "Karta"
 
 #: ../app/forms/admin/pictures/pictures_form.php:17
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: ../app/forms/admin/pictures/pictures_form.php:18
 msgid "Alternate text for the image, if the image cannot be displayed."
-msgstr ""
+msgstr "Alternativní text pro obrázek, pokud obrázek nelze zobrazit."
 
 #: ../app/forms/admin/tags/tags_form.php:12
 msgid "Tag lokalized"
