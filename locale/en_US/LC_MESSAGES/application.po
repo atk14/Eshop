@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-28 12:00+0100\n"
-"PO-Revision-Date: 2025-01-28 12:09+0100\n"
+"POT-Creation-Date: 2025-01-28 12:19+0100\n"
+"PO-Revision-Date: 2025-01-28 12:22+0100\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: Team <team@email.com>\n"
 "Language: en_US\n"
@@ -75,6 +75,36 @@ msgstr "Error 404: Page not found"
 msgid "We are deeply sorry, but the page on the URI <em>%1</em> wasn't found."
 msgstr "We are deeply sorry, but the page on the URI <em>%1</em> wasn't found."
 
+msgid "Posted by <em>%1</em> on <time datetime=\"%2\">%3</time>"
+msgstr "Posted by <em>%1</em> on <time datetime=\"%2\">%3</time>"
+
+msgid ""
+"This is not a published article! It's not available to the public audience."
+msgstr ""
+"This is not a published article! It's not available to the public audience."
+
+msgid "newer article"
+msgstr "newer article"
+
+msgid "older article"
+msgstr "older article"
+
+msgid "At the moment there are no news."
+msgstr "At the moment there are no news."
+
+msgid "articles total"
+msgstr "articles total"
+
+msgid ""
+"If you have any question, contact us through the following form. We will "
+"reply to you as soon as we can."
+msgstr ""
+"If you have any question, contact us through the following form. We will "
+"reply to you as soon as we can."
+
+msgid "The message has been sent to us. We will reply as soon as we can."
+msgstr "The message has been sent to us. We will reply as soon as we can."
+
 msgid "Have you forgotten password?"
 msgstr "Have you forgotten password?"
 
@@ -83,6 +113,24 @@ msgstr "You are signed in as <em>%1</em>."
 
 msgid "Click on the button to sign out."
 msgstr "Click on the button to sign out."
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Signing up for newsletter"
+msgstr "Signing up for newsletter"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "IP address"
+msgstr "IP address"
+
+msgid "Logged user:"
+msgstr "Logged user:"
 
 msgid "Hello %1!"
 msgstr "Hello %1!"
@@ -115,17 +163,20 @@ msgstr "login"
 msgid "name"
 msgstr "name"
 
-msgid ""
-"<em>ATK14 Mini Skelet</em> is the <a href=\"https://skelet.atk14.net/"
-"\">ATK14 Skelet</a> on a heavy diet. All the unnecessary meat has been cut "
-"away and what's left would like to be the very basis of your web application."
-msgstr ""
-"<em>ATK14 Mini Skelet</em> is the <a href=\"https://skelet.atk14.net/"
-"\">ATK14 Skelet</a> on a heavy diet. All the unnecessary meat has been cut "
-"away and what's left would like to be the very basis of your web application."
+msgid "The Skelet contains mainly"
+msgstr "The Skelet contains mainly"
 
-msgid "The Mini Skelet contains mainly"
-msgstr "The Mini Skelet contains mainly"
+msgid "Pages with a hierarchical structure"
+msgstr "Pages with a hierarchical structure"
+
+msgid "Contact page with fast contact form"
+msgstr "Contact page with fast contact form"
+
+msgid "Articles section"
+msgstr "Articles section"
+
+msgid "Manageable link lists in header and footer"
+msgstr "Manageable link lists in header and footer"
 
 msgid "User registration"
 msgstr "User registration"
@@ -156,27 +207,27 @@ msgid "Installation"
 msgstr "Installation"
 
 msgid ""
-"Are you planning to kick up a new project from the Atk14MiniSkelet? Great! "
-"Just run the following commands."
+"Are you planning to kick up a new project from the Atk14Skelet? Great! Just "
+"run the following commands."
 msgstr ""
-"Are you planning to kick up a new project from the Atk14MiniSkelet? Great! "
-"Just run the following commands."
+"Are you planning to kick up a new project from the Atk14Skelet? Great! Just "
+"run the following commands."
 
 msgid ""
 "You can find more information in <a href=\"https://github.com/atk14/"
-"Atk14MiniSkelet/blob/master/README.md#installation\">the installation "
+"Atk14Skelet/blob/master/README.md#installation\">the installation "
 "instructions.</a>"
 msgstr ""
 "You can find more information in <a href=\"https://github.com/atk14/"
-"Atk14MiniSkelet/blob/master/README.md#installation\">the installation "
+"Atk14Skelet/blob/master/README.md#installation\">the installation "
 "instructions.</a>"
 
 msgid ""
-"If you want to help us to improve the Atk14MiniSkelet, <a href=\"https://"
-"github.com/atk14/Atk14MiniSkelet\">fork it on GitHub.</a>"
+"If you want to help us to improve the Atk14Skelet, <a href=\"https://github."
+"com/atk14/Atk14Skelet\">fork it on GitHub.</a>"
 msgstr ""
-"If you want to help us to improve the Atk14MiniSkelet, <a href=\"https://"
-"github.com/atk14/Atk14MiniSkelet\">fork it on GitHub.</a>"
+"If you want to help us to improve the Atk14Skelet, <a href=\"https://github."
+"com/atk14/Atk14Skelet\">fork it on GitHub.</a>"
 
 msgid "Further Reading & Resources"
 msgstr "Further Reading & Resources"
@@ -193,8 +244,14 @@ msgstr "API Reference"
 msgid "ATK14 on GitHub"
 msgstr "ATK14 on GitHub"
 
-msgid "ATK14 Mini Skelet on GitHub"
-msgstr "ATK14 Mini Skelet on GitHub"
+msgid "ATK14 Skelet on GitHub"
+msgstr "ATK14 Skelet on GitHub"
+
+msgid "Table of contents"
+msgstr "Table of contents"
+
+msgid "Subpages"
+msgstr "Subpages"
 
 msgid "The address has expired or already been used."
 msgstr "The address has expired or already been used."
@@ -310,11 +367,20 @@ msgstr "Register"
 msgid "Menu"
 msgstr "Menu"
 
+msgid "Previous"
+msgstr "Previous"
+
+msgid "Next"
+msgstr "Next"
+
+msgid "Photo gallery"
+msgstr "Photo gallery"
+
 msgid "Here you can find the list of all commands in <em>%1</em>."
 msgstr "Here you can find the list of all commands in <em>%1</em>."
 
-msgid "Homepage"
-msgstr "Homepage"
+msgid "Pages"
+msgstr "Pages"
 
 #: ../app/controllers/users_controller.php:22
 msgid "New user registration"
@@ -339,6 +405,8 @@ msgstr "We offer an awesome restful API"
 msgid "Recent articles"
 msgstr "Recent articles"
 
+#: ../app/controllers/articles_controller.php:11
+#: ../app/controllers/articles_controller.php:60
 msgid "Articles"
 msgstr "Articles"
 
@@ -364,9 +432,11 @@ msgstr "Now you can <a href=\"%1\">sign in</a> and enjoy our website."
 msgid "Username (login)"
 msgstr "Username (login)"
 
+#: ../app/forms/contact_messages/create_new_form.php:8
 msgid "Your name"
 msgstr "Your name"
 
+#: ../app/forms/contact_messages/create_new_form.php:13
 msgid "Your email"
 msgstr "Your email"
 
@@ -402,15 +472,32 @@ msgstr "Bad password"
 msgid "There is no such user"
 msgstr "There is no such user"
 
-#: ../app/controllers/application_base.php:32
+#: ../app/controllers/api/temporary_file_uploads_controller.php:36
+msgid "Temporary file uploading is not enabled"
+msgstr "Temporary file uploading is not enabled"
+
+#: ../app/controllers/api/temporary_file_uploads_controller.php:45
+#, php-format
+msgid "The file exceeds the maximum file size, which is %s"
+msgstr "The file exceeds the maximum file size, which is %s"
+
+#: ../app/controllers/api/temporary_file_uploads_controller.php:65
+msgid "Error 1"
+msgstr "Error 1"
+
+#: ../app/controllers/api/temporary_file_uploads_controller.php:70
+msgid "Error 2"
+msgstr "Error 2"
+
+#: ../app/controllers/application_base.php:36
 msgid "Page not found"
 msgstr "Page not found"
 
-#: ../app/controllers/application_base.php:36
+#: ../app/controllers/application_base.php:50
 msgid "Forbidden"
 msgstr "Forbidden"
 
-#: ../app/controllers/application_base.php:136
+#: ../app/controllers/application_base.php:150
 msgid "Home"
 msgstr "Home"
 
@@ -430,7 +517,7 @@ msgstr "Your password was updated"
 msgid "Message sent from contact page"
 msgstr "Message sent from contact page"
 
-#: ../app/controllers/application.php:23
+#: ../app/controllers/application.php:45
 #: ../app/controllers/users_controller.php:5
 msgid "User profile"
 msgstr "User profile"
@@ -456,6 +543,20 @@ msgstr "You don't have access to the requested resource"
 #: ../app/controllers/application_rest_api.php:245
 msgid "Sorry, An internal error happened"
 msgstr "Sorry, An internal error happened"
+
+#: ../app/controllers/articles_controller.php:15
+#, php-format
+msgid "Articles tagged with <em>%s</em>"
+msgstr "Articles tagged with <em>%s</em>"
+
+#: ../app/controllers/contact_messages_controller.php:9
+#: ../app/controllers/contact_messages_controller.php:32
+msgid "Contact message"
+msgstr "Contact message"
+
+#: ../app/controllers/contact_messages_controller.php:33
+msgid "Contact message sent"
+msgstr "Contact message sent"
 
 #: ../app/controllers/logins_controller.php:26
 #, php-format
@@ -485,8 +586,8 @@ msgid "You've stayed logged in as <em>%s</em>"
 msgstr "You've stayed logged in as <em>%s</em>"
 
 #: ../app/controllers/main_controller.php:11
-msgid "Welcome at ATK14 Mini Skelet!"
-msgstr "Welcome at ATK14 Mini Skelet!"
+msgid "Welcome!"
+msgstr "Welcome!"
 
 #: ../app/controllers/password_recoveries_controller.php:13
 msgid "There is no such user with the given login or email"
@@ -559,11 +660,20 @@ msgstr "Your account data has been updated"
 msgid "This is not your current password"
 msgstr "This is not your current password"
 
-#: ../app/fields/boolean_with_select_field.php:7
+#: ../app/fields/async_file_field.php:12
+msgid "The file has been already deleted on the server, please upload it again"
+msgstr ""
+"The file has been already deleted on the server, please upload it again"
+
+#: ../app/fields/async_file_field.php:13
+msgid "The file was not fully uploaded, please upload it again"
+msgstr "The file was not fully uploaded, please upload it again"
+
+#: ../app/fields/boolean_with_select_field.php:11
 msgid "Ano"
 msgstr "Yes"
 
-#: ../app/fields/boolean_with_select_field.php:8
+#: ../app/fields/boolean_with_select_field.php:12
 msgid "Ne"
 msgstr "No"
 
@@ -586,6 +696,34 @@ msgstr "Only letters, numbers, dots and dashes are allowed"
 msgid "There is no such record"
 msgstr "There is no such record"
 
+#: ../app/fields/oembed_video_field.php:7
+msgid ""
+"Zadejte URL videa. Lze vložit video ze služeb, které poskytují API podle "
+"specifikace <a href=\"http://oembed.com/\">oEmbed</a>."
+msgstr ""
+"Enter video URL. You can embed a video from services that provide the <a "
+"href=\"http://oembed.com/\">oEmbed specification</a>."
+
+#: ../app/fields/oembed_video_field.php:19
+msgid ""
+"Nelze získat informace o videu. Ověřte URL videa a podporu oEmbed u "
+"poskytovatele videa."
+msgstr ""
+"Unable to get video information. Check video URL and oEmbed support with "
+"your video provider."
+
+#: ../app/fields/oembed_video_field.php:25
+msgid "Typ souboru na tomto URL není video"
+msgstr "The file type at this URL is not a video"
+
+#: ../app/fields/page_field.php:5
+msgid "page"
+msgstr "page"
+
+#: ../app/fields/page_field.php:48
+msgid "There is no such page"
+msgstr "There is no such page"
+
 #: ../app/fields/slug_field.php:8
 msgid "Slug"
 msgstr "Slug"
@@ -598,7 +736,22 @@ msgstr "funny-green-mug"
 msgid "Write something like black-cat-white-cat"
 msgstr "Write something like black-cat-white-cat"
 
+#: ../app/fields/tags_field.php:26
+msgid "Ensure that there are max %max% tags (now there are %count%)"
+msgstr "Ensure that there are max %max% tags (now there are %count%)"
+
+#: ../app/fields/tags_field.php:27
+#, php-format
+msgid "There is no tag <em>%s</em>"
+msgstr "There is no tag <em>%s</em>"
+
+#: ../app/fields/tags_field.php:28
+#, php-format
+msgid "Tag <em>%s</em> is there more than once"
+msgstr "Tag <em>%s</em> is there more than once"
+
 #: ../app/forms/api/suggestions/index_form.php:5
+#: ../app/forms/api/tags_suggestions/index_form.php:5
 msgid "Search term"
 msgstr "Search term"
 
@@ -629,6 +782,22 @@ msgstr "Save"
 #: ../app/forms/application_form.php:85
 msgid "Search query"
 msgstr "Search query"
+
+#: ../app/forms/application_form.php:99
+msgid "Sign up for newsletter"
+msgstr "Sign up for newsletter"
+
+#: ../app/forms/application_form.php:116 ../app/forms/application_form.php:120
+msgid "Spam protection"
+msgstr "Spam protection"
+
+#: ../app/forms/contact_messages/create_new_form.php:20
+msgid "Text"
+msgstr "Text"
+
+#: ../app/forms/contact_messages/create_new_form.php:28
+msgid "Send message"
+msgstr "Send message"
 
 #: ../app/forms/logins/create_new_form.php:8
 msgid "Login name"
@@ -689,6 +858,10 @@ msgstr "Password (repeat)"
 msgid "Password doesn't match"
 msgstr "Password doesn't match"
 
+#: ../app/helpers/block.drink_shortcode__person.php:17
+msgid "More"
+msgstr "More"
+
 #: ../app/helpers/modifier.display_bool.php:13
 msgid "Yes"
 msgstr "Yes"
@@ -696,6 +869,18 @@ msgstr "Yes"
 #: ../app/helpers/modifier.display_bool.php:14
 msgid "No"
 msgstr "No"
+
+#: ../app/helpers/modifier.iobject_type.php:15
+msgid "Video"
+msgstr "Video"
+
+#: ../app/helpers/modifier.iobject_type.php:19
+msgid "Galerie"
+msgstr "Gallery"
+
+#: ../app/helpers/modifier.iobject_type.php:23
+msgid "Obrázek"
+msgstr "Picture"
 
 #: ../app/models/invalid_login_attempt.php:46
 msgid "Delay the next sign-in attempt for a second"
@@ -738,113 +923,79 @@ msgstr "inactive user"
 msgid "administrator"
 msgstr "administrator"
 
-#~ msgid "Posted by <em>%1</em> on <time datetime=\"%2\">%3</time>"
-#~ msgstr "Posted by <em>%1</em> on <time datetime=\"%2\">%3</time>"
+#: ../app/widgets/async_file_input.php:20
+msgid "Remove file"
+msgstr "Remove file"
+
+#: ../app/widgets/async_pupiq_attachment_input.php:41
+#: ../app/widgets/pupiq_attachment_input.php:41
+#: ../app/widgets/pupiq_image_input.php:64
+msgid "remove"
+msgstr "remove"
+
+#: ../app/widgets/async_pupiq_attachment_input.php:42
+#: ../app/widgets/pupiq_attachment_input.php:42
+msgid "Download attachment"
+msgstr "Download attachment"
+
+#: ../app/widgets/pupiq_image_input.php:45
+msgid "no image"
+msgstr "no image"
+
+#: ../app/widgets/pupiq_image_input.php:65
+msgid "Display image"
+msgstr "Display image"
 
 #~ msgid ""
-#~ "This is not a published article! It's not available to the public "
-#~ "audience."
+#~ "<em>ATK14 Mini Skelet</em> is the <a href=\"https://skelet.atk14.net/"
+#~ "\">ATK14 Skelet</a> on a heavy diet. All the unnecessary meat has been "
+#~ "cut away and what's left would like to be the very basis of your web "
+#~ "application."
 #~ msgstr ""
-#~ "This is not a published article! It's not available to the public "
-#~ "audience."
+#~ "<em>ATK14 Mini Skelet</em> is the <a href=\"https://skelet.atk14.net/"
+#~ "\">ATK14 Skelet</a> on a heavy diet. All the unnecessary meat has been "
+#~ "cut away and what's left would like to be the very basis of your web "
+#~ "application."
 
-#~ msgid "newer article"
-#~ msgstr "newer article"
-
-#~ msgid "older article"
-#~ msgstr "older article"
-
-#~ msgid "At the moment there are no news."
-#~ msgstr "At the moment there are no news."
+#~ msgid "The Mini Skelet contains mainly"
+#~ msgstr "The Mini Skelet contains mainly"
 
 #~ msgid ""
-#~ "If you have any question, contact us through the following form. We will "
-#~ "reply to you as soon as we can."
+#~ "Are you planning to kick up a new project from the Atk14MiniSkelet? "
+#~ "Great! Just run the following commands."
 #~ msgstr ""
-#~ "If you have any question, contact us through the following form. We will "
-#~ "reply to you as soon as we can."
-
-#~ msgid "The message has been sent to us. We will reply as soon as we can."
-#~ msgstr "The message has been sent to us. We will reply as soon as we can."
-
-#~ msgid "Name"
-#~ msgstr "Name"
-
-#~ msgid "Email"
-#~ msgstr "Email"
-
-#~ msgid "Signing up for newsletter"
-#~ msgstr "Signing up for newsletter"
-
-#~ msgid "URL"
-#~ msgstr "URL"
-
-#~ msgid "IP address"
-#~ msgstr "IP address"
-
-#~ msgid "Logged user:"
-#~ msgstr "Logged user:"
-
-#~ msgid "The Skelet contains mainly"
-#~ msgstr "The Skelet contains mainly"
-
-#~ msgid "Pages with a hierarchical structure"
-#~ msgstr "Pages with a hierarchical structure"
-
-#~ msgid "Contact page with fast contact form"
-#~ msgstr "Contact page with fast contact form"
-
-#~ msgid "Articles section"
-#~ msgstr "Articles section"
-
-#~ msgid "Manageable link lists in header and footer"
-#~ msgstr "Manageable link lists in header and footer"
-
-#~ msgid ""
-#~ "Are you planning to kick up a new project from the Atk14Skelet? Great! "
-#~ "Just run the following commands."
-#~ msgstr ""
-#~ "Are you planning to kick up a new project from the Atk14Skelet? Great! "
-#~ "Just run the following commands."
+#~ "Are you planning to kick up a new project from the Atk14MiniSkelet? "
+#~ "Great! Just run the following commands."
 
 #~ msgid ""
 #~ "You can find more information in <a href=\"https://github.com/atk14/"
-#~ "Atk14Skelet/blob/master/README.md#installation\">the installation "
+#~ "Atk14MiniSkelet/blob/master/README.md#installation\">the installation "
 #~ "instructions.</a>"
 #~ msgstr ""
 #~ "You can find more information in <a href=\"https://github.com/atk14/"
-#~ "Atk14Skelet/blob/master/README.md#installation\">the installation "
+#~ "Atk14MiniSkelet/blob/master/README.md#installation\">the installation "
 #~ "instructions.</a>"
 
 #~ msgid ""
-#~ "If you want to help us to improve the Atk14Skelet, <a href=\"https://"
-#~ "github.com/atk14/Atk14Skelet\">fork it on GitHub.</a>"
+#~ "If you want to help us to improve the Atk14MiniSkelet, <a href=\"https://"
+#~ "github.com/atk14/Atk14MiniSkelet\">fork it on GitHub.</a>"
 #~ msgstr ""
-#~ "If you want to help us to improve the Atk14Skelet, <a href=\"https://"
-#~ "github.com/atk14/Atk14Skelet\">fork it on GitHub.</a>"
+#~ "If you want to help us to improve the Atk14MiniSkelet, <a href=\"https://"
+#~ "github.com/atk14/Atk14MiniSkelet\">fork it on GitHub.</a>"
 
-#~ msgid "ATK14 Skelet on GitHub"
-#~ msgstr "ATK14 Skelet on GitHub"
+#~ msgid "ATK14 Mini Skelet on GitHub"
+#~ msgstr "ATK14 Mini Skelet on GitHub"
 
-#~ msgid "Table of contents"
-#~ msgstr "Table of contents"
+#~ msgid "Homepage"
+#~ msgstr "Homepage"
+
+#~ msgid "Welcome at ATK14 Mini Skelet!"
+#~ msgstr "Welcome at ATK14 Mini Skelet!"
 
 #~ msgid ""
 #~ "This is not a visible page! It's not available to the public audience."
 #~ msgstr ""
 #~ "This is not a visible page! It's not available to the public audience."
-
-#~ msgid "Subpages"
-#~ msgstr "Subpages"
-
-#~ msgid "Photo gallery"
-#~ msgstr "Photo gallery"
-
-#~ msgid "Previous"
-#~ msgstr "Previous"
-
-#~ msgid "Next"
-#~ msgstr "Next"
 
 #~ msgid "Zavřít"
 #~ msgstr "Close"
@@ -860,107 +1011,6 @@ msgstr "administrator"
 
 #~ msgid "Další (šipka doprava)"
 #~ msgstr "Next (right arrow)"
-
-#~ msgid "Pages"
-#~ msgstr "Pages"
-
-#~ msgid "Temporary file uploading is not enabled"
-#~ msgstr "Temporary file uploading is not enabled"
-
-#, php-format
-#~ msgid "The file exceeds the maximum file size, which is %s"
-#~ msgstr "The file exceeds the maximum file size, which is %s"
-
-#~ msgid "Error 1"
-#~ msgstr "Error 1"
-
-#~ msgid "Error 2"
-#~ msgstr "Error 2"
-
-#, php-format
-#~ msgid "Articles tagged with <em>%s</em>"
-#~ msgstr "Articles tagged with <em>%s</em>"
-
-#~ msgid "Contact message"
-#~ msgstr "Contact message"
-
-#~ msgid "Contact message sent"
-#~ msgstr "Contact message sent"
-
-#~ msgid "Welcome!"
-#~ msgstr "Welcome!"
-
-#~ msgid ""
-#~ "The file has been already deleted on the server, please upload it again"
-#~ msgstr ""
-#~ "The file has been already deleted on the server, please upload it again"
-
-#~ msgid "The file was not fully uploaded, please upload it again"
-#~ msgstr "The file was not fully uploaded, please upload it again"
-
-#~ msgid ""
-#~ "Zadejte URL videa. Lze vložit video ze služeb, které poskytují API podle "
-#~ "specifikace <a href=\"http://oembed.com/\">oEmbed</a>."
-#~ msgstr ""
-#~ "Enter video URL. You can embed a video from services that provide the <a "
-#~ "href=\"http://oembed.com/\">oEmbed specification</a>."
-
-#~ msgid ""
-#~ "Nelze získat informace o videu. Ověřte URL videa a podporu oEmbed u "
-#~ "poskytovatele videa."
-#~ msgstr ""
-#~ "Unable to get video information. Check video URL and oEmbed support with "
-#~ "your video provider."
-
-#~ msgid "Typ souboru na tomto URL není video"
-#~ msgstr "The file type at this URL is not a video"
-
-#~ msgid "page"
-#~ msgstr "page"
-
-#~ msgid "There is no such page"
-#~ msgstr "There is no such page"
-
-#~ msgid "Ensure that there are max %max% tags (now there are %count%)"
-#~ msgstr "Ensure that there are max %max% tags (now there are %count%)"
-
-#, php-format
-#~ msgid "There is no tag <em>%s</em>"
-#~ msgstr "There is no tag <em>%s</em>"
-
-#, php-format
-#~ msgid "Tag <em>%s</em> is there more than once"
-#~ msgstr "Tag <em>%s</em> is there more than once"
-
-#~ msgid "Sign up for newsletter"
-#~ msgstr "Sign up for newsletter"
-
-#~ msgid "Text"
-#~ msgstr "Text"
-
-#~ msgid "Spam protection"
-#~ msgstr "Spam protection"
-
-#~ msgid "Send message"
-#~ msgstr "Send message"
-
-#~ msgid "Video"
-#~ msgstr "Video"
-
-#~ msgid "Galerie"
-#~ msgstr "Gallery"
-
-#~ msgid "Obrázek"
-#~ msgstr "Picture"
-
-#~ msgid "remove"
-#~ msgstr "remove"
-
-#~ msgid "Download attachment"
-#~ msgstr "Download attachment"
-
-#~ msgid "Display image"
-#~ msgstr "Display image"
 
 #~ msgid ""
 #~ "Only letters, numbers, dots and dashes are allowed. Up to 50 characters."
