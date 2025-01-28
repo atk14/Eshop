@@ -7,224 +7,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-25 16:27+0200\n"
-"PO-Revision-Date: 2022-04-25 17:21+0200\n"
+"POT-Creation-Date: 2025-01-28 12:00+0100\n"
+"PO-Revision-Date: 2025-01-28 12:10+0100\n"
 "Last-Translator: Jaromir Tomek <jaromir.tomek@gmail.com>\n"
 "Language-Team: Team <team@email.com>\n"
 "Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
-
-msgid ""
-"Are you sure to delete article item\n"
-"%1?"
-msgstr ""
-"Určitě chcete smazat článek\n"
-"%1?"
-
-msgid "Edit"
-msgstr "Upravit"
-
-msgid "Visit public link"
-msgstr "Navštívit veřejný odkaz"
-
-msgid "Delete article"
-msgstr "Smazat článek"
-
-msgid "Save and continue editing"
-msgstr "Uložit a pokračovat v úpravách"
-
-msgid "Save and go back"
-msgstr "Uložit a vrátit se zpět"
-
-msgid "Saving failed."
-msgstr "Ukládání se nezdařilo."
-
-msgid "Add new article"
-msgstr "Přidat nový článek"
-
-msgid "The list is empty."
-msgstr "Seznam je prázdný."
-
-#: ../app/forms/admin/articles/articles_form.php:6
-#: ../app/forms/admin/attachments/attachments_form.php:9
-#: ../app/forms/admin/files/files_form.php:8
-#: ../app/forms/admin/images/images_form.php:10
-#: ../app/forms/admin/link_list_items/link_list_items_form.php:6
-#: ../app/forms/admin/pages/pages_form.php:6
-msgid "Title"
-msgstr "Název"
-
-#: ../app/forms/admin/articles/articles_form.php:29
-msgid "Author"
-msgstr "Autor"
-
-msgid "Date"
-msgstr "Datum"
-
-#: ../app/controllers/admin/admin.php:32
-#: ../app/forms/admin/articles/articles_form.php:54
-msgid "Tags"
-msgstr "Štítky"
-
-msgid "Add attachment"
-msgstr "Přidat přílohu"
-
-msgid "Currently there are no attachments."
-msgstr "Momentálně tady přílohy nejsou."
-
-msgid "Delete"
-msgstr "Smazat"
-
-msgid "Add new redirection"
-msgstr "Přidat nové přesměrování"
-
-#: ../app/forms/admin/error_redirections/error_redirections_form.php:15
-msgid "Source URL"
-msgstr "Zdrojová adresa URL"
-
-#: ../app/forms/admin/error_redirections/error_redirections_form.php:26
-msgid "Target URL"
-msgstr "Cílová adresa URL"
-
-msgid "Created at"
-msgstr "Vytvořeno"
-
-msgid "Last access"
-msgstr "Poslední přístup"
-
-msgid "ID"
-msgstr "ID"
-
-msgid "Filename"
-msgstr "Název souboru"
-
-msgid "File Type"
-msgstr "Typ souboru"
-
-msgid "Filesize"
-msgstr "Velikost souboru"
-
-msgid "URL"
-msgstr "URL"
-
-msgid "Upravit fotogalerii"
-msgstr "Upravit fotogalerii"
-
-msgid "bez popisu"
-msgstr "bez popisu"
-
-msgid "Drag files here"
-msgstr "Přetáhněte soubory sem"
-
-msgid "Photos"
-msgstr "Fotky"
-
-msgid "Přidat obrázky do fotogalerie"
-msgstr "Přidat obrázky do fotogalerie"
-
-msgid "Přidat fotografii"
-msgstr "Přidat fotografii"
-
-msgid "Upravit obrázky fotogalerie"
-msgstr "Upravit obrázky fotogalerie"
-
-msgid "bez titulku nebo popisu"
-msgstr "bez titulku nebo popisu"
-
-msgid "The image was uploaded at:"
-msgstr "Obrázek byl nahrán:"
-
-msgid "The image was uploaded by:"
-msgstr "Obrázek nahrál:"
-
-msgid "The size of the original:"
-msgstr "Velikost originálu:"
-
-msgid "Add image"
-msgstr "Přidat obrázek"
-
-msgid "Currently there are no images."
-msgstr "Momentálně tady nejsou žádné obrázky."
-
-msgid "Add a link to the list"
-msgstr "Přidat odkaz do seznamu"
-
-msgid "There is no link in the list."
-msgstr "V seznamu není žádný odkaz."
-
-msgid "invisible"
-msgstr "neviditelné"
-
-msgid "Edit links"
-msgstr "Editovat odkazy"
-
-msgid "Create new link list"
-msgstr "Vytvořit nový odkaz"
-
-msgid "Link list"
-msgstr "Seznam odkazů"
-
-msgid ""
-"You are about to permanently delete link list %1\n"
-"Are you sure about that?"
-msgstr ""
-"Chystáte se trvale smazat seznam odkazů %1\n"
-"Jste si jistý/á?"
+"X-Generator: Poedit 3.4.2\n"
 
 msgid "Welcome administrator!"
 msgstr "Vítejte administrátore!"
 
-msgid "No record has been found."
-msgstr "Nebyl nalezen žádný záznam."
+msgid "The list is empty."
+msgstr "Seznam je prázdný."
+
+msgid "User"
+msgstr "Uživatel"
 
 msgid "Email"
 msgstr "E-mail"
 
-msgid "Name"
-msgstr "Jméno"
-
-msgid "Subscribed since"
-msgstr "Přihlášen od"
-
-msgid "IP address"
-msgstr "IP adresa"
-
-msgid "Export emails in CSV"
-msgstr "Export e-mailů v CSV"
-
-msgid "Subpages"
-msgstr "Podstránky"
-
-msgid "This page has no subpages"
-msgstr "Tato stránka nemá podstránky"
-
-msgid "Add new page"
-msgstr "Přidat novou stránku"
-
-msgid "Create a subpage"
-msgstr "Vytvořit podstránku"
-
-msgid ""
-"You are about to delete page %1\n"
-"Are you sure?"
-msgstr ""
-"Chystáte se smazat stránku %1\n"
-"Opravdu?"
-
-msgid "Delete page"
-msgstr "Smazat stránku"
-
-msgid "not showing in sitemap"
-msgstr "nezobrazuje se v mapě stránek"
-
-msgid "[%1]"
-msgstr "[%1]"
-
-msgid "User"
-msgstr "Uživatel"
+msgid "Created at"
+msgstr "Vytvořeno"
 
 msgid "Created from address"
 msgstr "Vytvořeno z adresy"
@@ -238,24 +44,8 @@ msgstr "Obnoveno dne"
 msgid "Recovered from address"
 msgstr "Obnoveno z adresy"
 
-#: ../app/forms/admin/images/images_form.php:16
-msgid "Description"
-msgstr "Popis"
-
-msgid "Dimensions of the original"
-msgstr "Rozměry originálu"
-
-msgid "Uploaded by"
-msgstr "Nahráno uživatelem"
-
-msgid "Updated at"
-msgstr "Změněno"
-
-msgid "Updated by"
-msgstr "Aktualizováno uživatelem"
-
-msgid "Download original"
-msgstr "Stáhněte si originál"
+msgid "Edit"
+msgstr "Upravit"
 
 msgid ""
 "You are about to delete the attachment %1\n"
@@ -276,8 +66,14 @@ msgstr "Momentálně tady nejsou žádné přílohy"
 msgid "Add an attachment"
 msgstr "Přidat přílohu"
 
+msgid "Currently there are no attachments."
+msgstr "Momentálně tady přílohy nejsou."
+
 msgid "Remove image"
 msgstr "Odstranit obrázek"
+
+msgid "bez titulku nebo popisu"
+msgstr "bez titulku nebo popisu"
 
 msgid "Logos"
 msgstr "Loga"
@@ -285,35 +81,11 @@ msgstr "Loga"
 msgid "Photo gallery"
 msgstr "Fotogalerie"
 
-msgid "Objects inserted into text"
-msgstr "Objekty vložené do textu"
+msgid "Drag files here"
+msgstr "Přetáhněte soubory sem"
 
-msgid "Copy the desired object's marker ([# ...]) into the text."
-msgstr "Zkopírujte značku požadovaného objektu ([# ...]) do textu."
-
-msgid "Do you really want to delete this object?"
-msgstr "Opravdu chcete tento objekt smazat?"
-
-msgid "bez názvu"
-msgstr "bez názvu"
-
-msgid "copy this line to the text"
-msgstr "zkopírujte tento řádek do textu"
-
-msgid "Copied!"
-msgstr "Zkopírováno!"
-
-msgid "Copy the line"
-msgstr "Kopírovat řádek"
-
-msgid "Currently there are no objects"
-msgstr "Momentálně tady nejsou žádné objekty"
-
-msgid "Add photogallery"
-msgstr "Přidat fotogalerii"
-
-msgid "Add video"
-msgstr "Přidat video"
+msgid "Přidat obrázky do fotogalerie"
+msgstr "Přidat obrázky do fotogalerie"
 
 msgid "Localhost"
 msgstr "Localhost"
@@ -341,9 +113,6 @@ msgstr "Přihlásit se"
 msgid "Register"
 msgstr "Registrovat"
 
-msgid "no image"
-msgstr "bez obrázku"
-
 msgid "Add images"
 msgstr "Přidat obrázky"
 
@@ -356,30 +125,6 @@ msgstr ""
 
 msgid "Submit form"
 msgstr "Odeslat formulář"
-
-msgid "Add new tag"
-msgstr "Přidat nový štítek"
-
-msgid "No tag has been found."
-msgstr "Nebyl nalezen žádný štítek."
-
-#: ../app/forms/admin/tags/tags_form.php:6
-msgid "Tag"
-msgstr "Štítek"
-
-#: ../app/forms/admin/admin_form.php:125
-msgid "Code"
-msgstr "Kód"
-
-msgid ""
-"You are about to permanently delete tag %1\n"
-"\tAre you sure about that?"
-msgstr ""
-"Chystáte se smazat štítek %1\n"
-"\tUrčite to chcete?"
-
-msgid "Delete tag"
-msgstr "Smazat štítek"
 
 msgid "On this page you can set a new password to the user <em>%1</em>."
 msgstr "Na této stránce můžete nastavit nové heslo pro uživatele <em>%1</em>."
@@ -395,12 +140,18 @@ msgstr ""
 "V současné době nikdo nezná skutečné heslo uživatele, protože hesla nejsou "
 "uložena v textové podobě."
 
-#: ../app/controllers/admin/users_controller.php:54
+#: ../app/controllers/admin/users_controller.php:55
 msgid "Create a new user"
 msgstr "Vytvořit nového uživatele"
 
+msgid "No record has been found."
+msgstr "Nebyl nalezen žádný záznam."
+
 msgid "Username"
 msgstr "Uživatelské jméno"
+
+msgid "Name"
+msgstr "Jméno"
 
 #: ../app/forms/admin/users/users_form.php:30
 msgid "Email address"
@@ -409,6 +160,12 @@ msgstr "E-mailová adresa"
 #: ../app/forms/admin/users/users_form.php:42
 msgid "Is admin?"
 msgstr "Je administrátor?"
+
+msgid "Updated at"
+msgstr "Změněno"
+
+msgid "deleted user"
+msgstr "smazaný uživatel"
 
 msgid "inactive user"
 msgstr "neaktivní uživatel"
@@ -421,6 +178,9 @@ msgstr "administrátor"
 
 msgid "regular user"
 msgstr "běžný uživatel"
+
+msgid "deleted"
+msgstr "smazáno"
 
 msgid "not active"
 msgstr "neaktivní"
@@ -441,308 +201,85 @@ msgstr ""
 msgid "Delete user"
 msgstr "Smazat uživatele"
 
-msgid "Změnit video"
-msgstr "Změnit video"
-
-#: ../app/forms/admin/videos/videos_form.php:20
-msgid "URL videa"
-msgstr "URL videa"
-
-#: ../app/forms/admin/videos/videos_form.php:26
-msgid "Náhledový obrázek"
-msgstr "Náhledový obrázek"
-
-msgid "Není nastaven"
-msgstr "Není nastaven"
-
 #: ../app/controllers/admin/admin.php:28
 msgid "Welcome screen"
 msgstr "Vítací obrazovka"
 
 #: ../app/controllers/admin/admin.php:29
-#: ../app/controllers/admin/iobjects_base.php:106
-msgid "Articles"
-msgstr "Články"
-
-#: ../app/controllers/admin/admin.php:30
-#: ../app/controllers/admin/iobjects_base.php:111
-#: ../app/controllers/admin/pages_controller.php:5
-msgid "Pages"
-msgstr "Stránky"
-
-#: ../app/controllers/admin/admin.php:31
-msgid "Link Lists"
-msgstr "Seznamy odkazů"
-
-#: ../app/controllers/admin/admin.php:33
 msgid "Users"
 msgstr "Uživatelé"
 
-#: ../app/controllers/admin/admin.php:34
+#: ../app/controllers/admin/admin.php:30
 #: ../app/controllers/admin/password_recoveries_controller.php:5
 msgid "Password recoveries"
 msgstr "Obnovy hesel"
 
-#: ../app/controllers/admin/admin.php:35
-msgid "Newsletter subscribers"
-msgstr "Odběratelé newsletteru"
-
-#: ../app/controllers/admin/admin.php:36
-#: ../app/controllers/admin/error_redirections_controller.php:5
-msgid "404 Redirections"
-msgstr "Přesměrování 404"
-
-#: ../app/controllers/admin/admin.php:100
+#: ../app/controllers/admin/admin.php:94
 #, php-format
 msgid "Seznam objektů typu %s"
 msgstr "Seznam objektů typu %s"
 
-#: ../app/controllers/admin/admin.php:135
+#: ../app/controllers/admin/admin.php:129
 msgid "The record has been created"
 msgstr "Záznam byl vytvořen"
 
-#: ../app/controllers/admin/admin.php:149
+#: ../app/controllers/admin/admin.php:143
 #, php-format
 msgid "Vytvořit objekt typu %s"
 msgstr "Vytvořit objekt typu %s"
 
-#: ../app/controllers/admin/admin.php:201
+#: ../app/controllers/admin/admin.php:195
 msgid "Změny byly uloženy"
 msgstr "Změny byly uloženy"
 
-#: ../app/controllers/admin/admin.php:236
+#: ../app/controllers/admin/admin.php:230
 #, php-format
 msgid "Editace objektu typu %s"
 msgstr "Editace objektu typu %s"
 
-#: ../app/controllers/admin/admin.php:270
+#: ../app/controllers/admin/admin.php:264
 msgid "Ve formuláři nebylo nic změněno"
 msgstr "Nothing has been changed in the form"
 
-#: ../app/controllers/admin/admin.php:391
+#: ../app/controllers/admin/admin.php:386
 msgid "The entry has been deleted"
 msgstr "Záznam byl smazán"
 
-#: ../app/controllers/admin/admin.php:410
-#: ../app/controllers/admin/galleries_controller.php:34
+#: ../app/controllers/admin/admin.php:405
 msgid "Fotogalerie"
 msgstr "Fotogalerie"
-
-#: ../app/controllers/admin/articles_controller.php:5
-msgid "Listing Articles"
-msgstr "Výpis článků"
-
-#: ../app/controllers/admin/articles_controller.php:38
-msgid "Create article"
-msgstr "Vytvořit článek"
-
-#: ../app/controllers/admin/articles_controller.php:49
-msgid "The article has been created successfully"
-msgstr "Článek byl úspěšně vytvořen"
-
-#: ../app/controllers/admin/articles_controller.php:55
-#, php-format
-msgid "Editing %s"
-msgstr "Editace %s"
-
-#: ../app/controllers/admin/articles_controller.php:67
-msgid "The article has been updated successfully"
-msgstr "Článek byl úspěšně aktualizován"
-
-#: ../app/controllers/admin/attachments_controller.php:5
-#, php-format
-msgid "Attachments for object %s#%s, section %s"
-msgstr "Přílohy pro objekt %s#%s, sekce %s"
-
-#: ../app/controllers/admin/attachments_controller.php:5
-#, php-format
-msgid "Attachments for object %s#%s"
-msgstr "Přílohy pro objekt %s#%s"
-
-#: ../app/controllers/admin/attachments_controller.php:10
-msgid "Adding attachment"
-msgstr "Přidání přílohy"
-
-#: ../app/controllers/admin/attachments_controller.php:25
-msgid "Attachment has been saved"
-msgstr "Příloha byla uložena"
-
-#: ../app/controllers/admin/attachments_controller.php:31
-#, php-format
-msgid "Editing attachment #%s"
-msgstr "Úprava přílohy #%s"
-
-#: ../app/controllers/admin/attachments_controller.php:38
-#: ../app/controllers/admin/images_controller.php:59
-msgid "Changes have been saved"
-msgstr "Změny byly uloženy"
-
-#: ../app/controllers/admin/attachments_controller.php:51
-msgid "Attachment has been deleted"
-msgstr "Příloha byla odstraněna"
-
-#: ../app/controllers/admin/error_redirections_controller.php:40
-msgid "Create redirection"
-msgstr "Vytvořit přesměrování"
-
-#: ../app/controllers/admin/error_redirections_controller.php:46
-#: ../app/controllers/admin/error_redirections_controller.php:64
-msgid "Another redirection with the same source URL already exists"
-msgstr "Jiné přesměrování se stejnou zdrojovou adresou URL již existuje"
-
-#: ../app/controllers/admin/error_redirections_controller.php:51
-msgid "The redirection has been created successfully"
-msgstr "Přesměrováná bylo úspěšně vytvořeno"
-
-#: ../app/controllers/admin/error_redirections_controller.php:57
-msgid "Editing redirection"
-msgstr "Editace přesměrování"
-
-#: ../app/controllers/admin/error_redirections_controller.php:69
-msgid "The redirection has been updated successfully"
-msgstr "Přesměrování bylo úspěšně změněno"
-
-#: ../app/controllers/admin/galleries_controller.php:11
-msgid "Nová fotogalerie"
-msgstr "Nová fotogalerie"
-
-#: ../app/controllers/admin/images_controller.php:5
-#, php-format
-msgid "Photo gallery of the object %s#%s, section %s"
-msgstr "Fotogalerie objektu %s#%s, sekce %s"
-
-#: ../app/controllers/admin/images_controller.php:5
-#, php-format
-msgid "Photo gallery of the object %s#%s"
-msgstr "Fotogalerie objektu %s#%s"
-
-#: ../app/controllers/admin/images_controller.php:11
-msgid "Adding an image into the photo gallery"
-msgstr "Přidání obrázku do fotogalerie"
-
-#: ../app/controllers/admin/images_controller.php:41
-msgid "Image has been created"
-msgstr "Obrázek byl vytvořen"
-
-#: ../app/controllers/admin/images_controller.php:47
-#, php-format
-msgid "Editing of the Image #%s"
-msgstr "Editace obrázku #%s"
-
-#: ../app/controllers/admin/images_controller.php:72
-msgid "The image has been deleted"
-msgstr "Obrázek byl smazán"
-
-#: ../app/controllers/admin/link_list_items_controller.php:5
-#, php-format
-msgid "Links in the list '%s'"
-msgstr "Odkazy v seznamu '%s'"
-
-#: ../app/controllers/admin/link_list_items_controller.php:12
-#, php-format
-msgid "Adding link to the list '%s'"
-msgstr "Přidání odkazu do seznamu '%s'"
-
-#: ../app/controllers/admin/link_list_items_controller.php:23
-#, php-format
-msgid "Editing link '%s'"
-msgstr "Editace odkazu '%s'"
-
-#: ../app/controllers/admin/link_list_items_controller.php:48
-msgid "Links"
-msgstr "Odkazy"
-
-#: ../app/controllers/admin/link_lists_controller.php:5
-msgid "Link lists"
-msgstr "Seznamy odkazů"
-
-#: ../app/controllers/admin/link_lists_controller.php:11
-msgid "Creating new link list"
-msgstr "Vytvoření nového seznamu odkazů"
-
-#: ../app/controllers/admin/link_lists_controller.php:17
-msgid "Editing link list"
-msgstr "Editace seznamu odkazů"
-
-#: ../app/controllers/admin/newsletter_subscribers_controller.php:5
-msgid "Newsletter Subscribers"
-msgstr "Odběratelé newsletteru"
-
-#: ../app/controllers/admin/pages_controller.php:11
-msgid "Create page"
-msgstr "Vytvořit stránku"
-
-#: ../app/controllers/admin/pages_controller.php:12
-msgid "The page has been created successfully"
-msgstr "Stránka byla úspěšně vytvořena"
-
-#: ../app/controllers/admin/pages_controller.php:17
-#, php-format
-msgid "Editing page %s"
-msgstr "Editace stránky %s"
-
-#: ../app/controllers/admin/pages_controller.php:28
-msgid "The page has been updated successfully"
-msgstr "Stránka byla úspěšně aktualizována"
-
-#: ../app/controllers/admin/tags_controller.php:5
-msgid "Listing Tags"
-msgstr "Přehled štítků"
-
-#: ../app/controllers/admin/tags_controller.php:40
-msgid "Create a new tag"
-msgstr "Vytvořit nový štítek"
-
-#: ../app/controllers/admin/tags_controller.php:47
-msgid "The tag has been created successfully"
-msgstr "Štítek byl úspěšně vytvořen"
-
-#: ../app/controllers/admin/tags_controller.php:55
-#, php-format
-msgid "Editing tag %s"
-msgstr "Editace štítku %s"
-
-#: ../app/controllers/admin/tags_controller.php:62
-#: ../app/forms/admin/tags/create_new_form.php:7
-msgid "The same tag already exists"
-msgstr "Stejný štítek již existuje"
-
-#: ../app/controllers/admin/tags_controller.php:67
-#: ../app/controllers/admin/users_controller.php:73
-msgid "Nothing has been changed"
-msgstr "Nic nebylo změněno"
-
-#: ../app/controllers/admin/tags_controller.php:73
-msgid "The tag has been updated"
-msgstr "Štítek byl aktualizován"
 
 #: ../app/controllers/admin/users_controller.php:5
 msgid "Users list"
 msgstr "Seznam uživatelů"
 
-#: ../app/controllers/admin/users_controller.php:60
+#: ../app/controllers/admin/users_controller.php:61
 msgid "The user has been created successfully"
 msgstr "Uživatel byl úspěšně vytvořen"
 
-#: ../app/controllers/admin/users_controller.php:66
+#: ../app/controllers/admin/users_controller.php:67
 #, php-format
 msgid "Editing user %s"
 msgstr "Editace uživatele %s"
 
-#: ../app/controllers/admin/users_controller.php:79
+#: ../app/controllers/admin/users_controller.php:74
+msgid "Nothing has been changed"
+msgstr "Nic nebylo změněno"
+
+#: ../app/controllers/admin/users_controller.php:80
 msgid "The user entry has been updated"
 msgstr "Záznam o uživateli byl aktualizován"
 
-#: ../app/controllers/admin/users_controller.php:87
+#: ../app/controllers/admin/users_controller.php:88
 #, php-format
 msgid "Setting a new password to the user %s"
 msgstr "Nastavit nové heslo uživateli %s"
 
-#: ../app/controllers/admin/users_controller.php:95
+#: ../app/controllers/admin/users_controller.php:96
 msgid "Nothing needs to be updated"
 msgstr "Není třeba nic aktualizovat"
 
-#: ../app/controllers/admin/users_controller.php:106
+#: ../app/controllers/admin/users_controller.php:107
 msgid ""
 "The new password has been set to the user <em>%user%</em>.<br>Would be nice "
 "to let him know at email address <a href=\"mailto:%email%\">%email%</a>."
@@ -750,288 +287,53 @@ msgstr ""
 "Nové heslo bylo nastaveno uživateli <em>%user%</em>.<br>Bude hezké, když mu "
 "o tom napíšete na e-mail <a href=\"mailto:%email%\">%email%</a>."
 
-#: ../app/controllers/admin/users_controller.php:112
+#: ../app/controllers/admin/users_controller.php:113
 msgid "The password for the user <em>%user%</em> has been deleted."
 msgstr "Heslo pro uživatele <em>%user%</em> bylo odstraněno."
 
-#: ../app/controllers/admin/users_controller.php:129
+#: ../app/controllers/admin/users_controller.php:130
 msgid "The user entry has been deleted"
 msgstr "Uživatel byl smazán"
 
-#: ../app/controllers/admin/users_controller.php:140
+#: ../app/controllers/admin/users_controller.php:141
 #, php-format
 msgid "Now you are logged as <em>%s</em>"
 msgstr "Nyní jste přihlášen jako <em>%s</em>"
 
-#: ../app/controllers/admin/videos_controller.php:6
-msgid "Nové video"
-msgstr "Nové video"
-
-#: ../app/controllers/admin/videos_controller.php:53
-msgid "Vložili jste úspěšně video"
-msgstr "Vložili jste úspěšně video"
-
-#: ../app/forms/admin/admin_form.php:108
-#: ../app/forms/admin/gallery_items/gallery_items_form.php:10
+#: ../app/forms/admin/admin_form.php:109
 msgid "Titulek"
 msgstr "Titulek"
 
-#: ../app/forms/admin/admin_form.php:117
-#: ../app/forms/admin/gallery_items/gallery_items_form.php:16
+#: ../app/forms/admin/admin_form.php:118
 msgid "Popis"
 msgstr "Popis"
 
-#: ../app/forms/admin/admin_form.php:130
+#: ../app/forms/admin/admin_form.php:126
+msgid "Code"
+msgstr "Kód"
+
+#: ../app/forms/admin/admin_form.php:131
 msgid "An alternative key for system usage."
 msgstr "Alternativní klíč pro systémové potřeby."
 
-#: ../app/forms/admin/admin_form.php:130
+#: ../app/forms/admin/admin_form.php:131
 msgid ""
 "An alternative key for system usage. Leave it unchanged if you are not sure."
 msgstr ""
 "Alternativní klíč pro systémové použití. Pokud si nejste jisti, ponechte "
 "beze změny."
 
-#: ../app/forms/admin/admin_form.php:138
+#: ../app/forms/admin/admin_form.php:139
 msgid "Is visible?"
 msgstr "Je viditelné?"
 
-#: ../app/forms/admin/admin_form.php:169 ../app/forms/admin/admin_form.php:176
+#: ../app/forms/admin/admin_form.php:170 ../app/forms/admin/admin_form.php:177
 msgid "Stejný kód je již použit pro jiný záznam"
 msgstr "Stejný kód je již použit pro jiný záznam"
 
-#: ../app/forms/admin/admin_form.php:244
+#: ../app/forms/admin/admin_form.php:245
 msgid "The same slug is used in a different object"
 msgstr "Stejný slug je použit u jiného objektu"
-
-#: ../app/forms/admin/articles/articles_form.php:11
-#: ../app/forms/admin/images/images_form.php:6
-#: ../app/forms/admin/link_list_items/link_list_items_form.php:29
-#: ../app/forms/admin/pages/pages_form.php:10
-msgid "Image"
-msgstr "Obrázek"
-
-#: ../app/forms/admin/articles/articles_form.php:13
-msgid "Image used in article overview"
-msgstr "Obrázek používaný v přehledu článků"
-
-#: ../app/forms/admin/articles/articles_form.php:17
-#: ../app/forms/admin/pages/pages_form.php:16
-msgid "Teaser"
-msgstr "Teaser"
-
-#: ../app/forms/admin/articles/articles_form.php:18
-#: ../app/forms/admin/articles/articles_form.php:24
-#: ../app/forms/admin/pages/pages_form.php:17
-#: ../app/forms/admin/pages/pages_form.php:23
-#, php-format
-msgid "<a href=\"%s\">Markdown</a> format is expected"
-msgstr "Je očekáván formát <a href=\"%s\">Markdown</a>"
-
-#: ../app/forms/admin/articles/articles_form.php:23
-#: ../app/forms/admin/pages/pages_form.php:22
-msgid "Body"
-msgstr "Tělo"
-
-#: ../app/forms/admin/articles/articles_form.php:35
-#: ../app/forms/admin/pages/pages_form.php:28
-msgid "HTML title"
-msgstr "HTML název"
-
-#: ../app/forms/admin/articles/articles_form.php:38
-#: ../app/forms/admin/pages/pages_form.php:31
-msgid "Content for <html><head><title>. If left empty, the title is used."
-msgstr ""
-"Obsah pro <html><head><title>. Pokud bude ponecháno prázdné, bude použit "
-"název."
-
-#: ../app/forms/admin/articles/articles_form.php:42
-#: ../app/forms/admin/pages/pages_form.php:35
-msgid "HTML description"
-msgstr "HTML popis"
-
-#: ../app/forms/admin/articles/articles_form.php:45
-#: ../app/forms/admin/pages/pages_form.php:38
-msgid ""
-"Content for <meta name=\"description\">. If left empty, the teaser is used."
-msgstr ""
-"Obsah pro <meta name=\"description\">. Pokud bude ponecháno prázdné, použije "
-"se teaser."
-
-#: ../app/forms/admin/articles/articles_form.php:49
-msgid "Published At"
-msgstr "Publikováno dne"
-
-#: ../app/forms/admin/attachments/attachments_form.php:6
-#: ../app/forms/admin/files/files_form.php:6
-msgid "File"
-msgstr "Soubor"
-
-#: ../app/forms/admin/attachments/attachments_form.php:10
-msgid "User Manual"
-msgstr "Uživatelský manuál"
-
-#: ../app/forms/admin/error_redirections/error_redirections_form.php:12
-msgid "This doesn't look like an URL or URI"
-msgstr "Toto nevypadá to jako URL nebo URI"
-
-#: ../app/forms/admin/error_redirections/error_redirections_form.php:16
-msgid ""
-"Address which cannot be found on this server. Here are some examples. The "
-"first one is usually the most appropriate."
-msgstr ""
-"Adresa, kterou nelze na tomto serveru najít. Zde jsou nějaké příklady. První "
-"z nich je obvykle nejvhodnější."
-
-#: ../app/forms/admin/error_redirections/error_redirections_form.php:27
-msgid "Examples:"
-msgstr "Příklady:"
-
-#: ../app/forms/admin/error_redirections/error_redirections_form.php:37
-msgid "Moved permanently?"
-msgstr "Přesunuto trvale?"
-
-#: ../app/forms/admin/error_redirections/error_redirections_form.php:47
-msgid "The Source URL and Target URL cannot be the same"
-msgstr "Zdrojová a cílová adresa URL nemohou být stejné"
-
-#: ../app/forms/admin/galleries/galleries_form.php:9
-msgid "Square"
-msgstr "Čtverec"
-
-#: ../app/forms/admin/galleries/galleries_form.php:10
-msgid "Slider"
-msgstr "Posuvník"
-
-#: ../app/forms/admin/galleries/galleries_form.php:11
-msgid "Slider darker & bigger"
-msgstr "Posuvník tmavší a větší"
-
-#: ../app/forms/admin/galleries/galleries_form.php:12
-msgid "Slider with thumbnails"
-msgstr "Posuvník s náhledy"
-
-#: ../app/forms/admin/gallery_items/create_new_form.php:7
-msgid "Nahrát fotografii"
-msgstr "Nahrát fotografii"
-
-#: ../app/forms/admin/gallery_items/gallery_items_form.php:6
-msgid "Fotografie"
-msgstr "Fotografie"
-
-#: ../app/forms/admin/images/images_form.php:24
-msgid "Display image in gallery on the product card?"
-msgstr "Zobrazit obrázek ve fotogalerii na kartě produktu?"
-
-#: ../app/forms/admin/iobjects_form.php:13
-msgid "Default appearance"
-msgstr "Výchozí vzhled"
-
-#: ../app/forms/admin/iobjects_form.php:27
-msgid "Titulek viditelný na webu?"
-msgstr "Titulek viditelný na webu?"
-
-#: ../app/forms/admin/iobjects_form.php:43
-msgid "Appearance"
-msgstr "Vzhled"
-
-#: ../app/forms/admin/link_list_items/link_list_items_form.php:10
-msgid "URL / path"
-msgstr "URL / cesta"
-
-#: ../app/forms/admin/link_list_items/link_list_items_form.php:11
-msgid ""
-"An internal link should be set as an URI (e.g. /about-us/). An external link "
-"has to be set in the full format (e.g. https://example.com/file.pdf)."
-msgstr ""
-"Interní odkaz by měl být zadán jako URI (např. /o-nas/). Externí odkaz musí "
-"být zadán v úplném tvaru (např. https://example.com/file.pdf)."
-
-#: ../app/forms/admin/link_list_items/link_list_items_form.php:16
-msgid "Specific URL for the given language"
-msgstr "Specifická adresa URL pro daný jazyk"
-
-#: ../app/forms/admin/link_list_items/link_list_items_form.php:19
-msgid "If necessary, a specific URL can be specified for the given language."
-msgstr "V případě potřeby lze zadat specifickou adresu URL pro daný jazyk."
-
-#: ../app/forms/admin/link_list_items/link_list_items_form.php:23
-msgid "CSS class"
-msgstr "Třída CSS"
-
-#: ../app/forms/admin/link_list_items/link_list_items_form.php:31
-msgid "In some cases the link looks better with an image."
-msgstr "V některých případech vypadá odkaz lépe s obrázkem."
-
-#: ../app/forms/admin/link_lists/link_lists_form.php:6
-msgid "System title"
-msgstr "Systémový název"
-
-#: ../app/forms/admin/link_lists/link_lists_form.php:7
-msgid "Useful in administration. This title is not shown in the application."
-msgstr "Užitečné v administraci. Tento název se nezobrazuje v aplikace."
-
-#: ../app/forms/admin/link_lists/link_lists_form.php:12
-msgid "Displayed title"
-msgstr "Zobrazovaný název"
-
-#: ../app/forms/admin/link_lists/link_lists_form.php:13
-msgid "About us"
-msgstr "O nás"
-
-#: ../app/forms/admin/pages/create_new_form.php:8
-#: ../app/forms/admin/pages/edit_form.php:21
-msgid "The same code is used on a different page"
-msgstr "Stejný kód je použit na jiné stránce"
-
-#: ../app/forms/admin/pages/edit_form.php:13
-msgid "The homepage should always be visible."
-msgstr "Domovská stránka by měla být vždy viditelná."
-
-#: ../app/forms/admin/pages/pages_form.php:12
-msgid "Image used on list of pages, social networks, etc."
-msgstr "Obrázek použitý v seznamu stránek, na sociálních sítí atd."
-
-#: ../app/forms/admin/pages/pages_form.php:42
-msgid "Parent page"
-msgstr "Rodičovské stránka"
-
-#: ../app/forms/admin/pages/pages_form.php:47
-msgid "Show in sitemap?"
-msgstr "Zobrazovat v mapě stránek?"
-
-#: ../app/forms/admin/pages/pages_form.php:53
-msgid "Visible?"
-msgstr "Viditelné?"
-
-#: ../app/forms/admin/pages/pages_form.php:69
-msgid "The page cannot be placed under itself."
-msgstr "Stránku nelze umístit samu pod sebe."
-
-#: ../app/forms/admin/pages/pages_form.php:75
-msgid "Nesting is too deep."
-msgstr "Vnoření je příliš hluboké."
-
-#: ../app/forms/admin/pictures/pictures_form.php:8
-msgid "Obrázek"
-msgstr "Obrázek"
-
-#: ../app/forms/admin/pictures/pictures_form.php:12
-msgid "Alternative look"
-msgstr "Alternativní vzhled"
-
-#: ../app/forms/admin/pictures/pictures_form.php:13
-msgid "Card"
-msgstr "Karta"
-
-#: ../app/forms/admin/tags/tags_form.php:12
-msgid "Tag lokalized"
-msgstr "Štítek lokalizovaný"
-
-#: ../app/forms/admin/tags/tags_form.php:15
-msgid ""
-"Enter proper value when the tag itself is not good in the given language"
-msgstr "Pokud štítek není v daném jazyce dobrý, zadejte vhodnější název"
 
 #: ../app/forms/admin/users/edit_password_form.php:6
 msgid "New password"
@@ -1061,17 +363,582 @@ msgstr "Neaktivní uživatel se nemůže přihlásit"
 msgid "The same login is already used for another user"
 msgstr "Stejný login je již použit pro jiného uživatele"
 
-#: ../app/forms/admin/videos/create_new/get_url_form.php:6
-msgid "Pokračovat"
-msgstr "Pokračovat"
+#~ msgid ""
+#~ "Are you sure to delete article item\n"
+#~ "%1?"
+#~ msgstr ""
+#~ "Určitě chcete smazat článek\n"
+#~ "%1?"
 
-#: ../app/forms/admin/videos/videos_form.php:9
-msgid "Automatické spuštění videa"
-msgstr "Automatické spuštění videa"
+#~ msgid "Visit public link"
+#~ msgstr "Navštívit veřejný odkaz"
 
-#: ../app/forms/admin/videos/videos_form.php:13
-msgid "Po ukončení přehrát znovu"
-msgstr "Po ukončení přehrát znovu"
+#~ msgid "Delete article"
+#~ msgstr "Smazat článek"
+
+#~ msgid "Save and continue editing"
+#~ msgstr "Uložit a pokračovat v úpravách"
+
+#~ msgid "Save and go back"
+#~ msgstr "Uložit a vrátit se zpět"
+
+#~ msgid "Saving failed."
+#~ msgstr "Ukládání se nezdařilo."
+
+#~ msgid "Add new article"
+#~ msgstr "Přidat nový článek"
+
+#~ msgid "Title"
+#~ msgstr "Název"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Tags"
+#~ msgstr "Štítky"
+
+#~ msgid "Add attachment"
+#~ msgstr "Přidat přílohu"
+
+#~ msgid "Delete"
+#~ msgstr "Smazat"
+
+#~ msgid "Add new redirection"
+#~ msgstr "Přidat nové přesměrování"
+
+#~ msgid "Source URL"
+#~ msgstr "Zdrojová adresa URL"
+
+#~ msgid "Target URL"
+#~ msgstr "Cílová adresa URL"
+
+#~ msgid "Last access"
+#~ msgstr "Poslední přístup"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Filename"
+#~ msgstr "Název souboru"
+
+#~ msgid "File Type"
+#~ msgstr "Typ souboru"
+
+#~ msgid "Filesize"
+#~ msgstr "Velikost souboru"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Upravit fotogalerii"
+#~ msgstr "Upravit fotogalerii"
+
+#~ msgid "bez popisu"
+#~ msgstr "bez popisu"
+
+#~ msgid "Photos"
+#~ msgstr "Fotky"
+
+#~ msgid "Přidat fotografii"
+#~ msgstr "Přidat fotografii"
+
+#~ msgid "Upravit obrázky fotogalerie"
+#~ msgstr "Upravit obrázky fotogalerie"
+
+#~ msgid "The image was uploaded at:"
+#~ msgstr "Obrázek byl nahrán:"
+
+#~ msgid "The image was uploaded by:"
+#~ msgstr "Obrázek nahrál:"
+
+#~ msgid "The size of the original:"
+#~ msgstr "Velikost originálu:"
+
+#~ msgid "Add image"
+#~ msgstr "Přidat obrázek"
+
+#~ msgid "Currently there are no images."
+#~ msgstr "Momentálně tady nejsou žádné obrázky."
+
+#~ msgid "Add a link to the list"
+#~ msgstr "Přidat odkaz do seznamu"
+
+#~ msgid "There is no link in the list."
+#~ msgstr "V seznamu není žádný odkaz."
+
+#~ msgid "invisible"
+#~ msgstr "neviditelné"
+
+#~ msgid "Edit links"
+#~ msgstr "Editovat odkazy"
+
+#~ msgid "Create new link list"
+#~ msgstr "Vytvořit nový odkaz"
+
+#~ msgid "Link list"
+#~ msgstr "Seznam odkazů"
+
+#~ msgid ""
+#~ "You are about to permanently delete link list %1\n"
+#~ "Are you sure about that?"
+#~ msgstr ""
+#~ "Chystáte se trvale smazat seznam odkazů %1\n"
+#~ "Jste si jistý/á?"
+
+#~ msgid "Subscribed since"
+#~ msgstr "Přihlášen od"
+
+#~ msgid "IP address"
+#~ msgstr "IP adresa"
+
+#~ msgid "Export emails in CSV"
+#~ msgstr "Export e-mailů v CSV"
+
+#~ msgid "Subpages"
+#~ msgstr "Podstránky"
+
+#~ msgid "This page has no subpages"
+#~ msgstr "Tato stránka nemá podstránky"
+
+#~ msgid "Add new page"
+#~ msgstr "Přidat novou stránku"
+
+#~ msgid "Create a subpage"
+#~ msgstr "Vytvořit podstránku"
+
+#~ msgid ""
+#~ "You are about to delete page %1\n"
+#~ "Are you sure?"
+#~ msgstr ""
+#~ "Chystáte se smazat stránku %1\n"
+#~ "Opravdu?"
+
+#~ msgid "Delete page"
+#~ msgstr "Smazat stránku"
+
+#~ msgid "not showing in sitemap"
+#~ msgstr "nezobrazuje se v mapě stránek"
+
+#~ msgid "[%1]"
+#~ msgstr "[%1]"
+
+#~ msgid "Description"
+#~ msgstr "Popis"
+
+#~ msgid "Dimensions of the original"
+#~ msgstr "Rozměry originálu"
+
+#~ msgid "Uploaded by"
+#~ msgstr "Nahráno uživatelem"
+
+#~ msgid "Updated by"
+#~ msgstr "Aktualizováno uživatelem"
+
+#~ msgid "Download original"
+#~ msgstr "Stáhněte si originál"
+
+#~ msgid "Objects inserted into text"
+#~ msgstr "Objekty vložené do textu"
+
+#~ msgid "Copy the desired object's marker ([# ...]) into the text."
+#~ msgstr "Zkopírujte značku požadovaného objektu ([# ...]) do textu."
+
+#~ msgid "Do you really want to delete this object?"
+#~ msgstr "Opravdu chcete tento objekt smazat?"
+
+#~ msgid "bez názvu"
+#~ msgstr "bez názvu"
+
+#~ msgid "copy this line to the text"
+#~ msgstr "zkopírujte tento řádek do textu"
+
+#~ msgid "Copied!"
+#~ msgstr "Zkopírováno!"
+
+#~ msgid "Copy the line"
+#~ msgstr "Kopírovat řádek"
+
+#~ msgid "Currently there are no objects"
+#~ msgstr "Momentálně tady nejsou žádné objekty"
+
+#~ msgid "Add photogallery"
+#~ msgstr "Přidat fotogalerii"
+
+#~ msgid "Add video"
+#~ msgstr "Přidat video"
+
+#~ msgid "no image"
+#~ msgstr "bez obrázku"
+
+#~ msgid "Add new tag"
+#~ msgstr "Přidat nový štítek"
+
+#~ msgid "No tag has been found."
+#~ msgstr "Nebyl nalezen žádný štítek."
+
+#~ msgid "Tag"
+#~ msgstr "Štítek"
+
+#~ msgid ""
+#~ "You are about to permanently delete tag %1\n"
+#~ "\tAre you sure about that?"
+#~ msgstr ""
+#~ "Chystáte se smazat štítek %1\n"
+#~ "\tUrčite to chcete?"
+
+#~ msgid "Delete tag"
+#~ msgstr "Smazat štítek"
+
+#~ msgid "Změnit video"
+#~ msgstr "Změnit video"
+
+#~ msgid "URL videa"
+#~ msgstr "URL videa"
+
+#~ msgid "Náhledový obrázek"
+#~ msgstr "Náhledový obrázek"
+
+#~ msgid "Není nastaven"
+#~ msgstr "Není nastaven"
+
+#~ msgid "Articles"
+#~ msgstr "Články"
+
+#~ msgid "Pages"
+#~ msgstr "Stránky"
+
+#~ msgid "Link Lists"
+#~ msgstr "Seznamy odkazů"
+
+#~ msgid "Newsletter subscribers"
+#~ msgstr "Odběratelé newsletteru"
+
+#~ msgid "404 Redirections"
+#~ msgstr "Přesměrování 404"
+
+#~ msgid "Listing Articles"
+#~ msgstr "Výpis článků"
+
+#~ msgid "Create article"
+#~ msgstr "Vytvořit článek"
+
+#~ msgid "The article has been created successfully"
+#~ msgstr "Článek byl úspěšně vytvořen"
+
+#, php-format
+#~ msgid "Editing %s"
+#~ msgstr "Editace %s"
+
+#~ msgid "The article has been updated successfully"
+#~ msgstr "Článek byl úspěšně aktualizován"
+
+#, php-format
+#~ msgid "Attachments for object %s#%s, section %s"
+#~ msgstr "Přílohy pro objekt %s#%s, sekce %s"
+
+#, php-format
+#~ msgid "Attachments for object %s#%s"
+#~ msgstr "Přílohy pro objekt %s#%s"
+
+#~ msgid "Adding attachment"
+#~ msgstr "Přidání přílohy"
+
+#~ msgid "Attachment has been saved"
+#~ msgstr "Příloha byla uložena"
+
+#, php-format
+#~ msgid "Editing attachment #%s"
+#~ msgstr "Úprava přílohy #%s"
+
+#~ msgid "Changes have been saved"
+#~ msgstr "Změny byly uloženy"
+
+#~ msgid "Attachment has been deleted"
+#~ msgstr "Příloha byla odstraněna"
+
+#~ msgid "Create redirection"
+#~ msgstr "Vytvořit přesměrování"
+
+#~ msgid "Another redirection with the same source URL already exists"
+#~ msgstr "Jiné přesměrování se stejnou zdrojovou adresou URL již existuje"
+
+#~ msgid "The redirection has been created successfully"
+#~ msgstr "Přesměrováná bylo úspěšně vytvořeno"
+
+#~ msgid "Editing redirection"
+#~ msgstr "Editace přesměrování"
+
+#~ msgid "The redirection has been updated successfully"
+#~ msgstr "Přesměrování bylo úspěšně změněno"
+
+#~ msgid "Nová fotogalerie"
+#~ msgstr "Nová fotogalerie"
+
+#, php-format
+#~ msgid "Photo gallery of the object %s#%s, section %s"
+#~ msgstr "Fotogalerie objektu %s#%s, sekce %s"
+
+#, php-format
+#~ msgid "Photo gallery of the object %s#%s"
+#~ msgstr "Fotogalerie objektu %s#%s"
+
+#~ msgid "Adding an image into the photo gallery"
+#~ msgstr "Přidání obrázku do fotogalerie"
+
+#~ msgid "Image has been created"
+#~ msgstr "Obrázek byl vytvořen"
+
+#, php-format
+#~ msgid "Editing of the Image #%s"
+#~ msgstr "Editace obrázku #%s"
+
+#~ msgid "The image has been deleted"
+#~ msgstr "Obrázek byl smazán"
+
+#, php-format
+#~ msgid "Links in the list '%s'"
+#~ msgstr "Odkazy v seznamu '%s'"
+
+#, php-format
+#~ msgid "Adding link to the list '%s'"
+#~ msgstr "Přidání odkazu do seznamu '%s'"
+
+#, php-format
+#~ msgid "Editing link '%s'"
+#~ msgstr "Editace odkazu '%s'"
+
+#~ msgid "Links"
+#~ msgstr "Odkazy"
+
+#~ msgid "Link lists"
+#~ msgstr "Seznamy odkazů"
+
+#~ msgid "Creating new link list"
+#~ msgstr "Vytvoření nového seznamu odkazů"
+
+#~ msgid "Editing link list"
+#~ msgstr "Editace seznamu odkazů"
+
+#~ msgid "Newsletter Subscribers"
+#~ msgstr "Odběratelé newsletteru"
+
+#~ msgid "Create page"
+#~ msgstr "Vytvořit stránku"
+
+#~ msgid "The page has been created successfully"
+#~ msgstr "Stránka byla úspěšně vytvořena"
+
+#, php-format
+#~ msgid "Editing page %s"
+#~ msgstr "Editace stránky %s"
+
+#~ msgid "The page has been updated successfully"
+#~ msgstr "Stránka byla úspěšně aktualizována"
+
+#~ msgid "Listing Tags"
+#~ msgstr "Přehled štítků"
+
+#~ msgid "Create a new tag"
+#~ msgstr "Vytvořit nový štítek"
+
+#~ msgid "The tag has been created successfully"
+#~ msgstr "Štítek byl úspěšně vytvořen"
+
+#, php-format
+#~ msgid "Editing tag %s"
+#~ msgstr "Editace štítku %s"
+
+#~ msgid "The same tag already exists"
+#~ msgstr "Stejný štítek již existuje"
+
+#~ msgid "The tag has been updated"
+#~ msgstr "Štítek byl aktualizován"
+
+#~ msgid "Nové video"
+#~ msgstr "Nové video"
+
+#~ msgid "Vložili jste úspěšně video"
+#~ msgstr "Vložili jste úspěšně video"
+
+#~ msgid "Image"
+#~ msgstr "Obrázek"
+
+#~ msgid "Image used in article overview"
+#~ msgstr "Obrázek používaný v přehledu článků"
+
+#~ msgid "Teaser"
+#~ msgstr "Teaser"
+
+#, php-format
+#~ msgid "<a href=\"%s\">Markdown</a> format is expected"
+#~ msgstr "Je očekáván formát <a href=\"%s\">Markdown</a>"
+
+#~ msgid "Body"
+#~ msgstr "Tělo"
+
+#~ msgid "HTML title"
+#~ msgstr "HTML název"
+
+#~ msgid "Content for <html><head><title>. If left empty, the title is used."
+#~ msgstr ""
+#~ "Obsah pro <html><head><title>. Pokud bude ponecháno prázdné, bude použit "
+#~ "název."
+
+#~ msgid "HTML description"
+#~ msgstr "HTML popis"
+
+#~ msgid ""
+#~ "Content for <meta name=\"description\">. If left empty, the teaser is "
+#~ "used."
+#~ msgstr ""
+#~ "Obsah pro <meta name=\"description\">. Pokud bude ponecháno prázdné, "
+#~ "použije se teaser."
+
+#~ msgid "Published At"
+#~ msgstr "Publikováno dne"
+
+#~ msgid "File"
+#~ msgstr "Soubor"
+
+#~ msgid "User Manual"
+#~ msgstr "Uživatelský manuál"
+
+#~ msgid "This doesn't look like an URL or URI"
+#~ msgstr "Toto nevypadá to jako URL nebo URI"
+
+#~ msgid ""
+#~ "Address which cannot be found on this server. Here are some examples. The "
+#~ "first one is usually the most appropriate."
+#~ msgstr ""
+#~ "Adresa, kterou nelze na tomto serveru najít. Zde jsou nějaké příklady. "
+#~ "První z nich je obvykle nejvhodnější."
+
+#~ msgid "Examples:"
+#~ msgstr "Příklady:"
+
+#~ msgid "Moved permanently?"
+#~ msgstr "Přesunuto trvale?"
+
+#~ msgid "The Source URL and Target URL cannot be the same"
+#~ msgstr "Zdrojová a cílová adresa URL nemohou být stejné"
+
+#~ msgid "Square"
+#~ msgstr "Čtverec"
+
+#~ msgid "Slider"
+#~ msgstr "Posuvník"
+
+#~ msgid "Slider darker & bigger"
+#~ msgstr "Posuvník tmavší a větší"
+
+#~ msgid "Slider with thumbnails"
+#~ msgstr "Posuvník s náhledy"
+
+#~ msgid "Nahrát fotografii"
+#~ msgstr "Nahrát fotografii"
+
+#~ msgid "Fotografie"
+#~ msgstr "Fotografie"
+
+#~ msgid "Display image in gallery on the product card?"
+#~ msgstr "Zobrazit obrázek ve fotogalerii na kartě produktu?"
+
+#~ msgid "Default appearance"
+#~ msgstr "Výchozí vzhled"
+
+#~ msgid "Titulek viditelný na webu?"
+#~ msgstr "Titulek viditelný na webu?"
+
+#~ msgid "Appearance"
+#~ msgstr "Vzhled"
+
+#~ msgid "URL / path"
+#~ msgstr "URL / cesta"
+
+#~ msgid ""
+#~ "An internal link should be set as an URI (e.g. /about-us/). An external "
+#~ "link has to be set in the full format (e.g. https://example.com/file.pdf)."
+#~ msgstr ""
+#~ "Interní odkaz by měl být zadán jako URI (např. /o-nas/). Externí odkaz "
+#~ "musí být zadán v úplném tvaru (např. https://example.com/file.pdf)."
+
+#~ msgid "Specific URL for the given language"
+#~ msgstr "Specifická adresa URL pro daný jazyk"
+
+#~ msgid ""
+#~ "If necessary, a specific URL can be specified for the given language."
+#~ msgstr "V případě potřeby lze zadat specifickou adresu URL pro daný jazyk."
+
+#~ msgid "CSS class"
+#~ msgstr "Třída CSS"
+
+#~ msgid "In some cases the link looks better with an image."
+#~ msgstr "V některých případech vypadá odkaz lépe s obrázkem."
+
+#~ msgid "System title"
+#~ msgstr "Systémový název"
+
+#~ msgid ""
+#~ "Useful in administration. This title is not shown in the application."
+#~ msgstr "Užitečné v administraci. Tento název se nezobrazuje v aplikace."
+
+#~ msgid "Displayed title"
+#~ msgstr "Zobrazovaný název"
+
+#~ msgid "About us"
+#~ msgstr "O nás"
+
+#~ msgid "The same code is used on a different page"
+#~ msgstr "Stejný kód je použit na jiné stránce"
+
+#~ msgid "The homepage should always be visible."
+#~ msgstr "Domovská stránka by měla být vždy viditelná."
+
+#~ msgid "Image used on list of pages, social networks, etc."
+#~ msgstr "Obrázek použitý v seznamu stránek, na sociálních sítí atd."
+
+#~ msgid "Parent page"
+#~ msgstr "Rodičovské stránka"
+
+#~ msgid "Show in sitemap?"
+#~ msgstr "Zobrazovat v mapě stránek?"
+
+#~ msgid "Visible?"
+#~ msgstr "Viditelné?"
+
+#~ msgid "The page cannot be placed under itself."
+#~ msgstr "Stránku nelze umístit samu pod sebe."
+
+#~ msgid "Nesting is too deep."
+#~ msgstr "Vnoření je příliš hluboké."
+
+#~ msgid "Obrázek"
+#~ msgstr "Obrázek"
+
+#~ msgid "Alternative look"
+#~ msgstr "Alternativní vzhled"
+
+#~ msgid "Card"
+#~ msgstr "Karta"
+
+#~ msgid "Tag lokalized"
+#~ msgstr "Štítek lokalizovaný"
+
+#~ msgid ""
+#~ "Enter proper value when the tag itself is not good in the given language"
+#~ msgstr "Pokud štítek není v daném jazyce dobrý, zadejte vhodnější název"
+
+#~ msgid "Pokračovat"
+#~ msgstr "Pokračovat"
+
+#~ msgid "Automatické spuštění videa"
+#~ msgstr "Automatické spuštění videa"
+
+#~ msgid "Po ukončení přehrát znovu"
+#~ msgstr "Po ukončení přehrát znovu"
 
 #~ msgid "System name"
 #~ msgstr "Systémový název"
@@ -1640,8 +1507,8 @@ msgstr "Po ukončení přehrát znovu"
 #~ msgstr "Abyste se mohl zaregistrovat, napřed se odhlaste"
 
 #~ msgid ""
-#~ "You have been successfully registered and now you are logged in as <em>"
-#~ "%s</em>"
+#~ "You have been successfully registered and now you are logged in as "
+#~ "<em>%s</em>"
 #~ msgstr ""
 #~ "Byl jste úspěšně zaregistrován a teď jste přihlášen jako <em>%s</em>"
 
@@ -1871,13 +1738,13 @@ msgstr "Po ukončení přehrát znovu"
 
 #~ msgid "Ensure this image is at most %max% pixels wide (it is %width%)."
 #~ msgstr ""
-#~ "Ujistěte se, že šířka obrázku nepřekročí %max% bodů (teď je šíroký %width"
-#~ "%)."
+#~ "Ujistěte se, že šířka obrázku nepřekročí %max% bodů (teď je šíroký "
+#~ "%width%)."
 
 #~ msgid "Ensure this image is at most %max% pixels high (it is %height%)."
 #~ msgstr ""
-#~ "Ujistěte se, že výška obrázku nepřekročí %max% bodů (teď je vysoký %height"
-#~ "%)."
+#~ "Ujistěte se, že výška obrázku nepřekročí %max% bodů (teď je vysoký "
+#~ "%height%)."
 
 #~ msgid "Ensure this image is at least %min% pixels wide (it is %width%)."
 #~ msgstr "Obrázek musí mít alespoň %min% bodů na šířku (nyní má %width%). "
