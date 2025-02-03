@@ -3,6 +3,7 @@ class TcInvalidLoginAttempt extends TcBase {
 
 	function test_IsRemoteAddressBlocked(){
 		$remote_addr = "8.8.8.8";
+		$another_remote_addr = "9.9.9.9";
 		$current_time = time();
 
 		$this->assertEquals(false,InvalidLoginAttempt::IsRemoteAddressBlocked($remote_addr,$realease_time,["current_time" => $current_time]));
@@ -57,6 +58,8 @@ class TcInvalidLoginAttempt extends TcBase {
 
 		$this->assertEquals(false,InvalidLoginAttempt::IsRemoteAddressBlocked($remote_addr,$realease_time,["current_time" => $current_time + 50]));
 		$this->assertEquals(null,$realease_time);
+
+		$this->assertEquals(false,InvalidLoginAttempt::IsRemoteAddressBlocked($another_remote_addr,$realease_time,["current_time" => $current_time]));
 	}
 
 	function test_BuildLoginAttemptDelayMessage(){
