@@ -74,11 +74,13 @@ install:
   - git submodule init && git submodule update
   - ./scripts/check_system || echo "FIX SYSTEM REQUIREMENTS!"
 
-# The phpunit/phpunit 7.5.20 package is compatible with PHP ^7.1 and also works on PHP 8.*
-before_script:
+before_install:
   - sudo apt-get update
   - sudo apt-get install libmagickwand-dev php-pear
   - printf "\n" | pecl install imagick
+
+# The phpunit/phpunit 7.5.20 package is compatible with PHP ^7.1 and also works on PHP 8.*
+before_script:
   - travis_retry composer install --dev --no-interaction --prefer-dist
   - composer require --dev "phpunit/phpunit" "7.5.20|8.5.41|9.6.22" 2>&1
   - composer config --global use-parent-dir true
