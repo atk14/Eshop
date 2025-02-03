@@ -61,7 +61,7 @@ jobs:
         - sudo apt install software-properties-common
         - sudo add-apt-repository ppa:ondrej/php
         - sudo apt update
-        - sudo apt install php8.4 php8.4-mbstring php8.4-cli php8.4-pgsql php8.4-readline php8.4-gd php8.4-xml php8.4-bcmath
+        - sudo apt install php8.4 php8.4-mbstring php8.4-cli php8.4-pgsql php8.4-readline php8.4-gd php8.4-xml php8.4-bcmath php8.4-imagick
         - php -v
         - sudo apt-get install postgresql-16 postgresql-client-16
         - "sed -i 's/test:/test:\\n  port: 5433/' config/database.yml 2>&1"
